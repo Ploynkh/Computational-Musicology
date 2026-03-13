@@ -3,6 +3,7 @@ title: "R&B Music Analysis Dashboard"
 format:
   dashboard:
     orientation: rows
+    max-width: 1200px
 theme: vapor
 ---
 
@@ -89,16 +90,16 @@ To explore rhythmic differences between eras, the distributions of tempo values 
 :::
 
 ::::: {.columns .justify-content-center}
-::: {.column width="40%"}
-![](images/Tempo_90s.png){fig-align="center" width="95%"}
+::: {.column width="35%"}
+![](images/Tempo_90s.png){fig-align="center" width="100%"}
 
 **1990s R&B**
 
 The tempo distribution of 1990s R&B tracks shows a clear concentration between 90 and 110 BPM. This range is characteristic of the groove-based rhythmic feel commonly associated with R&B production during that decade, where steady mid-tempo rhythms supported vocal performance and smooth harmonic progressions.
 :::
 
-::: {.column width="40%"}
-![](images/Tempo_Contemporary.png){fig-align="center" width="95%"}
+::: {.column width="35%"}
+![](images/Tempo_Contemporary.png){fig-align="center" width="100%"}
 
 **Contemporary R&B**
 
