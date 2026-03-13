@@ -90,7 +90,7 @@ To explore rhythmic differences between eras, the distributions of tempo values 
 
 ::::: {.columns .justify-content-center}
 ::: {.column width="40%"}
-![](images/tempo_90s.png){fig-align="center" width="95%"}
+![](images/Tempo_90s.png){fig-align="center" width="95%"}
 
 **1990s R&B**
 
@@ -98,7 +98,7 @@ The tempo distribution of 1990s R&B tracks shows a clear concentration between 9
 :::
 
 ::: {.column width="40%"}
-![](images/tempo_contemporary.png){fig-align="center" width="95%"}
+![](images/Tempo_Contemporary.png){fig-align="center" width="95%"}
 
 **Contemporary R&B**
 
