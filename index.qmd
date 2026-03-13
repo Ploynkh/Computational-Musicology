@@ -82,33 +82,33 @@ Together, these visualizations demonstrate how **data-driven analysis can reveal
 
 # Tempo Analysis
 
-::: card
+::: {.card style="height:auto"}
+
 ### Tempo Distribution Across R&B Eras
 
-Tempo is an important rhythmic characteristic that influences the overall feel and groove of a song.\
+Tempo is an important rhythmic characteristic that influences the overall feel and groove of a song.  
 To explore rhythmic differences between eras, the distributions of tempo values (in BPM) were compared for **1990s R&B** and **contemporary R&B** tracks.
-:::
 
 ::::: {.columns .justify-content-center}
-::: {.column width="35%"}
-![](images/Tempo_90s.png){fig-align="center" width="100%"}
+::: {.column width="40%"}
+![](images/Tempo_90s.png){fig-align="center" width="90%"}
 
 **1990s R&B**
 
-The tempo distribution of 1990s R&B tracks shows a clear concentration between 90 and 110 BPM. This range is characteristic of the groove-based rhythmic feel commonly associated with R&B production during that decade, where steady mid-tempo rhythms supported vocal performance and smooth harmonic progressions.
+The tempo distribution of 1990s R&B tracks shows a clear concentration between **90 and 110 BPM**. This range is characteristic of the groove-based rhythmic feel commonly associated with R&B production during that decade, where steady mid-tempo rhythms supported vocal performance and smooth harmonic progressions.
 :::
 
-::: {.column width="35%"}
-![](images/Tempo_Contemporary.png){fig-align="center" width="100%"}
+::: {.column width="40%"}
+![](images/Tempo_Contemporary.png){fig-align="center" width="90%"}
 
 **Contemporary R&B**
 
-In contrast, contemporary R&B displays a slightly broader tempo distribution. While many tracks still fall within the mid-tempo range, a noticeable number of songs appear at higher tempo values above 120 BPM, suggesting greater rhythmic diversity and experimentation in modern R&B production.
+In contrast, contemporary R&B displays a slightly broader tempo distribution. While many tracks still fall within the mid-tempo range, a noticeable number of songs appear at **higher tempo values above 120 BPM**, suggesting greater rhythmic diversity and experimentation in modern R&B production.
 :::
 :::::
 
-::: card
 ### Interpretation
 
-Overall, both eras favor mid-tempo grooves, which remain a defining rhythmic feature of R&B. However, the wider spread observed in contemporary tracks indicates that modern R&B artists and producers may be exploring a broader range of rhythmic styles, potentially reflecting influences from genres such as hip-hop, trap, and electronic music.
+Overall, both eras favor **mid-tempo grooves**, which remain a defining rhythmic feature of R&B. However, the wider spread observed in contemporary tracks indicates that modern R&B artists and producers may be exploring a broader range of rhythmic styles, potentially reflecting influences from genres such as **hip-hop, trap, and electronic music**.
+
 :::
