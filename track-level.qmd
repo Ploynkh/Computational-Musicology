@@ -1,0 +1,25 @@
+---
+title: "Track-level Features"
+---
+
+## Energy vs Valence
+
+![](images/energy_valence_plot.png){fig-align="center" width="70%"}
+
+This scatterplot shows the relationship between energy (musical intensity) and valence (emotional positivity) for songs from two eras: the 1990s and contemporary R&B.
+
+The upward trend in both groups suggests that songs with higher emotional positivity tend to also have higher energy levels.
+
+## Valence Distribution
+
+![](images/valence_plot.png){fig-align="center" width="70%"}
+
+This boxplot compares the distribution of valence between the two eras of R&B music.
+
+Valence represents how positive or happy a song sounds on a scale from 0 to 1.
+
+The median valence for 1990s tracks appears higher than for contemporary songs.
+
+## Interpretation
+
+The emotional feature analysis suggests that contemporary R&B tends to have slightly lower energy and valence compared to 1990s R&B, indicating a stylistic shift toward smoother and more reflective musical moods.

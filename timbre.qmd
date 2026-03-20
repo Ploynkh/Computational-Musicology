@@ -1,0 +1,19 @@
+---
+title: "Timbre Features"
+---
+
+## Cepstrogram – Snooze
+
+![](images/cepstrogram_snooze.png){fig-align="center" width="80%"}
+
+This cepstrogram visualizes the timbral characteristics of the song **Snooze** using **Mel-Frequency Cepstral Coefficients (MFCCs)**.
+
+Each horizontal band represents a different MFCC coefficient capturing aspects of the sound’s spectral shape.
+
+Lower coefficients tend to show more variation, reflecting changes in vocal presence and instrumentation across the track.
+
+The gradual color changes suggest smooth transitions between sections rather than abrupt timbral shifts.
+
+## Interpretation
+
+Together with the other visualizations, the cepstrogram suggests that contemporary R&B favors a smoother, more stable, and more immersive timbral texture.

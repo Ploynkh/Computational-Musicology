@@ -1,0 +1,24 @@
+---
+title: "Temporal Features"
+---
+
+
+## Tempo Distribution Across R&B Eras
+
+Tempo is an important rhythmic characteristic that influences the overall feel and groove of a song. To explore rhythmic differences between eras, the distributions of tempo values in BPM were compared for 1990s R&B and contemporary R&B tracks.
+
+## 1990s R&B
+
+![](images/Tempo_90s.png){fig-align="center" width="65%"}
+
+The tempo distribution of 1990s R&B tracks shows a clear concentration between **90 and 110 BPM**. This range is characteristic of the groove-based rhythmic feel commonly associated with R&B production during that decade, where steady mid-tempo rhythms supported vocal performance and smooth harmonic progressions.
+
+## Contemporary R&B
+
+![](images/Tempo_Contemporary.png){fig-align="center" width="65%"}
+
+In contrast, contemporary R&B displays a slightly broader tempo distribution. While many tracks still fall within the mid-tempo range, a noticeable number of songs appear at higher tempo values above **120 BPM**, suggesting greater rhythmic diversity and experimentation in modern R&B production.
+
+## Interpretation
+
+Overall, both eras favor mid-tempo grooves, which remain a defining rhythmic feature of R&B. However, the wider spread observed in contemporary tracks indicates that modern R&B artists and producers may be exploring a broader range of rhythmic styles, potentially reflecting influences from hip-hop, trap, and electronic music.

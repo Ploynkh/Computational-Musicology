@@ -1,0 +1,30 @@
+project:
+  type: website
+
+website:
+  title: "1990s vs 2020s R&B: Danceable vs Atmospheric Music"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Background
+      - href: track-level.qmd
+        text: Track-level Features
+      - href: chroma.qmd
+        text: Chroma Features
+      - href: timbre.qmd
+        text: Timbre Features
+      - href: temporal.qmd
+        text: Temporal Features
+      - href: clustering.qmd
+        text: Clustering
+      - href: conclusion.qmd
+        text: Conclusion
+
+format:
+  html:
+    theme: flatly
+    css: styles.css
+    toc: true
+    toc-location: left
+    smooth-scroll: true
+    number-sections: false

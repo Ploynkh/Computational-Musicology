@@ -1,0 +1,15 @@
+---
+title: "Chroma Features"
+---
+
+## Chromagram Comparison
+
+![](images/Comparative_Chromagram_two_tracks.png){fig-align="center" width="80%"}
+
+The chromagram compares the pitch-class activity of the songs **No Scrubs** and **Snooze**. Each horizontal row represents one of the twelve pitch classes, while the color intensity indicates how strongly that pitch appears in the audio signal over time.
+
+Both tracks show repeated emphasis on a limited number of pitch classes, reflecting chord progressions typical of R&B music.
+
+However, the distribution of pitch activity differs slightly between the songs. **No Scrubs** appears to maintain more consistent harmonic repetition, while **Snooze** shows more variation in pitch intensity over time.
+
+The Euclidean harmonic distance between the mean pitch-class profiles of the two songs is **0.748**, indicating a moderate harmonic difference.

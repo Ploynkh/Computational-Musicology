@@ -1,0 +1,184 @@
+[
+  {
+    "objectID": "chroma.html",
+    "href": "chroma.html",
+    "title": "Chroma Features",
+    "section": "",
+    "text": "The chromagram compares the pitch-class activity of the songs No Scrubs and Snooze. Each horizontal row represents one of the twelve pitch classes, while the color intensity indicates how strongly that pitch appears in the audio signal over time.\nBoth tracks show repeated emphasis on a limited number of pitch classes, reflecting chord progressions typical of R&B music.\nHowever, the distribution of pitch activity differs slightly between the songs. No Scrubs appears to maintain more consistent harmonic repetition, while Snooze shows more variation in pitch intensity over time.\nThe Euclidean harmonic distance between the mean pitch-class profiles of the two songs is 0.748, indicating a moderate harmonic difference."
+  },
+  {
+    "objectID": "chroma.html#chromagram-comparison",
+    "href": "chroma.html#chromagram-comparison",
+    "title": "Chroma Features",
+    "section": "",
+    "text": "The chromagram compares the pitch-class activity of the songs No Scrubs and Snooze. Each horizontal row represents one of the twelve pitch classes, while the color intensity indicates how strongly that pitch appears in the audio signal over time.\nBoth tracks show repeated emphasis on a limited number of pitch classes, reflecting chord progressions typical of R&B music.\nHowever, the distribution of pitch activity differs slightly between the songs. No Scrubs appears to maintain more consistent harmonic repetition, while Snooze shows more variation in pitch intensity over time.\nThe Euclidean harmonic distance between the mean pitch-class profiles of the two songs is 0.748, indicating a moderate harmonic difference."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Background",
+    "section": "",
+    "text": "This project explores how R&B has evolved from the 1990s to the 2020s by asking: Can R&B still make you move, or does it now aim to leave you speechless? It compares “danceable” R&B from the 1990s with more “atmospheric” R&B from the 2020s to examine whether the function of the genre has shifted over time.\nThe corpus consists of 50 tracks, with 25 songs from each era. The 1990s selection focuses on groove-driven, danceable R&B associated with artists such as Mariah Carey, Janet Jackson, Aaliyah, and Usher. These tracks were chosen for their strong rhythmic structure, clear beats, and popularity in social settings like clubs and parties. In contrast, the 2020s selection includes artists such as SZA, Ariana Grande, Frank Ocean, and Summer Walker, whose music often emphasizes slower tempos, softer textures, and a more atmospheric sound. These tracks were selected to represent contemporary R&B’s focus on mood, introspection, and personal listening contexts, such as late-night driving or listening alone.\nUsing Spotify audio features, this dashboard investigates whether these differences can be measured. It asks: Are 1990s R&B tracks more danceable and rhythmically driven than those from the 2020s? Do contemporary tracks show reduced tempo and rhythmic activity? Has harmonic movement become more repetitive? And do timbral features reflect a shift toward softer, more immersive textures?\nTo answer these questions, the analysis focuses on temporal features (tempo and rhythm), track-level features (such as danceability and energy), chroma features (harmonic variation), and timbral features (sound texture and density). By comparing these dimensions across both eras, the project aims to determine whether R&B has shifted from music designed for movement to music designed for mood.\nOverall, this study suggests that R&B has not only changed in style, but also in purpose from driving collective movement in social spaces to shaping emotional experience in more personal listening environments."
+  },
+  {
+    "objectID": "index.html#s-vs-2020s-rb-danceable-vs-atmospheric-music",
+    "href": "index.html#s-vs-2020s-rb-danceable-vs-atmospheric-music",
+    "title": "Background",
+    "section": "",
+    "text": "This project explores how R&B has evolved from the 1990s to the 2020s by asking: Can R&B still make you move, or does it now aim to leave you speechless? It compares “danceable” R&B from the 1990s with more “atmospheric” R&B from the 2020s to examine whether the function of the genre has shifted over time.\nThe corpus consists of 50 tracks, with 25 songs from each era. The 1990s selection focuses on groove-driven, danceable R&B associated with artists such as Mariah Carey, Janet Jackson, Aaliyah, and Usher. These tracks were chosen for their strong rhythmic structure, clear beats, and popularity in social settings like clubs and parties. In contrast, the 2020s selection includes artists such as SZA, Ariana Grande, Frank Ocean, and Summer Walker, whose music often emphasizes slower tempos, softer textures, and a more atmospheric sound. These tracks were selected to represent contemporary R&B’s focus on mood, introspection, and personal listening contexts, such as late-night driving or listening alone.\nUsing Spotify audio features, this dashboard investigates whether these differences can be measured. It asks: Are 1990s R&B tracks more danceable and rhythmically driven than those from the 2020s? Do contemporary tracks show reduced tempo and rhythmic activity? Has harmonic movement become more repetitive? And do timbral features reflect a shift toward softer, more immersive textures?\nTo answer these questions, the analysis focuses on temporal features (tempo and rhythm), track-level features (such as danceability and energy), chroma features (harmonic variation), and timbral features (sound texture and density). By comparing these dimensions across both eras, the project aims to determine whether R&B has shifted from music designed for movement to music designed for mood.\nOverall, this study suggests that R&B has not only changed in style, but also in purpose from driving collective movement in social spaces to shaping emotional experience in more personal listening environments."
+  },
+  {
+    "objectID": "track-level.html",
+    "href": "track-level.html",
+    "title": "Track-level Features",
+    "section": "",
+    "text": "This scatterplot shows the relationship between energy (musical intensity) and valence (emotional positivity) for songs from two eras: the 1990s and contemporary R&B.\nThe upward trend in both groups suggests that songs with higher emotional positivity tend to also have higher energy levels."
+  },
+  {
+    "objectID": "track-level.html#energy-vs-valence",
+    "href": "track-level.html#energy-vs-valence",
+    "title": "Track-level Features",
+    "section": "",
+    "text": "This scatterplot shows the relationship between energy (musical intensity) and valence (emotional positivity) for songs from two eras: the 1990s and contemporary R&B.\nThe upward trend in both groups suggests that songs with higher emotional positivity tend to also have higher energy levels."
+  },
+  {
+    "objectID": "track-level.html#valence-distribution",
+    "href": "track-level.html#valence-distribution",
+    "title": "Track-level Features",
+    "section": "Valence Distribution",
+    "text": "Valence Distribution\n\n\n\n\n\nThis boxplot compares the distribution of valence between the two eras of R&B music.\nValence represents how positive or happy a song sounds on a scale from 0 to 1.\nThe median valence for 1990s tracks appears higher than for contemporary songs."
+  },
+  {
+    "objectID": "track-level.html#interpretation",
+    "href": "track-level.html#interpretation",
+    "title": "Track-level Features",
+    "section": "Interpretation",
+    "text": "Interpretation\nThe emotional feature analysis suggests that contemporary R&B tends to have slightly lower energy and valence compared to 1990s R&B, indicating a stylistic shift toward smoother and more reflective musical moods."
+  },
+  {
+    "objectID": "clustering.html",
+    "href": "clustering.html",
+    "title": "Clustering",
+    "section": "",
+    "text": "This section examines how R&B has changed from the 1990s to the 2020s using both statistical clustering and audio analysis. The goal is to see whether differences between “movement” and “mood” can be observed in both data and sound."
+  },
+  {
+    "objectID": "clustering.html#analytical-workflow",
+    "href": "clustering.html#analytical-workflow",
+    "title": "Clustering",
+    "section": "Analytical Workflow",
+    "text": "Analytical Workflow\nThe analysis combines Spotify audio features with direct audio processing.\nFirst, playlists of 1990s and 2020s R&B tracks were collected. For each track, Spotify features such as danceability, energy, loudness, acousticness, valence, and tempo were used. These features were then used to perform hierarchical clustering.\nIn addition, two representative tracks were selected: No Diggity (1990s) and Cellophane (2020s). These tracks were used to link the statistical results to the actual sound of the music.\nThe audio files were first obtained as MP3 and then converted to WAV format to preserve sound quality. Short excerpts were edited in Audacity to focus on comparable sections. These excerpts were then analyzed in Sonic Visualiser, where spectrograms were used to examine frequency content and rhythmic structure.\nThis combined approach makes it possible to connect numerical features to audible differences."
+  },
+  {
+    "objectID": "clustering.html#hierarchical-clustering",
+    "href": "clustering.html#hierarchical-clustering",
+    "title": "Clustering",
+    "section": "Hierarchical Clustering",
+    "text": "Hierarchical Clustering\nHierarchical clustering groups songs based on similarity in their audio features. Instead of assigning songs to fixed categories, this method shows how tracks are gradually related to each other.\nThe aim is to see whether songs from the 1990s and 2020s naturally form separate clusters. If they do, this suggests that the musical style of R&B has changed over time."
+  },
+  {
+    "objectID": "clustering.html#dendrogram",
+    "href": "clustering.html#dendrogram",
+    "title": "Clustering",
+    "section": "Dendrogram",
+    "text": "Dendrogram\nThe dendrogram shows how songs are grouped based on similarity. The vertical axis (Height) represents the distance between clusters.\nThe results show a general separation between 1990s and 2020s tracks. Many 1990s songs cluster together due to higher energy, danceability, and loudness. In contrast, many 2020s tracks are grouped around higher acousticness and a more atmospheric sound.\nThis suggests that 1990s R&B is more focused on rhythm and movement, while 2020s R&B is more focused on mood and texture."
+  },
+  {
+    "objectID": "clustering.html#heatmap",
+    "href": "clustering.html#heatmap",
+    "title": "Clustering",
+    "section": "Heatmap",
+    "text": "Heatmap\nThe heatmap shows the values of the audio features for each track. Each row represents a song, and each column represents a feature.\nThe 1990s tracks generally show higher values for energy and danceability. This supports the idea that this era of R&B is more rhythm-driven.\nIn contrast, 2020s tracks show higher acousticness and more variation in valence. This indicates a shift toward emotional expression and atmosphere.\nThe heatmap helps explain why the clusters in the dendrogram are formed."
+  },
+  {
+    "objectID": "clustering.html#spectrogram-comparison",
+    "href": "clustering.html#spectrogram-comparison",
+    "title": "Clustering",
+    "section": "Spectrogram Comparison",
+    "text": "Spectrogram Comparison\nTo connect the clustering results to actual sound, two representative tracks were analyzed using spectrograms.\n\nNo Diggity (1990s)\nThe spectrogram of No Diggity shows strong vertical lines, which represent clear rhythmic hits. The pattern is dense and consistent, reflecting a steady groove.\nThis supports the idea that 1990s R&B is built around rhythm and movement.\n\n\n\nCellophane (2020s)\nThe spectrogram of Cellophane is more spread out and less dense. There are fewer strong rhythmic patterns and more sustained sounds.\nThis reflects a more atmospheric and emotional style, which is typical of modern R&B."
+  },
+  {
+    "objectID": "clustering.html#interpretation",
+    "href": "clustering.html#interpretation",
+    "title": "Clustering",
+    "section": "Interpretation",
+    "text": "Interpretation\nThe results from clustering and audio analysis point in the same direction.\n1990s R&B is generally characterized by higher energy, stronger rhythm, and greater danceability. In contrast, 2020s R&B places more emphasis on acoustic elements, space, and emotional variation.\nThe spectrograms support this pattern by showing clearer rhythmic structure in the 1990s track and a more open, atmospheric structure in the 2020s track.\nOverall, the findings suggest that R&B has shifted from a movement-focused style to a mood-focused style."
+  },
+  {
+    "objectID": "clustering.html#conclusion",
+    "href": "clustering.html#conclusion",
+    "title": "Clustering",
+    "section": "Conclusion",
+    "text": "Conclusion\nThe clustering analysis shows that many 1990s and 2020s tracks group differently based on their audio features. The heatmap explains these differences, and the spectrograms confirm them at the level of sound.\nTogether, these results suggest that R&B has evolved over time. While 1990s R&B is more focused on rhythm and dance, modern R&B emphasizes mood, texture, and emotional expression."
+  },
+  {
+    "objectID": "temporal.html",
+    "href": "temporal.html",
+    "title": "Temporal Features",
+    "section": "",
+    "text": "Tempo is an important rhythmic characteristic that influences the overall feel and groove of a song. To explore rhythmic differences between eras, the distributions of tempo values in BPM were compared for 1990s R&B and contemporary R&B tracks."
+  },
+  {
+    "objectID": "temporal.html#tempo-distribution-across-rb-eras",
+    "href": "temporal.html#tempo-distribution-across-rb-eras",
+    "title": "Temporal Features",
+    "section": "",
+    "text": "Tempo is an important rhythmic characteristic that influences the overall feel and groove of a song. To explore rhythmic differences between eras, the distributions of tempo values in BPM were compared for 1990s R&B and contemporary R&B tracks."
+  },
+  {
+    "objectID": "temporal.html#s-rb",
+    "href": "temporal.html#s-rb",
+    "title": "Temporal Features",
+    "section": "1990s R&B",
+    "text": "1990s R&B\n\n\n\n\n\nThe tempo distribution of 1990s R&B tracks shows a clear concentration between 90 and 110 BPM. This range is characteristic of the groove-based rhythmic feel commonly associated with R&B production during that decade, where steady mid-tempo rhythms supported vocal performance and smooth harmonic progressions."
+  },
+  {
+    "objectID": "temporal.html#contemporary-rb",
+    "href": "temporal.html#contemporary-rb",
+    "title": "Temporal Features",
+    "section": "Contemporary R&B",
+    "text": "Contemporary R&B\n\n\n\n\n\nIn contrast, contemporary R&B displays a slightly broader tempo distribution. While many tracks still fall within the mid-tempo range, a noticeable number of songs appear at higher tempo values above 120 BPM, suggesting greater rhythmic diversity and experimentation in modern R&B production."
+  },
+  {
+    "objectID": "temporal.html#interpretation",
+    "href": "temporal.html#interpretation",
+    "title": "Temporal Features",
+    "section": "Interpretation",
+    "text": "Interpretation\nOverall, both eras favor mid-tempo grooves, which remain a defining rhythmic feature of R&B. However, the wider spread observed in contemporary tracks indicates that modern R&B artists and producers may be exploring a broader range of rhythmic styles, potentially reflecting influences from hip-hop, trap, and electronic music."
+  },
+  {
+    "objectID": "timbre.html",
+    "href": "timbre.html",
+    "title": "Timbre Features",
+    "section": "",
+    "text": "This cepstrogram visualizes the timbral characteristics of the song Snooze using Mel-Frequency Cepstral Coefficients (MFCCs).\nEach horizontal band represents a different MFCC coefficient capturing aspects of the sound’s spectral shape.\nLower coefficients tend to show more variation, reflecting changes in vocal presence and instrumentation across the track.\nThe gradual color changes suggest smooth transitions between sections rather than abrupt timbral shifts."
+  },
+  {
+    "objectID": "timbre.html#cepstrogram-snooze",
+    "href": "timbre.html#cepstrogram-snooze",
+    "title": "Timbre Features",
+    "section": "",
+    "text": "This cepstrogram visualizes the timbral characteristics of the song Snooze using Mel-Frequency Cepstral Coefficients (MFCCs).\nEach horizontal band represents a different MFCC coefficient capturing aspects of the sound’s spectral shape.\nLower coefficients tend to show more variation, reflecting changes in vocal presence and instrumentation across the track.\nThe gradual color changes suggest smooth transitions between sections rather than abrupt timbral shifts."
+  },
+  {
+    "objectID": "timbre.html#interpretation",
+    "href": "timbre.html#interpretation",
+    "title": "Timbre Features",
+    "section": "Interpretation",
+    "text": "Interpretation\nTogether with the other visualizations, the cepstrogram suggests that contemporary R&B favors a smoother, more stable, and more immersive timbral texture."
+  },
+  {
+    "objectID": "conclusion.html",
+    "href": "conclusion.html",
+    "title": "Conclusion",
+    "section": "",
+    "text": "…"
+  },
+  {
+    "objectID": "conclusion.html#final-interpretation",
+    "href": "conclusion.html#final-interpretation",
+    "title": "Conclusion",
+    "section": "",
+    "text": "…"
+  }
+]
