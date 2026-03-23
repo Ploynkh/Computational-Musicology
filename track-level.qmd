@@ -1,25 +1,55 @@
 ---
-title: "Track-level Features"
+title: "Track-Level Features"
+format: 
+  html:
+    toc: true
+    toc-location: left
 ---
 
-## Energy vs Valence
+This section examines Spotify **track-level features** to evaluate whether measurable differences exist between 1990s and 2020s R&B. The analysis focuses on **danceability, energy, and valence**, which capture key aspects of rhythmic drive, intensity, and emotional expression.
 
-![](images/energy_valence_plot.png){fig-align="center" width="70%"}
+To compare these features across the two corpora, boxplots are used as the primary visualization method. **Boxplots** allow for a clear comparison of distributions, highlighting differences in median values, variability, and the presence of outliers between eras. This makes them particularly suitable for identifying systematic shifts in musical characteristics.
 
-This scatterplot shows the relationship between energy (musical intensity) and valence (emotional positivity) for songs from two eras: the 1990s and contemporary R&B.
+In addition, **a** **scatterplot** is used to examine the relationship between danceability and energy, providing insight into how these features interact within and across the two time periods.
 
-The upward trend in both groups suggests that songs with higher emotional positivity tend to also have higher energy levels.
+------------------------------------------------------------------------
 
-## Valence Distribution
+## Danceability Across Eras
 
-![](images/valence_plot.png){fig-align="center" width="70%"}
+![](images/danceability-boxplot.png)
 
-This boxplot compares the distribution of valence between the two eras of R&B music.
+Danceability is one of the clearest indicators of the shift explored in this project. **The 1990s** corpus shows **higher danceability values** overall, supporting the idea that R&B in this period was more strongly associated with rhythmic drive and social movement. In **the** **2020s** corpus, **danceability values are generally** **lower**, suggesting a genre that has become less centered on dancing and more focused on mood and introspection.
 
-Valence represents how positive or happy a song sounds on a scale from 0 to 1.
+------------------------------------------------------------------------
 
-The median valence for 1990s tracks appears higher than for contemporary songs.
+## Energy Across Eras
 
-## Interpretation
+![](images/energy-boxplot.png)
 
-The emotional feature analysis suggests that contemporary R&B tends to have slightly lower energy and valence compared to 1990s R&B, indicating a stylistic shift toward smoother and more reflective musical moods.
+Energy reflects the intensity and activity level of a track. **The 1990s** corpus shows consistently **higher energy values**, indicating a stronger emphasis on rhythmic drive and musical momentum. In **the 2020s** corpus, **energy levels are generally lower**, suggesting a shift toward softer, less forceful production and a more relaxed listening experience.
+
+------------------------------------------------------------------------
+
+## Valence Across Eras
+
+![](images/valence-plot.png)
+
+Valence captures the emotional positivity of a track. **The 1990s** corpus shows **higher valence values** overall, indicating a tendency toward more upbeat and outward emotional expression. In **the 2020s** corpus, **valence values are lower and more varied**, suggesting a shift toward more subdued, introspective, and emotionally complex musical moods.
+
+------------------------------------------------------------------------
+
+## Relationship Between Danceability and Energy
+
+![](images/danceability_vs_energy.png)
+
+This scatterplot shows how energy and danceability relate across the two eras. Tracks from **the 1990s cluster more strongly in the high-energy, high-danceability** **region**, reinforcing the idea that groove and movement were central characteristics of the genre. In **the 2020s corpus, tracks are more dispersed and tend to appear at lower values on both dimensions**, indicating a weaker link between intensity and danceability and a shift toward a more atmospheric style.
+
+------------------------------------------------------------------------
+
+## Key Findings
+
+The results across the track-level features reveal a consistent pattern. The 1990s corpus shows higher values for both danceability and energy, along with slightly higher valence, indicating a stronger emphasis on rhythmic drive, physical engagement, and more outward emotional expression. In the 2020s corpus, these features are generally lower and more variable, suggesting a shift toward less movement-oriented and more subdued musical characteristics.
+
+The relationship between danceability and energy further supports this pattern. Tracks from the 1990s cluster more strongly in the high-energy, high-danceability region, while 2020s tracks are more dispersed and tend to occupy lower ranges on both dimensions.
+
+Taken together, these findings provide quantitative support for a broader stylistic shift in R&B: from a genre closely associated with groove and collective movement toward one that emphasizes atmosphere, mood, and introspective listening.
