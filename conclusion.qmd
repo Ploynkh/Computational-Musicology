@@ -1,7 +1,73 @@
 ---
 title: "Conclusion"
+format:
+  html:
+    toc: true
+    toc-location: left
 ---
 
-## Final Interpretation
+## Has R&B Shifted from Danceable to Atmospheric?
 
-...
+This project set out to answer one question: has R&B shifted from a danceable, movement-oriented style to a more atmospheric and introspective one? Across five analytical sections, the answer is consistent and clear.
+
+```{=html}
+<div style="
+  background: linear-gradient(135deg, #2D1B69, #1a0a3d);
+  border-left: 4px solid #FF2D78;
+  border-radius: 8px;
+  padding: 1.2rem 1.5rem;
+  margin: 1.5rem 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: white;
+">
+  Yes. The shift is measurable, and it runs deep across every dimension of the music examined.
+</div>
+```
+
+## Summary of Findings
+
+| Section | 1990s R&B | 2020s R&B | What changed |
+|---|---|---|---|
+| Track-level features | High danceability, energy, valence, loudness | Lower and more variable on all features | Shifted toward less rhythmic intensity and more subdued emotional tone |
+| Chroma | Few repeating pitch classes, tight harmonic loops | Wider pitch class distribution, tonal ambiguity | Moved from harmonic stability to harmonic openness |
+| Temporal | Narrow tempo range, longer tracks, stable pulse | Broader tempo variation, shorter tracks, looser pulse | Less rhythmically consistent, more structurally flexible |
+| Timbre | Dense timbral profiles, clear section repetition | Softer, more uniform timbre, continuous form | From layered active production to restrained atmospheric texture |
+| Clustering | Clusters around high energy and danceability | Clusters around high acousticness, era separable by kNN | The two eras occupy distinct regions of the audio feature space |
+
+## Feature Comparison
+
+| Feature | 1990s | 2020s |
+|---|---|---|
+| Danceability | High, consistent (peak ~0.75) | Lower, more spread |
+| Energy | High | Moderate, more variable |
+| Valence | High positivity | More subdued, wider range |
+| Loudness | Louder, more compressed | Quieter on average |
+| Acousticness | Low | Higher |
+| Harmonic stability | Tonally stable, one key | Harmonically mobile |
+| Track duration | Longer | Shorter |
+| Rhythmic density | Dense, regular pulse | Gradual, less dominant pulse |
+
+## Discussion
+
+::: {.callout-note appearance="simple"}
+**Do the features generate meaningful clusters?**
+
+Yes. Both hierarchical clustering and kNN classification demonstrate that 1990s and 2020s tracks separate meaningfully based on Spotify audio features alone. The features most responsible for this separation are danceability, energy, and acousticness. This suggests that Spotify's feature set, while algorithmic and imperfect, is sensitive enough to capture real stylistic differences between eras.
+:::
+
+::: {.callout-tip appearance="simple"}
+**What have you learned? Who could benefit?**
+
+The most important insight is that the shift in R&B is not confined to any single dimension. It is visible in rhythm, harmony, timbre, structure, and emotional tone simultaneously. This convergence across methods makes the finding robust and suggests a genuine change in the genre's identity and purpose.
+
+These findings are relevant to several groups. Music researchers and computational musicologists may find the multi-method approach useful as a model for comparing genres across corpora. Streaming platforms could use era-based feature profiles to improve how R&B is categorised and recommended. Artists and producers might find it useful to understand how the measurable properties of the genre have shifted. Music educators could use this to show how quantitative methods complement traditional musicological approaches.
+:::
+
+## Limitations
+
+The corpus is small, with 25 tracks per era, meaning individual tracks can have an outsized effect on distributional results. The boundaries of R&B are porous and several tracks carry influences from pop, hip-hop, and soul. Spotify's audio features are algorithmic estimates rather than ground truth measurements and may not capture every dimension of musical expression. These limitations do not undermine the findings but mean the results should be understood as suggestive rather than definitive.
+
+## Final Reflection
+
+What this analysis ultimately suggests is that R&B has not only changed in sound, but in purpose. The genre has moved from a music designed to be felt collectively, in the body and on the dancefloor, toward a music designed to be felt privately, in the mind and in the mood. Whether that shift reflects changes in technology, culture, listening habits, or simply what people need from music at different moments in history is a question that goes beyond the data. But the data makes one thing clear: the shift has happened, and it is audible in every dimension of the music examined here.

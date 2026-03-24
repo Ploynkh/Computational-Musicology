@@ -1,19 +1,75 @@
 ---
-title: "Timbre Features"
+title: "Timbre, Keys & Chords"
+format:
+  html:
+    toc: true
+    toc-location: left
 ---
 
-## Cepstrogram – Snooze
+This section examines the timbral and harmonic character of R&B across eras. Timbre refers to the texture and colour of sound, capturing what makes a track feel dense or spacious, rough or smooth. Harmony refers to the choice of keys and chords, and whether a track stays in one tonal place or moves through different harmonic centres.
 
-![](images/cepstrogram_snooze.png){fig-align="center" width="80%"}
+Together, these dimensions reveal how the sonic identity of R&B has changed beyond rhythm and energy.
 
-This cepstrogram visualizes the timbral characteristics of the song **Snooze** using **Mel-Frequency Cepstral Coefficients (MFCCs)**.
+## Timbral Texture
 
-Each horizontal band represents a different MFCC coefficient capturing aspects of the sound’s spectral shape.
+### Cepstrograms
 
-Lower coefficients tend to show more variation, reflecting changes in vocal presence and instrumentation across the track.
+Cepstrograms visualise Mel-Frequency Cepstral Coefficients (MFCCs) over time. MFCCs capture the timbral shape of sound by measuring how energy is distributed across frequency bands at each moment. Each row represents one MFCC coefficient and warmer colours indicate higher values. A track with rich, varied timbral content will show strong variation across rows, while a smoother, more uniform track will appear more even.
 
-The gradual color changes suggest smooth transitions between sections rather than abrupt timbral shifts.
+### Creep by TLC (1990s)
 
-## Interpretation
+![](images/cepstrogram_creep.png)
 
-Together with the other visualizations, the cepstrogram suggests that contemporary R&B favors a smoother, more stable, and more immersive timbral texture.
+The cepstrogram for *Creep* shows consistent activity across multiple MFCC coefficients throughout the track. The lower coefficients, which capture broad spectral shape, show strong and stable values, reflecting the track's layered production and steady rhythmic texture. The variation across coefficients is relatively dense, which is typical of tracks built around active instrumentation and a prominent rhythmic backbone.
+
+### Snooze by SZA (2020s)
+
+![](images/cepstrogram_snooze.png)
+
+In contrast, *Snooze* shows a softer and more diffuse timbral profile. Activity is concentrated in fewer coefficients and the overall pattern is smoother and less varied. This reflects the track's minimalist production, with gentle layers, soft percussion, and a focus on vocal texture rather than rhythmic density. The cepstrogram confirms that 2020s R&B tends toward a more restrained and atmospheric sonic palette.
+
+## Structural Repetition
+
+### Self-Similarity Matrices
+
+A self-similarity matrix compares every moment in a track to every other moment based on timbral similarity. Bright squares along the diagonal indicate that a section sounds similar to itself over time, which is a sign of repetition and groove. Clear block structures away from the diagonal indicate recurring sections such as verses and choruses.
+
+### That's The Way Love Goes by Janet Jackson (1990s)
+
+![](images/ssm_janetjackson.png)
+
+The self-similarity matrix for *That's The Way Love Goes* shows clear block structures, with bright rectangular regions indicating repeated sections returning throughout the track. This is consistent with the groove-based, loop-oriented structure typical of 1990s R&B, where sections are revisited regularly to sustain rhythmic momentum and danceability.
+
+### Good Days by SZA (2020s)
+
+![](images/ssm_gooddays.png)
+
+The matrix for *Good Days* is more diffuse. The diagonal is visible but weaker, and the off-diagonal block structure is less pronounced. This suggests a track that evolves more continuously, with fewer clearly repeated sections. The result is a more fluid and atmospheric structure, less focused on repetition and groove and more on gradual development and mood.
+
+## Key and Chord Estimation
+
+### Keygrams
+
+A keygram estimates the most likely musical key at each moment in a track using the Krumhansl-Schmuckler algorithm, which compares the pitch class distribution to templates for all major and minor keys. Warmer colours indicate higher confidence in the estimated key. A track that stays in one key will show a clear, consistent band of warmth across the full timeline, while a harmonically mobile track will show shifting patterns.
+
+### No Diggity by Blackstreet (1990s)
+
+![](images/keygram_nodiggity.png)
+
+The keygram for *No Diggity* shows a strong and consistent key estimate throughout the track. One key and its relative minor dominate the full timeline with high confidence, reflecting the track's tight harmonic vamp. The stability of the keygram mirrors what was observed in the chromagram: a track built around a small, repeating set of pitch centres with little harmonic movement.
+
+### Pov by Ariana Grande (2020s)
+
+![](images/keygram_pov.png)
+
+The keygram for *Pov* shows a different pattern. While a primary key is still detectable, the confidence is lower and more variable across the track. Several competing keys show activity at different points, indicating a more harmonically open and ambiguous track. This reflects a compositional approach that prioritises emotional atmosphere over harmonic clarity, consistent with the broader shift toward introspection in 2020s R&B.
+
+## Key Findings
+
+The timbre and harmony analyses add another layer of evidence to the central research question. At the timbral level, 1990s R&B tracks show denser and more varied MFCC profiles, reflecting active and layered production. 2020s tracks are softer and more uniform, consistent with a more atmospheric and restrained sonic palette.
+
+At the structural level, 1990s tracks show clearer repetition patterns in their self-similarity matrices, reflecting loop-based groove structures. 2020s tracks are more continuous and less structured, suggesting a move away from section-based repetition toward a more fluid form.
+
+At the harmonic level, 1990s tracks are tonally stable and focused, while 2020s tracks show lower key confidence and greater harmonic ambiguity. This pattern aligns with the lower valence and more introspective character observed in the track-level analysis.
+
+Taken together, these findings confirm that the shift in R&B extends deep into the music's structure, from its timbral texture and formal organisation to its harmonic language.

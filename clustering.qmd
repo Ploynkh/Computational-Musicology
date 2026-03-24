@@ -38,7 +38,7 @@ The 1990s tracks generally show higher values for energy and danceability, suppo
 
 ## Spectrogram Comparison
 
-To connect the clustering results to actual sound, two representative tracks were analysed using spectrograms in Sonic Visualiser. Spectrograms display the frequency content of audio over time, making it possible to observe rhythmic density, timbral texture, and structural patterns directly from the sound.
+To connect the clustering results to actual sound, two representative tracks were analysed using spectrograms. A spectrogram displays the frequency content of audio over time, with warmer colours indicating higher energy at a given frequency. This makes it possible to observe rhythmic density, timbral texture, and structural patterns directly from the sound.
 
 ::: {.panel-tabset}
 
@@ -46,13 +46,13 @@ To connect the clustering results to actual sound, two representative tracks wer
 
 ![](images/Spectogram_Nodiggity.png)
 
-The spectrogram of *No Diggity* shows strong vertical lines representing clear rhythmic hits. The pattern is dense and consistent throughout the excerpt, reflecting a steady groove and strong rhythmic articulation. This supports the clustering result that 1990s R&B is built around rhythm and movement.
+The spectrogram of *No Diggity* shows a dense and consistent pattern of vertical lines across the full frequency range. These vertical bursts of energy represent clear rhythmic hits occurring regularly throughout the track, reflecting the steady groove and strong percussive articulation that characterises 1990s R&B. The energy is distributed broadly and evenly, confirming that this track is built around active, movement-oriented production.
 
 ### Cellophane (2020s)
 
 ![](images/Spectogram_Cellophane.png)
 
-The spectrogram of *Cellophane* is more spread out and less dense. There are fewer strong rhythmic patterns and more sustained, continuous frequency content. This reflects a more atmospheric and emotionally oriented style, consistent with the higher acousticness and lower danceability values observed in the clustering analysis.
+The spectrogram of *Cellophane* presents a noticeably different picture. The pattern is less dense and more horizontally continuous, with fewer sharp vertical hits and more sustained frequency activity. Rather than a regular pulse of rhythmic events, the energy flows more gradually across time. This reflects the track's atmospheric and emotionally oriented production style, where texture and continuity take priority over rhythmic drive.
 
 :::
 

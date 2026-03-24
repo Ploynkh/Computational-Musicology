@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Timbre Features – 1990s vs 2020s R&amp;B: Danceable vs Atmospheric Music</title>
+<title>Timbre, Keys &amp; Chords – 1990s vs 2020s R&amp;B: Danceable vs Atmospheric Music</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -132,8 +132,25 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#cepstrogram-snooze" id="toc-cepstrogram-snooze" class="nav-link active" data-scroll-target="#cepstrogram-snooze">Cepstrogram – Snooze</a></li>
-  <li><a href="#interpretation" id="toc-interpretation" class="nav-link" data-scroll-target="#interpretation">Interpretation</a></li>
+  <li><a href="#timbral-texture" id="toc-timbral-texture" class="nav-link active" data-scroll-target="#timbral-texture">Timbral Texture</a>
+  <ul class="collapse">
+  <li><a href="#cepstrograms" id="toc-cepstrograms" class="nav-link" data-scroll-target="#cepstrograms">Cepstrograms</a></li>
+  <li><a href="#creep-by-tlc-1990s" id="toc-creep-by-tlc-1990s" class="nav-link" data-scroll-target="#creep-by-tlc-1990s">Creep by TLC (1990s)</a></li>
+  <li><a href="#snooze-by-sza-2020s" id="toc-snooze-by-sza-2020s" class="nav-link" data-scroll-target="#snooze-by-sza-2020s">Snooze by SZA (2020s)</a></li>
+  </ul></li>
+  <li><a href="#structural-repetition" id="toc-structural-repetition" class="nav-link" data-scroll-target="#structural-repetition">Structural Repetition</a>
+  <ul class="collapse">
+  <li><a href="#self-similarity-matrices" id="toc-self-similarity-matrices" class="nav-link" data-scroll-target="#self-similarity-matrices">Self-Similarity Matrices</a></li>
+  <li><a href="#thats-the-way-love-goes-by-janet-jackson-1990s" id="toc-thats-the-way-love-goes-by-janet-jackson-1990s" class="nav-link" data-scroll-target="#thats-the-way-love-goes-by-janet-jackson-1990s">That’s The Way Love Goes by Janet Jackson (1990s)</a></li>
+  <li><a href="#good-days-by-sza-2020s" id="toc-good-days-by-sza-2020s" class="nav-link" data-scroll-target="#good-days-by-sza-2020s">Good Days by SZA (2020s)</a></li>
+  </ul></li>
+  <li><a href="#key-and-chord-estimation" id="toc-key-and-chord-estimation" class="nav-link" data-scroll-target="#key-and-chord-estimation">Key and Chord Estimation</a>
+  <ul class="collapse">
+  <li><a href="#keygrams" id="toc-keygrams" class="nav-link" data-scroll-target="#keygrams">Keygrams</a></li>
+  <li><a href="#no-diggity-by-blackstreet-1990s" id="toc-no-diggity-by-blackstreet-1990s" class="nav-link" data-scroll-target="#no-diggity-by-blackstreet-1990s">No Diggity by Blackstreet (1990s)</a></li>
+  <li><a href="#pov-by-ariana-grande-2020s" id="toc-pov-by-ariana-grande-2020s" class="nav-link" data-scroll-target="#pov-by-ariana-grande-2020s">Pov by Ariana Grande (2020s)</a></li>
+  </ul></li>
+  <li><a href="#key-findings" id="toc-key-findings" class="nav-link" data-scroll-target="#key-findings">Key Findings</a></li>
   </ul>
 </nav>
 </nav>
@@ -146,7 +163,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Timbre Features</h1>
+<h1 class="title">Timbre, Keys &amp; Chords</h1>
 </div>
 
 
@@ -163,21 +180,65 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="cepstrogram-snooze" class="level2">
-<h2 class="anchored" data-anchor-id="cepstrogram-snooze">Cepstrogram – Snooze</h2>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/cepstrogram_snooze.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%"></p>
-</figure>
-</div>
-<p>This cepstrogram visualizes the timbral characteristics of the song <strong>Snooze</strong> using <strong>Mel-Frequency Cepstral Coefficients (MFCCs)</strong>.</p>
-<p>Each horizontal band represents a different MFCC coefficient capturing aspects of the sound’s spectral shape.</p>
-<p>Lower coefficients tend to show more variation, reflecting changes in vocal presence and instrumentation across the track.</p>
-<p>The gradual color changes suggest smooth transitions between sections rather than abrupt timbral shifts.</p>
+<p>This section examines the timbral and harmonic character of R&amp;B across eras. Timbre refers to the texture and colour of sound, capturing what makes a track feel dense or spacious, rough or smooth. Harmony refers to the choice of keys and chords, and whether a track stays in one tonal place or moves through different harmonic centres.</p>
+<p>Together, these dimensions reveal how the sonic identity of R&amp;B has changed beyond rhythm and energy.</p>
+<section id="timbral-texture" class="level2">
+<h2 class="anchored" data-anchor-id="timbral-texture">Timbral Texture</h2>
+<section id="cepstrograms" class="level3">
+<h3 class="anchored" data-anchor-id="cepstrograms">Cepstrograms</h3>
+<p>Cepstrograms visualise Mel-Frequency Cepstral Coefficients (MFCCs) over time. MFCCs capture the timbral shape of sound by measuring how energy is distributed across frequency bands at each moment. Each row represents one MFCC coefficient and warmer colours indicate higher values. A track with rich, varied timbral content will show strong variation across rows, while a smoother, more uniform track will appear more even.</p>
 </section>
-<section id="interpretation" class="level2">
-<h2 class="anchored" data-anchor-id="interpretation">Interpretation</h2>
-<p>Together with the other visualizations, the cepstrogram suggests that contemporary R&amp;B favors a smoother, more stable, and more immersive timbral texture.</p>
+<section id="creep-by-tlc-1990s" class="level3">
+<h3 class="anchored" data-anchor-id="creep-by-tlc-1990s">Creep by TLC (1990s)</h3>
+<p><img src="images/cepstrogram_creep.png" class="img-fluid"></p>
+<p>The cepstrogram for <em>Creep</em> shows consistent activity across multiple MFCC coefficients throughout the track. The lower coefficients, which capture broad spectral shape, show strong and stable values, reflecting the track’s layered production and steady rhythmic texture. The variation across coefficients is relatively dense, which is typical of tracks built around active instrumentation and a prominent rhythmic backbone.</p>
+</section>
+<section id="snooze-by-sza-2020s" class="level3">
+<h3 class="anchored" data-anchor-id="snooze-by-sza-2020s">Snooze by SZA (2020s)</h3>
+<p><img src="images/cepstrogram_snooze.png" class="img-fluid"></p>
+<p>In contrast, <em>Snooze</em> shows a softer and more diffuse timbral profile. Activity is concentrated in fewer coefficients and the overall pattern is smoother and less varied. This reflects the track’s minimalist production, with gentle layers, soft percussion, and a focus on vocal texture rather than rhythmic density. The cepstrogram confirms that 2020s R&amp;B tends toward a more restrained and atmospheric sonic palette.</p>
+</section>
+</section>
+<section id="structural-repetition" class="level2">
+<h2 class="anchored" data-anchor-id="structural-repetition">Structural Repetition</h2>
+<section id="self-similarity-matrices" class="level3">
+<h3 class="anchored" data-anchor-id="self-similarity-matrices">Self-Similarity Matrices</h3>
+<p>A self-similarity matrix compares every moment in a track to every other moment based on timbral similarity. Bright squares along the diagonal indicate that a section sounds similar to itself over time, which is a sign of repetition and groove. Clear block structures away from the diagonal indicate recurring sections such as verses and choruses.</p>
+</section>
+<section id="thats-the-way-love-goes-by-janet-jackson-1990s" class="level3">
+<h3 class="anchored" data-anchor-id="thats-the-way-love-goes-by-janet-jackson-1990s">That’s The Way Love Goes by Janet Jackson (1990s)</h3>
+<p><img src="images/ssm_janetjackson.png" class="img-fluid"></p>
+<p>The self-similarity matrix for <em>That’s The Way Love Goes</em> shows clear block structures, with bright rectangular regions indicating repeated sections returning throughout the track. This is consistent with the groove-based, loop-oriented structure typical of 1990s R&amp;B, where sections are revisited regularly to sustain rhythmic momentum and danceability.</p>
+</section>
+<section id="good-days-by-sza-2020s" class="level3">
+<h3 class="anchored" data-anchor-id="good-days-by-sza-2020s">Good Days by SZA (2020s)</h3>
+<p><img src="images/ssm_gooddays.png" class="img-fluid"></p>
+<p>The matrix for <em>Good Days</em> is more diffuse. The diagonal is visible but weaker, and the off-diagonal block structure is less pronounced. This suggests a track that evolves more continuously, with fewer clearly repeated sections. The result is a more fluid and atmospheric structure, less focused on repetition and groove and more on gradual development and mood.</p>
+</section>
+</section>
+<section id="key-and-chord-estimation" class="level2">
+<h2 class="anchored" data-anchor-id="key-and-chord-estimation">Key and Chord Estimation</h2>
+<section id="keygrams" class="level3">
+<h3 class="anchored" data-anchor-id="keygrams">Keygrams</h3>
+<p>A keygram estimates the most likely musical key at each moment in a track using the Krumhansl-Schmuckler algorithm, which compares the pitch class distribution to templates for all major and minor keys. Warmer colours indicate higher confidence in the estimated key. A track that stays in one key will show a clear, consistent band of warmth across the full timeline, while a harmonically mobile track will show shifting patterns.</p>
+</section>
+<section id="no-diggity-by-blackstreet-1990s" class="level3">
+<h3 class="anchored" data-anchor-id="no-diggity-by-blackstreet-1990s">No Diggity by Blackstreet (1990s)</h3>
+<p><img src="images/keygram_nodiggity.png" class="img-fluid"></p>
+<p>The keygram for <em>No Diggity</em> shows a strong and consistent key estimate throughout the track. One key and its relative minor dominate the full timeline with high confidence, reflecting the track’s tight harmonic vamp. The stability of the keygram mirrors what was observed in the chromagram: a track built around a small, repeating set of pitch centres with little harmonic movement.</p>
+</section>
+<section id="pov-by-ariana-grande-2020s" class="level3">
+<h3 class="anchored" data-anchor-id="pov-by-ariana-grande-2020s">Pov by Ariana Grande (2020s)</h3>
+<p><img src="images/keygram_pov.png" class="img-fluid"></p>
+<p>The keygram for <em>Pov</em> shows a different pattern. While a primary key is still detectable, the confidence is lower and more variable across the track. Several competing keys show activity at different points, indicating a more harmonically open and ambiguous track. This reflects a compositional approach that prioritises emotional atmosphere over harmonic clarity, consistent with the broader shift toward introspection in 2020s R&amp;B.</p>
+</section>
+</section>
+<section id="key-findings" class="level2">
+<h2 class="anchored" data-anchor-id="key-findings">Key Findings</h2>
+<p>The timbre and harmony analyses add another layer of evidence to the central research question. At the timbral level, 1990s R&amp;B tracks show denser and more varied MFCC profiles, reflecting active and layered production. 2020s tracks are softer and more uniform, consistent with a more atmospheric and restrained sonic palette.</p>
+<p>At the structural level, 1990s tracks show clearer repetition patterns in their self-similarity matrices, reflecting loop-based groove structures. 2020s tracks are more continuous and less structured, suggesting a move away from section-based repetition toward a more fluid form.</p>
+<p>At the harmonic level, 1990s tracks are tonally stable and focused, while 2020s tracks show lower key confidence and greater harmonic ambiguity. This pattern aligns with the lower valence and more introspective character observed in the track-level analysis.</p>
+<p>Taken together, these findings confirm that the shift in R&amp;B extends deep into the music’s structure, from its timbral texture and formal organisation to its harmonic language.</p>
 
 
 </section>

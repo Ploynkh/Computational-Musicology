@@ -4,35 +4,84 @@
     "href": "conclusion.html",
     "title": "Conclusion",
     "section": "",
-    "text": "…"
+    "text": "This project set out to answer one question: has R&B shifted from a danceable, movement-oriented style to a more atmospheric and introspective one? Across five analytical sections, the answer is consistent and clear.\n\n  Yes. The shift is measurable, and it runs deep across every dimension of the music examined."
   },
   {
-    "objectID": "conclusion.html#final-interpretation",
-    "href": "conclusion.html#final-interpretation",
+    "objectID": "conclusion.html#has-rb-shifted-from-danceable-to-atmospheric",
+    "href": "conclusion.html#has-rb-shifted-from-danceable-to-atmospheric",
     "title": "Conclusion",
     "section": "",
-    "text": "…"
+    "text": "This project set out to answer one question: has R&B shifted from a danceable, movement-oriented style to a more atmospheric and introspective one? Across five analytical sections, the answer is consistent and clear.\n\n  Yes. The shift is measurable, and it runs deep across every dimension of the music examined."
+  },
+  {
+    "objectID": "conclusion.html#summary-of-findings",
+    "href": "conclusion.html#summary-of-findings",
+    "title": "Conclusion",
+    "section": "Summary of Findings",
+    "text": "Summary of Findings\n\n\n\n\n\n\n\n\n\nSection\n1990s R&B\n2020s R&B\nWhat changed\n\n\n\n\nTrack-level features\nHigh danceability, energy, valence, loudness\nLower and more variable on all features\nShifted toward less rhythmic intensity and more subdued emotional tone\n\n\nChroma\nFew repeating pitch classes, tight harmonic loops\nWider pitch class distribution, tonal ambiguity\nMoved from harmonic stability to harmonic openness\n\n\nTemporal\nNarrow tempo range, longer tracks, stable pulse\nBroader tempo variation, shorter tracks, looser pulse\nLess rhythmically consistent, more structurally flexible\n\n\nTimbre\nDense timbral profiles, clear section repetition\nSofter, more uniform timbre, continuous form\nFrom layered active production to restrained atmospheric texture\n\n\nClustering\nClusters around high energy and danceability\nClusters around high acousticness, era separable by kNN\nThe two eras occupy distinct regions of the audio feature space"
+  },
+  {
+    "objectID": "conclusion.html#feature-comparison",
+    "href": "conclusion.html#feature-comparison",
+    "title": "Conclusion",
+    "section": "Feature Comparison",
+    "text": "Feature Comparison\n\n\n\n\n\n\n\n\nFeature\n1990s\n2020s\n\n\n\n\nDanceability\nHigh, consistent (peak ~0.75)\nLower, more spread\n\n\nEnergy\nHigh\nModerate, more variable\n\n\nValence\nHigh positivity\nMore subdued, wider range\n\n\nLoudness\nLouder, more compressed\nQuieter on average\n\n\nAcousticness\nLow\nHigher\n\n\nHarmonic stability\nTonally stable, one key\nHarmonically mobile\n\n\nTrack duration\nLonger\nShorter\n\n\nRhythmic density\nDense, regular pulse\nGradual, less dominant pulse"
+  },
+  {
+    "objectID": "conclusion.html#discussion",
+    "href": "conclusion.html#discussion",
+    "title": "Conclusion",
+    "section": "Discussion",
+    "text": "Discussion\n\n\n\n\n\n\nDo the features generate meaningful clusters?\nYes. Both hierarchical clustering and kNN classification demonstrate that 1990s and 2020s tracks separate meaningfully based on Spotify audio features alone. The features most responsible for this separation are danceability, energy, and acousticness. This suggests that Spotify’s feature set, while algorithmic and imperfect, is sensitive enough to capture real stylistic differences between eras.\n\n\n\n\n\n\n\n\n\nWhat have you learned? Who could benefit?\nThe most important insight is that the shift in R&B is not confined to any single dimension. It is visible in rhythm, harmony, timbre, structure, and emotional tone simultaneously. This convergence across methods makes the finding robust and suggests a genuine change in the genre’s identity and purpose.\nThese findings are relevant to several groups. Music researchers and computational musicologists may find the multi-method approach useful as a model for comparing genres across corpora. Streaming platforms could use era-based feature profiles to improve how R&B is categorised and recommended. Artists and producers might find it useful to understand how the measurable properties of the genre have shifted. Music educators could use this to show how quantitative methods complement traditional musicological approaches."
+  },
+  {
+    "objectID": "conclusion.html#limitations",
+    "href": "conclusion.html#limitations",
+    "title": "Conclusion",
+    "section": "Limitations",
+    "text": "Limitations\nThe corpus is small, with 25 tracks per era, meaning individual tracks can have an outsized effect on distributional results. The boundaries of R&B are porous and several tracks carry influences from pop, hip-hop, and soul. Spotify’s audio features are algorithmic estimates rather than ground truth measurements and may not capture every dimension of musical expression. These limitations do not undermine the findings but mean the results should be understood as suggestive rather than definitive."
+  },
+  {
+    "objectID": "conclusion.html#final-reflection",
+    "href": "conclusion.html#final-reflection",
+    "title": "Conclusion",
+    "section": "Final Reflection",
+    "text": "Final Reflection\nWhat this analysis ultimately suggests is that R&B has not only changed in sound, but in purpose. The genre has moved from a music designed to be felt collectively, in the body and on the dancefloor, toward a music designed to be felt privately, in the mind and in the mood. Whether that shift reflects changes in technology, culture, listening habits, or simply what people need from music at different moments in history is a question that goes beyond the data. But the data makes one thing clear: the shift has happened, and it is audible in every dimension of the music examined here."
   },
   {
     "objectID": "timbre.html",
     "href": "timbre.html",
-    "title": "Timbre Features",
+    "title": "Timbre, Keys & Chords",
     "section": "",
-    "text": "This cepstrogram visualizes the timbral characteristics of the song Snooze using Mel-Frequency Cepstral Coefficients (MFCCs).\nEach horizontal band represents a different MFCC coefficient capturing aspects of the sound’s spectral shape.\nLower coefficients tend to show more variation, reflecting changes in vocal presence and instrumentation across the track.\nThe gradual color changes suggest smooth transitions between sections rather than abrupt timbral shifts."
+    "text": "This section examines the timbral and harmonic character of R&B across eras. Timbre refers to the texture and colour of sound, capturing what makes a track feel dense or spacious, rough or smooth. Harmony refers to the choice of keys and chords, and whether a track stays in one tonal place or moves through different harmonic centres.\nTogether, these dimensions reveal how the sonic identity of R&B has changed beyond rhythm and energy."
   },
   {
-    "objectID": "timbre.html#cepstrogram-snooze",
-    "href": "timbre.html#cepstrogram-snooze",
-    "title": "Timbre Features",
-    "section": "",
-    "text": "This cepstrogram visualizes the timbral characteristics of the song Snooze using Mel-Frequency Cepstral Coefficients (MFCCs).\nEach horizontal band represents a different MFCC coefficient capturing aspects of the sound’s spectral shape.\nLower coefficients tend to show more variation, reflecting changes in vocal presence and instrumentation across the track.\nThe gradual color changes suggest smooth transitions between sections rather than abrupt timbral shifts."
+    "objectID": "timbre.html#timbral-texture",
+    "href": "timbre.html#timbral-texture",
+    "title": "Timbre, Keys & Chords",
+    "section": "Timbral Texture",
+    "text": "Timbral Texture\n\nCepstrograms\nCepstrograms visualise Mel-Frequency Cepstral Coefficients (MFCCs) over time. MFCCs capture the timbral shape of sound by measuring how energy is distributed across frequency bands at each moment. Each row represents one MFCC coefficient and warmer colours indicate higher values. A track with rich, varied timbral content will show strong variation across rows, while a smoother, more uniform track will appear more even.\n\n\nCreep by TLC (1990s)\n\nThe cepstrogram for Creep shows consistent activity across multiple MFCC coefficients throughout the track. The lower coefficients, which capture broad spectral shape, show strong and stable values, reflecting the track’s layered production and steady rhythmic texture. The variation across coefficients is relatively dense, which is typical of tracks built around active instrumentation and a prominent rhythmic backbone.\n\n\nSnooze by SZA (2020s)\n\nIn contrast, Snooze shows a softer and more diffuse timbral profile. Activity is concentrated in fewer coefficients and the overall pattern is smoother and less varied. This reflects the track’s minimalist production, with gentle layers, soft percussion, and a focus on vocal texture rather than rhythmic density. The cepstrogram confirms that 2020s R&B tends toward a more restrained and atmospheric sonic palette."
   },
   {
-    "objectID": "timbre.html#interpretation",
-    "href": "timbre.html#interpretation",
-    "title": "Timbre Features",
-    "section": "Interpretation",
-    "text": "Interpretation\nTogether with the other visualizations, the cepstrogram suggests that contemporary R&B favors a smoother, more stable, and more immersive timbral texture."
+    "objectID": "timbre.html#structural-repetition",
+    "href": "timbre.html#structural-repetition",
+    "title": "Timbre, Keys & Chords",
+    "section": "Structural Repetition",
+    "text": "Structural Repetition\n\nSelf-Similarity Matrices\nA self-similarity matrix compares every moment in a track to every other moment based on timbral similarity. Bright squares along the diagonal indicate that a section sounds similar to itself over time, which is a sign of repetition and groove. Clear block structures away from the diagonal indicate recurring sections such as verses and choruses.\n\n\nThat’s The Way Love Goes by Janet Jackson (1990s)\n\nThe self-similarity matrix for That’s The Way Love Goes shows clear block structures, with bright rectangular regions indicating repeated sections returning throughout the track. This is consistent with the groove-based, loop-oriented structure typical of 1990s R&B, where sections are revisited regularly to sustain rhythmic momentum and danceability.\n\n\nGood Days by SZA (2020s)\n\nThe matrix for Good Days is more diffuse. The diagonal is visible but weaker, and the off-diagonal block structure is less pronounced. This suggests a track that evolves more continuously, with fewer clearly repeated sections. The result is a more fluid and atmospheric structure, less focused on repetition and groove and more on gradual development and mood."
+  },
+  {
+    "objectID": "timbre.html#key-and-chord-estimation",
+    "href": "timbre.html#key-and-chord-estimation",
+    "title": "Timbre, Keys & Chords",
+    "section": "Key and Chord Estimation",
+    "text": "Key and Chord Estimation\n\nKeygrams\nA keygram estimates the most likely musical key at each moment in a track using the Krumhansl-Schmuckler algorithm, which compares the pitch class distribution to templates for all major and minor keys. Warmer colours indicate higher confidence in the estimated key. A track that stays in one key will show a clear, consistent band of warmth across the full timeline, while a harmonically mobile track will show shifting patterns.\n\n\nNo Diggity by Blackstreet (1990s)\n\nThe keygram for No Diggity shows a strong and consistent key estimate throughout the track. One key and its relative minor dominate the full timeline with high confidence, reflecting the track’s tight harmonic vamp. The stability of the keygram mirrors what was observed in the chromagram: a track built around a small, repeating set of pitch centres with little harmonic movement.\n\n\nPov by Ariana Grande (2020s)\n\nThe keygram for Pov shows a different pattern. While a primary key is still detectable, the confidence is lower and more variable across the track. Several competing keys show activity at different points, indicating a more harmonically open and ambiguous track. This reflects a compositional approach that prioritises emotional atmosphere over harmonic clarity, consistent with the broader shift toward introspection in 2020s R&B."
+  },
+  {
+    "objectID": "timbre.html#key-findings",
+    "href": "timbre.html#key-findings",
+    "title": "Timbre, Keys & Chords",
+    "section": "Key Findings",
+    "text": "Key Findings\nThe timbre and harmony analyses add another layer of evidence to the central research question. At the timbral level, 1990s R&B tracks show denser and more varied MFCC profiles, reflecting active and layered production. 2020s tracks are softer and more uniform, consistent with a more atmospheric and restrained sonic palette.\nAt the structural level, 1990s tracks show clearer repetition patterns in their self-similarity matrices, reflecting loop-based groove structures. 2020s tracks are more continuous and less structured, suggesting a move away from section-based repetition toward a more fluid form.\nAt the harmonic level, 1990s tracks are tonally stable and focused, while 2020s tracks show lower key confidence and greater harmonic ambiguity. This pattern aligns with the lower valence and more introspective character observed in the track-level analysis.\nTaken together, these findings confirm that the shift in R&B extends deep into the music’s structure, from its timbral texture and formal organisation to its harmonic language."
   },
   {
     "objectID": "temporal.html",
@@ -102,7 +151,7 @@
     "href": "clustering.html#spectrogram-comparison",
     "title": "Clustering",
     "section": "Spectrogram Comparison",
-    "text": "Spectrogram Comparison\nTo connect the clustering results to actual sound, two representative tracks were analysed using spectrograms in Sonic Visualiser. Spectrograms display the frequency content of audio over time, making it possible to observe rhythmic density, timbral texture, and structural patterns directly from the sound.\n\nNo Diggity (1990s)Cellophane (2020s)\n\n\n\nThe spectrogram of No Diggity shows strong vertical lines representing clear rhythmic hits. The pattern is dense and consistent throughout the excerpt, reflecting a steady groove and strong rhythmic articulation. This supports the clustering result that 1990s R&B is built around rhythm and movement.\n\n\n\nThe spectrogram of Cellophane is more spread out and less dense. There are fewer strong rhythmic patterns and more sustained, continuous frequency content. This reflects a more atmospheric and emotionally oriented style, consistent with the higher acousticness and lower danceability values observed in the clustering analysis."
+    "text": "Spectrogram Comparison\nTo connect the clustering results to actual sound, two representative tracks were analysed using spectrograms. A spectrogram displays the frequency content of audio over time, with warmer colours indicating higher energy at a given frequency. This makes it possible to observe rhythmic density, timbral texture, and structural patterns directly from the sound.\n\nNo Diggity (1990s)Cellophane (2020s)\n\n\n\nThe spectrogram of No Diggity shows a dense and consistent pattern of vertical lines across the full frequency range. These vertical bursts of energy represent clear rhythmic hits occurring regularly throughout the track, reflecting the steady groove and strong percussive articulation that characterises 1990s R&B. The energy is distributed broadly and evenly, confirming that this track is built around active, movement-oriented production.\n\n\n\nThe spectrogram of Cellophane presents a noticeably different picture. The pattern is less dense and more horizontally continuous, with fewer sharp vertical hits and more sustained frequency activity. Rather than a regular pulse of rhythmic events, the energy flows more gradually across time. This reflects the track’s atmospheric and emotionally oriented production style, where texture and continuity take priority over rhythmic drive."
   },
   {
     "objectID": "clustering.html#classification-can-audio-features-predict-era",
@@ -130,7 +179,7 @@
     "href": "track-level.html#track-level-features-and-loudness",
     "title": "Track-Level Features, Loudness & Chroma",
     "section": "Track-Level Features and Loudness",
-    "text": "Track-Level Features and Loudness\n\nFeature Distributions Across Eras\n\nDensity plots are used here because they reveal the full shape of each era’s distribution, including skew, spread, and overlap — making them more informative than boxplots for identifying systematic shifts between corpora.\nThe 1990s corpus (pink) shows higher and more concentrated values for danceability and valence, with the danceability peak sitting around 0.75–0.80 compared to a broader, lower 2020s distribution. Valence is the most striking panel: the 1990s curve is strongly skewed toward high positivity, while the 2020s distribution shifts noticeably below 0.50, indicating more subdued and introspective emotional tones. Energy and loudness show similar but less pronounced patterns, with the 2020s corpus occupying slightly lower and more variable ranges on both dimensions.\n\n\nRelationship Between Danceability and Energy\n\nThis scatterplot examines how danceability and energy interact across eras. The 1990s corpus (pink) clusters tightly in the upper portion of the plot, with danceability consistently above 0.70 regardless of energy level indicating that high danceability was a stable property of these tracks. The 2020s corpus (purple) sits substantially lower and is more dispersed, with a weaker relationship between the two features. This decoupling suggests that in contemporary R&B, energy no longer reliably predicts danceability consistent with a shift toward a more atmospheric sound.\n\n\nLoudness and Emotional Tone\n\nThis scatterplot compares loudness with valence to examine whether sonic power and emotional positivity move together across eras. The separation is clear: the 1990s corpus (pink) clusters consistently in the upper band of the plot, with high valence at all loudness levels. The 2020s corpus (purple) sits substantially lower, with many tracks falling below 0.50 on valence. This confirms that the emotional shift in R&B is not a function of loudness 2020s tracks are more emotionally subdued across the full loudness range."
+    "text": "Track-Level Features and Loudness\n\nFeature Distributions Across Eras\n\nDensity plots are used here because they reveal the full shape of each era’s distribution, including skew, spread, and overlap making them more informative than boxplots for identifying systematic shifts between corpora.\nThe 1990s corpus (pink) shows higher and more concentrated values for danceability and valence, with the danceability peak sitting around 0.75–0.80 compared to a broader, lower 2020s distribution. Valence is the most striking panel: the 1990s curve is strongly skewed toward high positivity, while the 2020s distribution shifts noticeably below 0.50, indicating more subdued and introspective emotional tones. Energy and loudness show similar but less pronounced patterns, with the 2020s corpus occupying slightly lower and more variable ranges on both dimensions.\n\n\nRelationship Between Danceability and Energy\n\nThis scatterplot examines how danceability and energy interact across eras. The 1990s corpus (pink) clusters tightly in the upper portion of the plot, with danceability consistently above 0.70 regardless of energy level indicating that high danceability was a stable property of these tracks. The 2020s corpus (purple) sits substantially lower and is more dispersed, with a weaker relationship between the two features. This decoupling suggests that in contemporary R&B, energy no longer reliably predicts danceability consistent with a shift toward a more atmospheric sound.\n\n\nLoudness and Emotional Tone\n\nThis scatterplot compares loudness with valence to examine whether sonic power and emotional positivity move together across eras. The separation is clear: the 1990s corpus (pink) clusters consistently in the upper band of the plot, with high valence at all loudness levels. The 2020s corpus (purple) sits substantially lower, with many tracks falling below 0.50 on valence. This confirms that the emotional shift in R&B is not a function of loudness 2020s tracks are more emotionally subdued across the full loudness range."
   },
   {
     "objectID": "track-level.html#chroma-features",
