@@ -7,11 +7,9 @@ website:
   navbar:
     left:
       - href: index.qmd
-        text: Background
+        text: Background & Corpus
       - href: track-level.qmd
         text: Track-level Features
-      - href: chroma.qmd
-        text: Chroma Features
       - href: timbre.qmd
         text: Timbre Features
       - href: temporal.qmd
@@ -23,9 +21,11 @@ website:
 
 format:
   html:
-    theme: flatly
+    theme: darkly
     css: styles.css
     toc: true
     toc-location: left
     smooth-scroll: true
     number-sections: false
+    code-fold: true
+    code-summary: "Show code"

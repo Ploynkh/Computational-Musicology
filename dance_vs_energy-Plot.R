@@ -1,58 +1,53 @@
 library(tidyverse)
 
-era_fill <- c("1990s" = "#E69F00", "2020s" = "#56B4E9")
-era_color <- c("1990s" = "#E69F00", "2020s" = "#56B4E9")
+# ── Colours ───────────────────────────────────────────────────────────────────
+era_colour <- c("1990s" = "#FF2D78", "2020s" = "#C77DFF")
+bg         <- "#0E0A1A"
 
-theme_set(
-  theme_minimal(base_size = 13) +
-    theme(
-      plot.title = element_text(face = "bold", size = 15),
-      plot.subtitle = element_text(size = 11, color = "grey30"),
-      axis.title.x = element_text(face = "bold", size = 11),
-      axis.title.y = element_text(face = "bold", size = 11),
-      axis.text = element_text(color = "black"),
-      legend.title = element_blank(),
-      legend.position = "top",
-      panel.grid.minor = element_blank(),
-      panel.grid.major.x = element_blank(),
-      plot.margin = margin(12, 12, 12, 12)
-    )
-)
-# load, combine, clean data
-
+# ── Load & combine data ───────────────────────────────────────────────────────
 rnb_90s <- read_csv("1990s.csv", show_col_types = FALSE) %>%
-  mutate(
-    `Release Date` = as.character(`Release Date`),
-    Era = "1990s"
-  )
+  mutate(`Release Date` = as.character(`Release Date`), Era = "1990s")
 
 rnb_2020s <- read_csv("2020s.csv", show_col_types = FALSE) %>%
-  mutate(
-    `Release Date` = as.character(`Release Date`),
-    Era = "2020s"
-  )
+  mutate(`Release Date` = as.character(`Release Date`), Era = "2020s")
 
-rnb_tracks <- bind_rows(rnb_90s, rnb_2020s)
-
-rnb_tracks <- rnb_tracks %>%
+rnb_tracks <- bind_rows(rnb_90s, rnb_2020s) %>%
   mutate(
     Danceability = as.numeric(Danceability),
-    Energy = as.numeric(Energy),
-    Valence = as.numeric(Valence),
-    Tempo = as.numeric(Tempo),
-    Era = factor(Era, levels = c("1990s", "2020s"))
+    Energy       = as.numeric(Energy),
+    Era          = factor(Era, levels = c("1990s", "2020s"))
   ) %>%
-  drop_na(Danceability, Energy, Valence, Tempo)
+  drop_na(Danceability, Energy)
 
-dance_vs_energy <- ggplot(rnb_tracks, aes(x = Energy, y = Danceability, color = Era)) +
-  geom_point(size = 2.2, alpha = 0.7) +
+# ── Plot ──────────────────────────────────────────────────────────────────────
+dance_vs_energy <- ggplot(rnb_tracks, aes(x = Energy, y = Danceability, colour = Era)) +
+  geom_point(size = 2.2, alpha = 0.65) +
   geom_smooth(method = "lm", se = FALSE, linewidth = 1) +
-  scale_color_manual(values = era_color) +
-  labs(
-#    title = "Danceability and Energy",
-#    subtitle = "More energetic songs also tend to be more danceable",
-    x = "Energy",
-    y = "Danceability"
+  scale_colour_manual(values = era_colour) +
+  labs(x = "Energy (0–1)", y = "Danceability (0–1)") +
+  coord_cartesian(xlim = c(0, 1), ylim = c(0, 1)) +
+  theme_minimal(base_size = 12) +
+  theme(
+    axis.title.x     = element_text(face = "bold", size = 10, color = "white", margin = margin(t = 6)),
+    axis.title.y     = element_text(face = "bold", size = 10, color = "white"),
+    axis.text        = element_text(color = "grey70"),
+    legend.title     = element_blank(),
+    legend.position  = "bottom",
+    legend.text      = element_text(size = 10, color = "white"),
+    legend.key       = element_rect(fill = bg, colour = NA),
+    panel.grid.minor = element_blank(),
+    panel.grid.major = element_line(colour = "#2E2E32", linewidth = 0.4),
+    panel.background = element_rect(fill = bg, colour = NA),
+    plot.background  = element_rect(fill = bg, colour = NA),
+    plot.margin      = margin(10, 12, 10, 12)
   )
 
 plot(dance_vs_energy)
+
+# ── Save ──────────────────────────────────────────────────────────────────────
+ggsave("images/danceability_vs_energy.png",
+       plot   = dance_vs_energy,
+       width  = 7,
+       height = 5,
+       dpi    = 300,
+       bg     = bg)

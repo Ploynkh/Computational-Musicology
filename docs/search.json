@@ -1,150 +1,17 @@
 [
   {
-    "objectID": "chroma.html",
-    "href": "chroma.html",
-    "title": "Chroma Features",
+    "objectID": "conclusion.html",
+    "href": "conclusion.html",
+    "title": "Conclusion",
     "section": "",
-    "text": "The chromagram compares the pitch-class activity of the songs No Scrubs and Snooze. Each horizontal row represents one of the twelve pitch classes, while the color intensity indicates how strongly that pitch appears in the audio signal over time.\nBoth tracks show repeated emphasis on a limited number of pitch classes, reflecting chord progressions typical of R&B music.\nHowever, the distribution of pitch activity differs slightly between the songs. No Scrubs appears to maintain more consistent harmonic repetition, while Snooze shows more variation in pitch intensity over time.\nThe Euclidean harmonic distance between the mean pitch-class profiles of the two songs is 0.748, indicating a moderate harmonic difference."
+    "text": "…"
   },
   {
-    "objectID": "chroma.html#chromagram-comparison",
-    "href": "chroma.html#chromagram-comparison",
-    "title": "Chroma Features",
+    "objectID": "conclusion.html#final-interpretation",
+    "href": "conclusion.html#final-interpretation",
+    "title": "Conclusion",
     "section": "",
-    "text": "The chromagram compares the pitch-class activity of the songs No Scrubs and Snooze. Each horizontal row represents one of the twelve pitch classes, while the color intensity indicates how strongly that pitch appears in the audio signal over time.\nBoth tracks show repeated emphasis on a limited number of pitch classes, reflecting chord progressions typical of R&B music.\nHowever, the distribution of pitch activity differs slightly between the songs. No Scrubs appears to maintain more consistent harmonic repetition, while Snooze shows more variation in pitch intensity over time.\nThe Euclidean harmonic distance between the mean pitch-class profiles of the two songs is 0.748, indicating a moderate harmonic difference."
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Background",
-    "section": "",
-    "text": "This project explores how R&B has evolved from the 1990s to the 2020s by asking: Can R&B still make you move, or does it now aim to leave you speechless? It compares “danceable” R&B from the 1990s with more “atmospheric” R&B from the 2020s to examine whether the function of the genre has shifted over time.\nThe corpus consists of 50 tracks, with 25 songs from each era. The 1990s selection focuses on groove-driven, danceable R&B associated with artists such as Mariah Carey, Janet Jackson, Aaliyah, and Usher. These tracks were chosen for their strong rhythmic structure, clear beats, and popularity in social settings like clubs and parties. In contrast, the 2020s selection includes artists such as SZA, Ariana Grande, Frank Ocean, and Summer Walker, whose music often emphasizes slower tempos, softer textures, and a more atmospheric sound. These tracks were selected to represent contemporary R&B’s focus on mood, introspection, and personal listening contexts, such as late-night driving or listening alone.\nUsing Spotify audio features, this dashboard investigates whether these differences can be measured. It asks: Are 1990s R&B tracks more danceable and rhythmically driven than those from the 2020s? Do contemporary tracks show reduced tempo and rhythmic activity? Has harmonic movement become more repetitive? And do timbral features reflect a shift toward softer, more immersive textures?\nTo answer these questions, the analysis focuses on temporal features (tempo and rhythm), track-level features (such as danceability and energy), chroma features (harmonic variation), and timbral features (sound texture and density). By comparing these dimensions across both eras, the project aims to determine whether R&B has shifted from music designed for movement to music designed for mood.\nOverall, this study suggests that R&B has not only changed in style, but also in purpose from driving collective movement in social spaces to shaping emotional experience in more personal listening environments."
-  },
-  {
-    "objectID": "index.html#s-vs-2020s-rb-danceable-vs-atmospheric-music",
-    "href": "index.html#s-vs-2020s-rb-danceable-vs-atmospheric-music",
-    "title": "Background",
-    "section": "",
-    "text": "This project explores how R&B has evolved from the 1990s to the 2020s by asking: Can R&B still make you move, or does it now aim to leave you speechless? It compares “danceable” R&B from the 1990s with more “atmospheric” R&B from the 2020s to examine whether the function of the genre has shifted over time.\nThe corpus consists of 50 tracks, with 25 songs from each era. The 1990s selection focuses on groove-driven, danceable R&B associated with artists such as Mariah Carey, Janet Jackson, Aaliyah, and Usher. These tracks were chosen for their strong rhythmic structure, clear beats, and popularity in social settings like clubs and parties. In contrast, the 2020s selection includes artists such as SZA, Ariana Grande, Frank Ocean, and Summer Walker, whose music often emphasizes slower tempos, softer textures, and a more atmospheric sound. These tracks were selected to represent contemporary R&B’s focus on mood, introspection, and personal listening contexts, such as late-night driving or listening alone.\nUsing Spotify audio features, this dashboard investigates whether these differences can be measured. It asks: Are 1990s R&B tracks more danceable and rhythmically driven than those from the 2020s? Do contemporary tracks show reduced tempo and rhythmic activity? Has harmonic movement become more repetitive? And do timbral features reflect a shift toward softer, more immersive textures?\nTo answer these questions, the analysis focuses on temporal features (tempo and rhythm), track-level features (such as danceability and energy), chroma features (harmonic variation), and timbral features (sound texture and density). By comparing these dimensions across both eras, the project aims to determine whether R&B has shifted from music designed for movement to music designed for mood.\nOverall, this study suggests that R&B has not only changed in style, but also in purpose from driving collective movement in social spaces to shaping emotional experience in more personal listening environments."
-  },
-  {
-    "objectID": "track-level.html",
-    "href": "track-level.html",
-    "title": "Track-Level Features",
-    "section": "",
-    "text": "This section examines Spotify track-level features to evaluate whether measurable differences exist between 1990s and 2020s R&B. The analysis focuses on danceability, energy, and valence, which capture key aspects of rhythmic drive, intensity, and emotional expression.\nTo compare these features across the two corpora, boxplots are used as the primary visualization method. Boxplots allow for a clear comparison of distributions, highlighting differences in median values, variability, and the presence of outliers between eras. This makes them particularly suitable for identifying systematic shifts in musical characteristics.\nIn addition, a scatterplot is used to examine the relationship between danceability and energy, providing insight into how these features interact within and across the two time periods."
-  },
-  {
-    "objectID": "track-level.html#danceability-across-eras",
-    "href": "track-level.html#danceability-across-eras",
-    "title": "Track-Level Features",
-    "section": "Danceability Across Eras",
-    "text": "Danceability Across Eras\n\nDanceability is one of the clearest indicators of the shift explored in this project. The 1990s corpus shows higher danceability values overall, supporting the idea that R&B in this period was more strongly associated with rhythmic drive and social movement. In the 2020s corpus, danceability values are generally lower, suggesting a genre that has become less centered on dancing and more focused on mood and introspection."
-  },
-  {
-    "objectID": "track-level.html#energy-across-eras",
-    "href": "track-level.html#energy-across-eras",
-    "title": "Track-Level Features",
-    "section": "Energy Across Eras",
-    "text": "Energy Across Eras\n\nEnergy reflects the intensity and activity level of a track. The 1990s corpus shows consistently higher energy values, indicating a stronger emphasis on rhythmic drive and musical momentum. In the 2020s corpus, energy levels are generally lower, suggesting a shift toward softer, less forceful production and a more relaxed listening experience."
-  },
-  {
-    "objectID": "track-level.html#valence-across-eras",
-    "href": "track-level.html#valence-across-eras",
-    "title": "Track-Level Features",
-    "section": "Valence Across Eras",
-    "text": "Valence Across Eras\n\nValence captures the emotional positivity of a track. The 1990s corpus shows higher valence values overall, indicating a tendency toward more upbeat and outward emotional expression. In the 2020s corpus, valence values are lower and more varied, suggesting a shift toward more subdued, introspective, and emotionally complex musical moods."
-  },
-  {
-    "objectID": "track-level.html#relationship-between-danceability-and-energy",
-    "href": "track-level.html#relationship-between-danceability-and-energy",
-    "title": "Track-Level Features",
-    "section": "Relationship Between Danceability and Energy",
-    "text": "Relationship Between Danceability and Energy\n\nThis scatterplot shows how energy and danceability relate across the two eras. Tracks from the 1990s cluster more strongly in the high-energy, high-danceability region, reinforcing the idea that groove and movement were central characteristics of the genre. In the 2020s corpus, tracks are more dispersed and tend to appear at lower values on both dimensions, indicating a weaker link between intensity and danceability and a shift toward a more atmospheric style."
-  },
-  {
-    "objectID": "track-level.html#key-findings",
-    "href": "track-level.html#key-findings",
-    "title": "Track-Level Features",
-    "section": "Key Findings",
-    "text": "Key Findings\nThe results across the track-level features reveal a consistent pattern. The 1990s corpus shows higher values for both danceability and energy, along with slightly higher valence, indicating a stronger emphasis on rhythmic drive, physical engagement, and more outward emotional expression. In the 2020s corpus, these features are generally lower and more variable, suggesting a shift toward less movement-oriented and more subdued musical characteristics.\nThe relationship between danceability and energy further supports this pattern. Tracks from the 1990s cluster more strongly in the high-energy, high-danceability region, while 2020s tracks are more dispersed and tend to occupy lower ranges on both dimensions.\nTaken together, these findings provide quantitative support for a broader stylistic shift in R&B: from a genre closely associated with groove and collective movement toward one that emphasizes atmosphere, mood, and introspective listening."
-  },
-  {
-    "objectID": "clustering.html",
-    "href": "clustering.html",
-    "title": "Clustering",
-    "section": "",
-    "text": "This section examines how R&B has changed from the 1990s to the 2020s using both statistical clustering and audio analysis. The goal is to see whether differences between “movement” and “mood” can be observed in both data and sound."
-  },
-  {
-    "objectID": "clustering.html#analytical-workflow",
-    "href": "clustering.html#analytical-workflow",
-    "title": "Clustering",
-    "section": "Analytical Workflow",
-    "text": "Analytical Workflow\nThe analysis combines Spotify audio features with direct audio processing.\nFirst, playlists of 1990s and 2020s R&B tracks were collected. For each track, Spotify features such as danceability, energy, loudness, acousticness, valence, and tempo were used. These features were then used to perform hierarchical clustering.\nIn addition, two representative tracks were selected: No Diggity (1990s) and Cellophane (2020s). These tracks were used to link the statistical results to the actual sound of the music.\nThe audio files were first obtained as MP3 and then converted to WAV format to preserve sound quality. Short excerpts were edited in Audacity to focus on comparable sections. These excerpts were then analyzed in Sonic Visualiser, where spectrograms were used to examine frequency content and rhythmic structure.\nThis combined approach makes it possible to connect numerical features to audible differences."
-  },
-  {
-    "objectID": "clustering.html#hierarchical-clustering",
-    "href": "clustering.html#hierarchical-clustering",
-    "title": "Clustering",
-    "section": "Hierarchical Clustering",
-    "text": "Hierarchical Clustering\nHierarchical clustering groups songs based on similarity in their audio features. Instead of assigning songs to fixed categories, this method shows how tracks are gradually related to each other.\nThe aim is to see whether songs from the 1990s and 2020s naturally form separate clusters. If they do, this suggests that the musical style of R&B has changed over time."
-  },
-  {
-    "objectID": "clustering.html#dendrogram",
-    "href": "clustering.html#dendrogram",
-    "title": "Clustering",
-    "section": "Dendrogram",
-    "text": "Dendrogram\nThe dendrogram shows how songs are grouped based on similarity. The vertical axis (Height) represents the distance between clusters.\nThe results show a general separation between 1990s and 2020s tracks. Many 1990s songs cluster together due to higher energy, danceability, and loudness. In contrast, many 2020s tracks are grouped around higher acousticness and a more atmospheric sound.\nThis suggests that 1990s R&B is more focused on rhythm and movement, while 2020s R&B is more focused on mood and texture."
-  },
-  {
-    "objectID": "clustering.html#heatmap",
-    "href": "clustering.html#heatmap",
-    "title": "Clustering",
-    "section": "Heatmap",
-    "text": "Heatmap\nThe heatmap shows the values of the audio features for each track. Each row represents a song, and each column represents a feature.\nThe 1990s tracks generally show higher values for energy and danceability. This supports the idea that this era of R&B is more rhythm-driven.\nIn contrast, 2020s tracks show higher acousticness and more variation in valence. This indicates a shift toward emotional expression and atmosphere.\nThe heatmap helps explain why the clusters in the dendrogram are formed."
-  },
-  {
-    "objectID": "clustering.html#spectrogram-comparison",
-    "href": "clustering.html#spectrogram-comparison",
-    "title": "Clustering",
-    "section": "Spectrogram Comparison",
-    "text": "Spectrogram Comparison\nTo connect the clustering results to actual sound, two representative tracks were analyzed using spectrograms.\n\nNo Diggity (1990s)\nThe spectrogram of No Diggity shows strong vertical lines, which represent clear rhythmic hits. The pattern is dense and consistent, reflecting a steady groove.\nThis supports the idea that 1990s R&B is built around rhythm and movement.\n\n\n\nCellophane (2020s)\nThe spectrogram of Cellophane is more spread out and less dense. There are fewer strong rhythmic patterns and more sustained sounds.\nThis reflects a more atmospheric and emotional style, which is typical of modern R&B."
-  },
-  {
-    "objectID": "clustering.html#interpretation",
-    "href": "clustering.html#interpretation",
-    "title": "Clustering",
-    "section": "Interpretation",
-    "text": "Interpretation\nThe results from clustering and audio analysis point in the same direction.\n1990s R&B is generally characterized by higher energy, stronger rhythm, and greater danceability. In contrast, 2020s R&B places more emphasis on acoustic elements, space, and emotional variation.\nThe spectrograms support this pattern by showing clearer rhythmic structure in the 1990s track and a more open, atmospheric structure in the 2020s track.\nOverall, the findings suggest that R&B has shifted from a movement-focused style to a mood-focused style."
-  },
-  {
-    "objectID": "clustering.html#conclusion",
-    "href": "clustering.html#conclusion",
-    "title": "Clustering",
-    "section": "Conclusion",
-    "text": "Conclusion\nThe clustering analysis shows that many 1990s and 2020s tracks group differently based on their audio features. The heatmap explains these differences, and the spectrograms confirm them at the level of sound.\nTogether, these results suggest that R&B has evolved over time. While 1990s R&B is more focused on rhythm and dance, modern R&B emphasizes mood, texture, and emotional expression."
-  },
-  {
-    "objectID": "temporal.html",
-    "href": "temporal.html",
-    "title": "1990s vs 2020s R&B: Danceable vs Atmospheric Music",
-    "section": "",
-    "text": "Temporal features were analysed to examine whether R&B has shifted from a movement-oriented style toward a more atmospheric and introspective one. This section combines corpus-level and track-level analyses to investigate rhythmic pacing, structural duration, and the organisation of pulse over time.\nAt the corpus level, tempo and duration provide a general overview of stylistic tendencies in 1990s and 2020s R&B. At the track level, novelty functions and autocorrelation tempograms offer a more detailed perspective on how rhythmic events and tempo-related patterns unfold within individual songs. Together, these approaches allow for a clearer comparison between groove-based and atmosphere-oriented musical characteristics.\n\n\nTemporal features were examined using both statistical summaries and audio-based representations. Histograms and boxplots were used to capture overall trends in tempo and duration across the dataset, while novelty functions and tempograms were employed to analyse rhythmic activity and pulse stability within individual tracks.\n\n\n\nA histogram was used to examine the distribution of tempo values across the corpus. This method highlights the most frequently occurring tempo ranges and allows for a direct comparison between the two eras.\n\nThe results show that 1990s R&B is concentrated within a relatively narrow mid-tempo range, particularly around 90–110 BPM. This suggests a stable rhythmic profile, consistent with groove-based production and music designed for physical movement. In contrast, 2020s R&B displays a broader distribution of tempo values. Although mid-tempo tracks remain common, the wider spread indicates greater rhythmic diversity and less reliance on a single dominant tempo range.\nThis difference supports the idea that earlier R&B prioritised danceability and bodily engagement, while contemporary R&B explores a wider range of expressive possibilities, including mood and atmosphere.\n\n\n\nTrack duration was analysed using a boxplot to compare structural length across the two eras. Duration serves as an indicator of musical form, as longer tracks often allow for extended repetition and groove development, whereas shorter tracks tend to reflect more compact structures.\n\nThe boxplot shows that 1990s R&B tracks are generally longer than those from the 2020s. The median duration is higher, and the distribution suggests that extended track lengths were more common in earlier R&B. In contrast, 2020s tracks appear shorter and more tightly structured.\nThis pattern suggests a shift in how musical time is organised. Earlier R&B often relies on sustained grooves and repetition, supporting dance-oriented listening. Contemporary R&B, however, tends to favour more concise forms, which may reflect changes in listening habits, such as the influence of streaming platforms and a greater focus on atmosphere over prolonged rhythmic development.\n\n\n\nTo complement the corpus-level analysis, two representative tracks were examined in greater detail: Yeah! by Usher and Good Days by SZA. These tracks illustrate contrasting approaches to rhythm and pulse organisation.\nNovelty functions were used to capture moments of change in the audio signal, while autocorrelation tempograms were used to visualise the strength and stability of tempo over time. Together, these methods provide a detailed view of rhythmic activity within each track.\n\n\nThe novelty function for Yeah! shows a dense and highly active pattern across the first 30 seconds.\n\nFrequent and pronounced peaks indicate a high level of rhythmic activity, suggesting that percussive events occur regularly and with strong articulation. This reflects an immediate emphasis on rhythmic energy and supports the track’s dance-oriented character.\nThe tempogram further reinforces this interpretation.\n\nClear and persistent horizontal bands indicate a stable and well-defined pulse. Rhythmic energy is concentrated at consistent tempo levels, suggesting a strong metrical structure. Together, these features demonstrate that Yeah! is built around a regular and highly accessible groove, encouraging bodily movement and rhythmic entrainment.\n\n\n\nIn contrast, the novelty function for Good Days presents a more gradual and restrained pattern.\n\nThe opening section shows lower levels of activity, with fewer prominent peaks. Rather than emphasising immediate rhythmic impact, the track develops more slowly, allowing rhythmic intensity to emerge over time. This suggests a greater focus on atmosphere and timbral continuity.\nThe tempogram provides additional insight into this structure.\n\nAlthough horizontal bands are still visible, they are less dominant and less tightly defined than in Yeah!. The pulse is present but does not strongly dictate the musical texture. Instead, rhythm functions more as a supportive element within a broader, more immersive sound environment.\nTogether, these features indicate that Good Days maintains temporal organisation while placing less emphasis on rhythmic drive. The result is a more introspective listening experience, in which pulse is less central to the overall musical expression."
-  },
-  {
-    "objectID": "temporal.html#temporal-structure-and-rhythmic-organisation-in-rb",
-    "href": "temporal.html#temporal-structure-and-rhythmic-organisation-in-rb",
-    "title": "1990s vs 2020s R&B: Danceable vs Atmospheric Music",
-    "section": "",
-    "text": "Temporal features were analysed to examine whether R&B has shifted from a movement-oriented style toward a more atmospheric and introspective one. This section combines corpus-level and track-level analyses to investigate rhythmic pacing, structural duration, and the organisation of pulse over time.\nAt the corpus level, tempo and duration provide a general overview of stylistic tendencies in 1990s and 2020s R&B. At the track level, novelty functions and autocorrelation tempograms offer a more detailed perspective on how rhythmic events and tempo-related patterns unfold within individual songs. Together, these approaches allow for a clearer comparison between groove-based and atmosphere-oriented musical characteristics.\n\n\nTemporal features were examined using both statistical summaries and audio-based representations. Histograms and boxplots were used to capture overall trends in tempo and duration across the dataset, while novelty functions and tempograms were employed to analyse rhythmic activity and pulse stability within individual tracks.\n\n\n\nA histogram was used to examine the distribution of tempo values across the corpus. This method highlights the most frequently occurring tempo ranges and allows for a direct comparison between the two eras.\n\nThe results show that 1990s R&B is concentrated within a relatively narrow mid-tempo range, particularly around 90–110 BPM. This suggests a stable rhythmic profile, consistent with groove-based production and music designed for physical movement. In contrast, 2020s R&B displays a broader distribution of tempo values. Although mid-tempo tracks remain common, the wider spread indicates greater rhythmic diversity and less reliance on a single dominant tempo range.\nThis difference supports the idea that earlier R&B prioritised danceability and bodily engagement, while contemporary R&B explores a wider range of expressive possibilities, including mood and atmosphere.\n\n\n\nTrack duration was analysed using a boxplot to compare structural length across the two eras. Duration serves as an indicator of musical form, as longer tracks often allow for extended repetition and groove development, whereas shorter tracks tend to reflect more compact structures.\n\nThe boxplot shows that 1990s R&B tracks are generally longer than those from the 2020s. The median duration is higher, and the distribution suggests that extended track lengths were more common in earlier R&B. In contrast, 2020s tracks appear shorter and more tightly structured.\nThis pattern suggests a shift in how musical time is organised. Earlier R&B often relies on sustained grooves and repetition, supporting dance-oriented listening. Contemporary R&B, however, tends to favour more concise forms, which may reflect changes in listening habits, such as the influence of streaming platforms and a greater focus on atmosphere over prolonged rhythmic development.\n\n\n\nTo complement the corpus-level analysis, two representative tracks were examined in greater detail: Yeah! by Usher and Good Days by SZA. These tracks illustrate contrasting approaches to rhythm and pulse organisation.\nNovelty functions were used to capture moments of change in the audio signal, while autocorrelation tempograms were used to visualise the strength and stability of tempo over time. Together, these methods provide a detailed view of rhythmic activity within each track.\n\n\nThe novelty function for Yeah! shows a dense and highly active pattern across the first 30 seconds.\n\nFrequent and pronounced peaks indicate a high level of rhythmic activity, suggesting that percussive events occur regularly and with strong articulation. This reflects an immediate emphasis on rhythmic energy and supports the track’s dance-oriented character.\nThe tempogram further reinforces this interpretation.\n\nClear and persistent horizontal bands indicate a stable and well-defined pulse. Rhythmic energy is concentrated at consistent tempo levels, suggesting a strong metrical structure. Together, these features demonstrate that Yeah! is built around a regular and highly accessible groove, encouraging bodily movement and rhythmic entrainment.\n\n\n\nIn contrast, the novelty function for Good Days presents a more gradual and restrained pattern.\n\nThe opening section shows lower levels of activity, with fewer prominent peaks. Rather than emphasising immediate rhythmic impact, the track develops more slowly, allowing rhythmic intensity to emerge over time. This suggests a greater focus on atmosphere and timbral continuity.\nThe tempogram provides additional insight into this structure.\n\nAlthough horizontal bands are still visible, they are less dominant and less tightly defined than in Yeah!. The pulse is present but does not strongly dictate the musical texture. Instead, rhythm functions more as a supportive element within a broader, more immersive sound environment.\nTogether, these features indicate that Good Days maintains temporal organisation while placing less emphasis on rhythmic drive. The result is a more introspective listening experience, in which pulse is less central to the overall musical expression."
-  },
-  {
-    "objectID": "temporal.html#key-findings",
-    "href": "temporal.html#key-findings",
-    "title": "1990s vs 2020s R&B: Danceable vs Atmospheric Music",
-    "section": "Key Findings",
-    "text": "Key Findings\nThe temporal analyses reveal a clear shift in R&B across eras. At the corpus level, 1990s R&B is characterised by a concentrated tempo range and longer track durations, reflecting a strong emphasis on groove, repetition, and danceability. In contrast, 2020s R&B shows greater tempo variation and shorter track lengths, suggesting a move toward more flexible and compact structures.\nAt the track level, these differences become even more apparent. Yeah! demonstrates dense rhythmic activity and a stable pulse, both of which support movement and rhythmic engagement. Good Days, on the other hand, exhibits a more gradual rhythmic profile and a less dominant pulse structure, emphasising atmosphere and emotional depth.\nOverall, the findings suggest that R&B has evolved from a predominantly groove-driven genre toward a more atmospheric and introspective style. While rhythm remains an important component, its role has shifted from driving physical movement to supporting mood and texture within the music."
+    "text": "…"
   },
   {
     "objectID": "timbre.html",
@@ -168,17 +35,157 @@
     "text": "Interpretation\nTogether with the other visualizations, the cepstrogram suggests that contemporary R&B favors a smoother, more stable, and more immersive timbral texture."
   },
   {
-    "objectID": "conclusion.html",
-    "href": "conclusion.html",
-    "title": "Conclusion",
+    "objectID": "temporal.html",
+    "href": "temporal.html",
+    "title": "Temporal Features",
     "section": "",
-    "text": "…"
+    "text": "Temporal features were analysed to examine whether R&B has shifted from a movement-oriented style toward a more atmospheric and introspective one. This section combines corpus-level and track-level analyses to investigate rhythmic pacing, structural duration, and the organisation of pulse over time.\nAt the corpus level, tempo and duration provide a general overview of stylistic tendencies in 1990s and 2020s R&B. At the track level, novelty functions and autocorrelation tempograms offer a more detailed perspective on how rhythmic events and tempo-related patterns unfold within individual songs. Together, these approaches allow for a clearer comparison between groove-based and atmosphere-oriented musical characteristics."
   },
   {
-    "objectID": "conclusion.html#final-interpretation",
-    "href": "conclusion.html#final-interpretation",
-    "title": "Conclusion",
+    "objectID": "temporal.html#analytical-approach",
+    "href": "temporal.html#analytical-approach",
+    "title": "Temporal Features",
+    "section": "Analytical Approach",
+    "text": "Analytical Approach\nTemporal features were examined using both statistical summaries and audio-based representations. Histograms and boxplots were used to capture overall trends in tempo and duration across the dataset, while novelty functions and tempograms were employed to analyse rhythmic activity and pulse stability within individual tracks."
+  },
+  {
+    "objectID": "temporal.html#distribution-of-tempo-across-eras",
+    "href": "temporal.html#distribution-of-tempo-across-eras",
+    "title": "Temporal Features",
+    "section": "Distribution of Tempo Across Eras",
+    "text": "Distribution of Tempo Across Eras\nA histogram was used to examine the distribution of tempo values across the corpus. This method highlights the most frequently occurring tempo ranges and allows for a direct comparison between the two eras.\n\nThe results show that 1990s R&B is concentrated within a relatively narrow mid-tempo range, particularly around 90–110 BPM. This suggests a stable rhythmic profile, consistent with groove-based production and music designed for physical movement. In contrast, 2020s R&B displays a broader distribution of tempo values. Although mid-tempo tracks remain common, the wider spread indicates greater rhythmic diversity and less reliance on a single dominant tempo range.\nThis difference supports the idea that earlier R&B prioritised danceability and bodily engagement, while contemporary R&B explores a wider range of expressive possibilities, including mood and atmosphere."
+  },
+  {
+    "objectID": "temporal.html#differences-in-track-duration",
+    "href": "temporal.html#differences-in-track-duration",
+    "title": "Temporal Features",
+    "section": "Differences in Track Duration",
+    "text": "Differences in Track Duration\nTrack duration was analysed using a boxplot to compare structural length across the two eras. Duration serves as an indicator of musical form, as longer tracks often allow for extended repetition and groove development, whereas shorter tracks tend to reflect more compact structures.\n\nThe boxplot shows that 1990s R&B tracks are generally longer than those from the 2020s. The median duration is higher, and the distribution suggests that extended track lengths were more common in earlier R&B. In contrast, 2020s tracks appear shorter and more tightly structured.\nThis pattern suggests a shift in how musical time is organised. Earlier R&B often relies on sustained grooves and repetition, supporting dance-oriented listening. Contemporary R&B tends to favour more concise forms, which may reflect changes in listening habits, such as the influence of streaming platforms and a greater focus on atmosphere over prolonged rhythmic development."
+  },
+  {
+    "objectID": "temporal.html#temporal-dynamics-at-the-track-level",
+    "href": "temporal.html#temporal-dynamics-at-the-track-level",
+    "title": "Temporal Features",
+    "section": "Temporal Dynamics at the Track Level",
+    "text": "Temporal Dynamics at the Track Level\nTo complement the corpus-level analysis, two representative tracks were examined in greater detail: Yeah! by Usher and Good Days by SZA. These tracks illustrate contrasting approaches to rhythm and pulse organisation.\nNovelty functions were used to capture moments of change in the audio signal, while autocorrelation tempograms were used to visualise the strength and stability of tempo over time. Together, these methods provide a detailed view of rhythmic activity within each track.\n\nYeah! by Usher (1990s)\nThe novelty function for Yeah! shows a dense and highly active pattern across the first 30 seconds.\n\nFrequent and pronounced peaks indicate a high level of rhythmic activity, suggesting that percussive events occur regularly and with strong articulation. This reflects an immediate emphasis on rhythmic energy and supports the track’s dance-oriented character.\nThe tempogram further reinforces this interpretation.\n\nClear and persistent horizontal bands indicate a stable and well-defined pulse. Rhythmic energy is concentrated at consistent tempo levels, suggesting a strong metrical structure. Together, these features demonstrate that Yeah! is built around a regular and highly accessible groove, encouraging bodily movement and rhythmic entrainment.\n\n\nGood Days by SZA (2020s)\nIn contrast, the novelty function for Good Days presents a more gradual and restrained pattern.\n\nThe opening section shows lower levels of activity, with fewer prominent peaks. Rather than emphasising immediate rhythmic impact, the track develops more slowly, allowing rhythmic intensity to emerge over time. This suggests a greater focus on atmosphere and timbral continuity.\nThe tempogram provides additional insight into this structure.\n\nAlthough horizontal bands are still visible, they are less dominant and less tightly defined than in Yeah!. The pulse is present but does not strongly dictate the musical texture. Instead, rhythm functions more as a supportive element within a broader, more immersive sound environment.\nTogether, these features indicate that Good Days maintains temporal organisation while placing less emphasis on rhythmic drive. The result is a more introspective listening experience, in which pulse is less central to the overall musical expression."
+  },
+  {
+    "objectID": "temporal.html#key-findings",
+    "href": "temporal.html#key-findings",
+    "title": "Temporal Features",
+    "section": "Key Findings",
+    "text": "Key Findings\nThe temporal analyses reveal a clear shift in R&B across eras. At the corpus level, 1990s R&B is characterised by a concentrated tempo range and longer track durations, reflecting a strong emphasis on groove, repetition, and danceability. In contrast, 2020s R&B shows greater tempo variation and shorter track lengths, suggesting a move toward more flexible and compact structures.\nAt the track level, these differences become even more apparent. Yeah! demonstrates dense rhythmic activity and a stable pulse, both of which support movement and rhythmic engagement. Good Days exhibits a more gradual rhythmic profile and a less dominant pulse structure, emphasising atmosphere and emotional depth.\nOverall, the findings suggest that R&B has evolved from a predominantly groove-driven genre toward a more atmospheric and introspective style. While rhythm remains an important component, its role has shifted from driving physical movement to supporting mood and texture within the music."
+  },
+  {
+    "objectID": "clustering.html",
+    "href": "clustering.html",
+    "title": "Clustering",
     "section": "",
-    "text": "…"
+    "text": "This section examines how R&B has changed from the 1990s to the 2020s using hierarchical clustering and audio analysis. The goal is to determine whether differences between movement-oriented and mood-oriented music can be observed in the data and confirmed through direct sound analysis."
+  },
+  {
+    "objectID": "clustering.html#analytical-approach",
+    "href": "clustering.html#analytical-approach",
+    "title": "Clustering",
+    "section": "Analytical Approach",
+    "text": "Analytical Approach\nThe analysis combines Spotify audio features with direct audio processing. For each track, features including danceability, energy, loudness, acousticness, valence, and tempo were used to perform hierarchical clustering. All features were standardised before clustering to ensure that no single variable dominates due to scale differences.\nIn addition, two representative tracks were selected for spectrogram analysis: No Diggity by Blackstreet (1990s) and Cellophane by FKA Twigs (2020s). These tracks were used to connect the statistical clustering results to audible differences in the music."
+  },
+  {
+    "objectID": "clustering.html#hierarchical-clustering",
+    "href": "clustering.html#hierarchical-clustering",
+    "title": "Clustering",
+    "section": "Hierarchical Clustering",
+    "text": "Hierarchical Clustering\nHierarchical clustering groups tracks based on similarity in their audio features. Rather than assigning songs to fixed categories, this method reveals how tracks are gradually related to each other producing a tree structure in which closely related tracks branch off at lower heights and more distant groupings merge at higher heights.\nThe aim is to examine whether tracks from the 1990s and 2020s naturally form separate clusters. If they do, this provides evidence that the musical style of R&B has shifted systematically over time.\n\nDendrogram\nThe dendrogram visualises how tracks are grouped based on feature similarity. Track labels are coloured by era pink for 1990s tracks and purple for 2020s tracks making it possible to see at a glance whether the two eras separate into distinct branches.\n\nThe results show a general separation between 1990s and 2020s tracks. Many 1990s songs cluster together due to higher energy, danceability, and loudness, while many 2020s tracks group around higher acousticness and a more atmospheric sonic profile. This suggests that the two eras occupy meaningfully different regions of the feature space.\n\n\nHeatmap\nThe heatmap displays the normalised audio feature values for each track. Each row represents a song and each column represents a feature, with warmer colours indicating higher values.\n\nThe 1990s tracks generally show higher values for energy and danceability, supporting the idea that this era of R&B is more rhythm-driven. In contrast, 2020s tracks show higher acousticness and more variation in valence, indicating a shift toward emotional expression and atmosphere. The heatmap helps explain why the clusters in the dendrogram form as they do."
+  },
+  {
+    "objectID": "clustering.html#spectrogram-comparison",
+    "href": "clustering.html#spectrogram-comparison",
+    "title": "Clustering",
+    "section": "Spectrogram Comparison",
+    "text": "Spectrogram Comparison\nTo connect the clustering results to actual sound, two representative tracks were analysed using spectrograms in Sonic Visualiser. Spectrograms display the frequency content of audio over time, making it possible to observe rhythmic density, timbral texture, and structural patterns directly from the sound.\n\nNo Diggity (1990s)Cellophane (2020s)\n\n\n\nThe spectrogram of No Diggity shows strong vertical lines representing clear rhythmic hits. The pattern is dense and consistent throughout the excerpt, reflecting a steady groove and strong rhythmic articulation. This supports the clustering result that 1990s R&B is built around rhythm and movement.\n\n\n\nThe spectrogram of Cellophane is more spread out and less dense. There are fewer strong rhythmic patterns and more sustained, continuous frequency content. This reflects a more atmospheric and emotionally oriented style, consistent with the higher acousticness and lower danceability values observed in the clustering analysis."
+  },
+  {
+    "objectID": "clustering.html#classification-can-audio-features-predict-era",
+    "href": "clustering.html#classification-can-audio-features-predict-era",
+    "title": "Clustering",
+    "section": "Classification: Can Audio Features Predict Era?",
+    "text": "Classification: Can Audio Features Predict Era?\nTo test whether the differences between the two eras are strong enough to support classification, a k-nearest neighbours (kNN) classifier was trained to predict era, 1990s or 2020s, from audio features alone. The model was evaluated using 5-fold cross-validation to ensure the results are not specific to a single train-test split.\nIf the classifier performs well above chance (50%), it provides direct quantitative evidence that the two eras are genuinely separable by their Spotify audio features.\n\nThe confusion matrix shows how often the model correctly predicted each era. Correct predictions appear along the diagonal. High accuracy on both classes would confirm that 1990s and 2020s R&B occupy distinct regions of the audio feature space supporting the central claim of this project."
+  },
+  {
+    "objectID": "clustering.html#key-findings",
+    "href": "clustering.html#key-findings",
+    "title": "Clustering",
+    "section": "Key Findings",
+    "text": "Key Findings\nThe clustering analysis and spectrogram comparison point in the same direction. At the feature level, 1990s R&B is characterised by higher energy, stronger rhythm, and greater danceability, while 2020s R&B places more emphasis on acoustic elements, space, and emotional variation. At the audio level, these differences are confirmed by the spectrograms, which show a clear contrast between the dense rhythmic structure of No Diggity and the more open, sustained texture of Cellophane.\nTaken together, the results provide convergent evidence that R&B has shifted from a movement-focused style toward a mood-focused one, a pattern that is consistent across the statistical, visual, and acoustic dimensions of this analysis."
+  },
+  {
+    "objectID": "track-level.html",
+    "href": "track-level.html",
+    "title": "Track-Level Features, Loudness & Chroma",
+    "section": "",
+    "text": "This section examines Spotify track-level features, loudness, and chroma to evaluate whether measurable differences exist between 1990s and 2020s R&B. The analysis covers danceability, energy, valence, and loudness at the track level, and chroma features at the harmonic level."
+  },
+  {
+    "objectID": "track-level.html#track-level-features-and-loudness",
+    "href": "track-level.html#track-level-features-and-loudness",
+    "title": "Track-Level Features, Loudness & Chroma",
+    "section": "Track-Level Features and Loudness",
+    "text": "Track-Level Features and Loudness\n\nFeature Distributions Across Eras\n\nDensity plots are used here because they reveal the full shape of each era’s distribution, including skew, spread, and overlap — making them more informative than boxplots for identifying systematic shifts between corpora.\nThe 1990s corpus (pink) shows higher and more concentrated values for danceability and valence, with the danceability peak sitting around 0.75–0.80 compared to a broader, lower 2020s distribution. Valence is the most striking panel: the 1990s curve is strongly skewed toward high positivity, while the 2020s distribution shifts noticeably below 0.50, indicating more subdued and introspective emotional tones. Energy and loudness show similar but less pronounced patterns, with the 2020s corpus occupying slightly lower and more variable ranges on both dimensions.\n\n\nRelationship Between Danceability and Energy\n\nThis scatterplot examines how danceability and energy interact across eras. The 1990s corpus (pink) clusters tightly in the upper portion of the plot, with danceability consistently above 0.70 regardless of energy level indicating that high danceability was a stable property of these tracks. The 2020s corpus (purple) sits substantially lower and is more dispersed, with a weaker relationship between the two features. This decoupling suggests that in contemporary R&B, energy no longer reliably predicts danceability consistent with a shift toward a more atmospheric sound.\n\n\nLoudness and Emotional Tone\n\nThis scatterplot compares loudness with valence to examine whether sonic power and emotional positivity move together across eras. The separation is clear: the 1990s corpus (pink) clusters consistently in the upper band of the plot, with high valence at all loudness levels. The 2020s corpus (purple) sits substantially lower, with many tracks falling below 0.50 on valence. This confirms that the emotional shift in R&B is not a function of loudness 2020s tracks are more emotionally subdued across the full loudness range."
+  },
+  {
+    "objectID": "track-level.html#chroma-features",
+    "href": "track-level.html#chroma-features",
+    "title": "Track-Level Features, Loudness & Chroma",
+    "section": "Chroma Features",
+    "text": "Chroma Features\nChroma features describe the distribution of harmonic energy across the twelve pitch classes of the chromatic scale. Computed using the NNLS Chroma algorithm, they are visualised as chromagrams — heatmaps showing which pitch classes are active at each point in time. Two tracks were selected as case studies: No Diggity by Blackstreet (1990s) and Good Days by SZA (2020s), chosen as representative examples of their respective eras.\n\nNo Diggity — Blackstreet (1990s)\n\nThe chromagram for No Diggity shows a harmonically focused and repetitive structure. Pitch classes C and A dominate consistently throughout the track, appearing as recurring bright bands with little variation over time. This reflects the track’s groove-based vamp structure cycling through a small set of pitch centres without substantial harmonic development. The visual regularity of the chromagram is evidence of the loop-based, movement-oriented character of 1990s R&B.\n\n\nGood Days — SZA (2020s)\n\nGood Days presents a markedly different harmonic profile. Harmonic energy is distributed across D, E, F#, G, A, and B, shifting between them as the track progresses. No single pitch class dominates consistently, and sections of tonal ambiguity are visible where activity is diffuse across multiple rows. This harmonic openness is consistent with the atmospheric, introspective quality of contemporary R&B."
+  },
+  {
+    "objectID": "track-level.html#key-findings",
+    "href": "track-level.html#key-findings",
+    "title": "Track-Level Features, Loudness & Chroma",
+    "section": "Key Findings",
+    "text": "Key Findings\nThe analysis reveals a consistent pattern across all dimensions. The 1990s corpus shows higher danceability, energy, valence, and loudness features associated with physical engagement and outward emotional expression. The 2020s corpus scores lower and more variably on all four, with the gap in valence being the most pronounced.\nThe scatterplots reinforce this: danceability was a stable property of 1990s tracks regardless of energy level, while the two features are more weakly linked in the 2020s. The loudness versus valence plot confirms that the emotional gap between eras persists across all loudness levels.\nAt the harmonic level, No Diggity is built around a tight, repeating pitch class loop, while Good Days distributes its harmonic energy more freely reflecting a shift from groove-oriented repetition to atmospheric harmonic openness.\nTaken together, these findings support the central research question: R&B has shifted measurably from a genre organised around danceability and rhythmic consistency toward one that prioritises mood, atmosphere, and emotional complexity."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Background & Corpus",
+    "section": "",
+    "text": "Can R&B still make you move, or does it now aim to leave you speechless?\nThis project examines how R&B has evolved from the 1990s to the 2020s, not just in sound, but in purpose. It asks whether a genre once defined by groove, rhythm, and dancefloor energy has shifted toward atmosphere, introspection, and personal emotional experience."
+  },
+  {
+    "objectID": "index.html#research-question",
+    "href": "index.html#research-question",
+    "title": "Background & Corpus",
+    "section": "",
+    "text": "Can R&B still make you move, or does it now aim to leave you speechless?\nThis project examines how R&B has evolved from the 1990s to the 2020s, not just in sound, but in purpose. It asks whether a genre once defined by groove, rhythm, and dancefloor energy has shifted toward atmosphere, introspection, and personal emotional experience."
+  },
+  {
+    "objectID": "index.html#the-corpus",
+    "href": "index.html#the-corpus",
+    "title": "Background & Corpus",
+    "section": "The Corpus",
+    "text": "The Corpus\nThe corpus consists of 50 tracks, with 25 from each era, selected to represent two distinct stylistic poles of R&B.\nThe 1990s selection draws from artists such as Janet Jackson, Aaliyah, Blackstreet, Usher, and Mariah Carey. These tracks were chosen for their strong rhythmic structure, high danceability, and cultural association with social listening environments such as clubs, parties, and collective movement. They represent a period in which R&B was closely tied to the body and the dancefloor, built around groove, energy, and outward emotional expression.\nThe 2020s selection features artists such as SZA, Frank Ocean, Ariana Grande, and Summer Walker. These tracks were selected for their slower tempos, softer production textures, and emphasis on mood and emotional nuance. They represent a contemporary R&B more likely to be experienced in personal, intimate contexts such as late-night drives, quiet evenings, or moments of private reflection."
+  },
+  {
+    "objectID": "index.html#the-two-playlists",
+    "href": "index.html#the-two-playlists",
+    "title": "Background & Corpus",
+    "section": "The Two Playlists",
+    "text": "The Two Playlists\n\n1990s R&B\n\n  \n    25 TRACKS · GROOVE-DRIVEN · DANCEABLE\n  \n\n\n\n\n\n\n2020s R&B\n\n  \n    25 TRACKS · ATMOSPHERIC · INTROSPECTIVE"
+  },
+  {
+    "objectID": "index.html#approach",
+    "href": "index.html#approach",
+    "title": "Background & Corpus",
+    "section": "Approach",
+    "text": "Approach\nUsing Spotify’s audio features and audio analysis tools, this dashboard investigates whether the stylistic differences between the two eras can be measured quantitatively. Four analytical dimensions are examined across the pages of this dashboard.\nTrack-level features look at danceability, energy, valence, and loudness to capture the most immediate and measurable qualities of each track.\nChroma features examine harmonic content and pitch class profiles to reveal how the tonal character of R&B has shifted across eras.\nTimbral features analyse sound texture, density, and instrumentation to capture how the sonic palette of the genre has changed.\nTemporal features focus on tempo, rhythm, and structural patterns to determine whether the rhythmic drive of R&B has weakened over time.\nBy comparing these dimensions across both corpora, the project aims to determine whether R&B has shifted from music designed for movement to music designed for mood."
+  },
+  {
+    "objectID": "index.html#full-corpus-explorer",
+    "href": "index.html#full-corpus-explorer",
+    "title": "Background & Corpus",
+    "section": "Full Corpus Explorer",
+    "text": "Full Corpus Explorer\nThe table below contains all 50 tracks with their key Spotify audio features. Use the search box or column filters to explore by era, artist, or feature range."
   }
 ]

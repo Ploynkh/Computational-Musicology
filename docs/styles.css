@@ -1,4 +1,102 @@
-:root {
-  --bs-primary: #6c5ce7;   /* purple (main color) */
-  --bs-secondary: #00b894; /* teal accent */
+/* ── Page background ───────────────────────────────────────────── */
+body {
+  background-color: #0E0A1A !important;
+  color: #FFFFFF !important;
+}
+
+/* ── Navbar ────────────────────────────────────────────────────── */
+.navbar {
+  background-color: #160D2A !important;
+  border-bottom: 2px solid #3B1F6E;
+}
+
+.navbar-brand {
+  color: #FFFFFF !important;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.navbar .nav-link {
+  color: #C77DFF !important;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  color: #FFFFFF !important;
+}
+
+/* ── Page title ────────────────────────────────────────────────── */
+h1.title {
+  color: #FFFFFF !important;
+  font-weight: 700;
+}
+
+/* ── Section headings ──────────────────────────────────────────── */
+h1, h2, h3, h4, h5, h6 {
+  color: #FFFFFF !important;
+  border-bottom: 1px solid #3B1F6E;
+  padding-bottom: 6px;
+}
+
+/* ── TOC sidebar ───────────────────────────────────────────────── */
+.sidebar {
+  background-color: #160D2A !important;
+  border-right: 1px solid #3B1F6E;
+}
+
+#TOC a {
+  color: #C77DFF !important;
+}
+
+#TOC a:hover {
+  color: #FFFFFF !important;
+}
+
+/* Active TOC link — turns white when you are on that section */
+#TOC a.active,
+.toc-active > a,
+nav.toc a.active {
+  color: #FFFFFF !important;
+  font-weight: 600;
+}
+
+/* ── Body text ─────────────────────────────────────────────────── */
+p, li, span, td, th, label {
+  color: #FFFFFF !important;
+  line-height: 1.75;
+}
+
+/* ── Horizontal rules ──────────────────────────────────────────── */
+hr {
+  border-color: #3B1F6E;
+  margin: 2rem 0;
+}
+
+/* ── Images ────────────────────────────────────────────────────── */
+img {
+  border-radius: 8px;
+  border: 1px solid #3B1F6E;
+}
+
+/* ── Code blocks ───────────────────────────────────────────────── */
+.sourceCode {
+  background-color: #160D2A !important;
+  border: 1px solid #3B1F6E;
+  border-radius: 8px;
+}
+
+/* ── Content area ──────────────────────────────────────────────── */
+.page-columns,
+.quarto-container,
+main {
+  background-color: #0E0A1A !important;
+}
+
+/* ── Subtle card effect on plot containers ─────────────────────── */
+.cell-output-display {
+  background-color: #160D2A;
+  border: 1px solid #3B1F6E;
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 1rem 0;
 }

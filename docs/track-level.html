@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Track-Level Features – 1990s vs 2020s R&amp;B: Danceable vs Atmospheric Music</title>
+<title>Track-Level Features, Loudness &amp; Chroma – 1990s vs 2020s R&amp;B: Danceable vs Atmospheric Music</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -37,10 +37,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-707d8167ce6003fca903bfe2be84ab7f.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-f93c2b1f3f0577f377aefa4848a86a36.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-2ec1ecde4794cf0ca2676fdbadd3167b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -95,15 +95,11 @@ ul.task-list li input[type="checkbox"] {
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
     <a class="nav-link" href="./index.html"> 
-<span class="menu-text">Background</span></a>
+<span class="menu-text">Background &amp; Corpus</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link active" href="./track-level.html" aria-current="page"> 
 <span class="menu-text">Track-level Features</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./chroma.html"> 
-<span class="menu-text">Chroma Features</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./timbre.html"> 
@@ -136,10 +132,17 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#danceability-across-eras" id="toc-danceability-across-eras" class="nav-link active" data-scroll-target="#danceability-across-eras">Danceability Across Eras</a></li>
-  <li><a href="#energy-across-eras" id="toc-energy-across-eras" class="nav-link" data-scroll-target="#energy-across-eras">Energy Across Eras</a></li>
-  <li><a href="#valence-across-eras" id="toc-valence-across-eras" class="nav-link" data-scroll-target="#valence-across-eras">Valence Across Eras</a></li>
+  <li><a href="#track-level-features-and-loudness" id="toc-track-level-features-and-loudness" class="nav-link active" data-scroll-target="#track-level-features-and-loudness">Track-Level Features and Loudness</a>
+  <ul class="collapse">
+  <li><a href="#feature-distributions-across-eras" id="toc-feature-distributions-across-eras" class="nav-link" data-scroll-target="#feature-distributions-across-eras">Feature Distributions Across Eras</a></li>
   <li><a href="#relationship-between-danceability-and-energy" id="toc-relationship-between-danceability-and-energy" class="nav-link" data-scroll-target="#relationship-between-danceability-and-energy">Relationship Between Danceability and Energy</a></li>
+  <li><a href="#loudness-and-emotional-tone" id="toc-loudness-and-emotional-tone" class="nav-link" data-scroll-target="#loudness-and-emotional-tone">Loudness and Emotional Tone</a></li>
+  </ul></li>
+  <li><a href="#chroma-features" id="toc-chroma-features" class="nav-link" data-scroll-target="#chroma-features">Chroma Features</a>
+  <ul class="collapse">
+  <li><a href="#no-diggity-blackstreet-1990s" id="toc-no-diggity-blackstreet-1990s" class="nav-link" data-scroll-target="#no-diggity-blackstreet-1990s">No Diggity — Blackstreet (1990s)</a></li>
+  <li><a href="#good-days-sza-2020s" id="toc-good-days-sza-2020s" class="nav-link" data-scroll-target="#good-days-sza-2020s">Good Days — SZA (2020s)</a></li>
+  </ul></li>
   <li><a href="#key-findings" id="toc-key-findings" class="nav-link" data-scroll-target="#key-findings">Key Findings</a></li>
   </ul>
 </nav>
@@ -153,7 +156,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Track-Level Features</h1>
+<h1 class="title">Track-Level Features, Loudness &amp; Chroma</h1>
 </div>
 
 
@@ -170,39 +173,46 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>This section examines Spotify <strong>track-level features</strong> to evaluate whether measurable differences exist between 1990s and 2020s R&amp;B. The analysis focuses on <strong>danceability, energy, and valence</strong>, which capture key aspects of rhythmic drive, intensity, and emotional expression.</p>
-<p>To compare these features across the two corpora, boxplots are used as the primary visualization method. <strong>Boxplots</strong> allow for a clear comparison of distributions, highlighting differences in median values, variability, and the presence of outliers between eras. This makes them particularly suitable for identifying systematic shifts in musical characteristics.</p>
-<p>In addition, <strong>a</strong> <strong>scatterplot</strong> is used to examine the relationship between danceability and energy, providing insight into how these features interact within and across the two time periods.</p>
-<hr>
-<section id="danceability-across-eras" class="level2">
-<h2 class="anchored" data-anchor-id="danceability-across-eras">Danceability Across Eras</h2>
-<p><img src="images/danceability-boxplot.png" class="img-fluid"></p>
-<p>Danceability is one of the clearest indicators of the shift explored in this project. <strong>The 1990s</strong> corpus shows <strong>higher danceability values</strong> overall, supporting the idea that R&amp;B in this period was more strongly associated with rhythmic drive and social movement. In <strong>the</strong> <strong>2020s</strong> corpus, <strong>danceability values are generally</strong> <strong>lower</strong>, suggesting a genre that has become less centered on dancing and more focused on mood and introspection.</p>
-<hr>
+<p>This section examines Spotify track-level features, loudness, and chroma to evaluate whether measurable differences exist between 1990s and 2020s R&amp;B. The analysis covers <strong>danceability, energy, valence, and loudness</strong> at the track level, and <strong>chroma features</strong> at the harmonic level.</p>
+<section id="track-level-features-and-loudness" class="level2">
+<h2 class="anchored" data-anchor-id="track-level-features-and-loudness">Track-Level Features and Loudness</h2>
+<section id="feature-distributions-across-eras" class="level3">
+<h3 class="anchored" data-anchor-id="feature-distributions-across-eras">Feature Distributions Across Eras</h3>
+<p><img src="images/density_track_features.png" class="img-fluid"></p>
+<p>Density plots are used here because they reveal the full shape of each era’s distribution, including skew, spread, and overlap — making them more informative than boxplots for identifying systematic shifts between corpora.</p>
+<p>The 1990s corpus (pink) shows higher and more concentrated values for danceability and valence, with the danceability peak sitting around 0.75–0.80 compared to a broader, lower 2020s distribution. Valence is the most striking panel: the 1990s curve is strongly skewed toward high positivity, while the 2020s distribution shifts noticeably below 0.50, indicating more subdued and introspective emotional tones. Energy and loudness show similar but less pronounced patterns, with the 2020s corpus occupying slightly lower and more variable ranges on both dimensions.</p>
 </section>
-<section id="energy-across-eras" class="level2">
-<h2 class="anchored" data-anchor-id="energy-across-eras">Energy Across Eras</h2>
-<p><img src="images/energy-boxplot.png" class="img-fluid"></p>
-<p>Energy reflects the intensity and activity level of a track. <strong>The 1990s</strong> corpus shows consistently <strong>higher energy values</strong>, indicating a stronger emphasis on rhythmic drive and musical momentum. In <strong>the 2020s</strong> corpus, <strong>energy levels are generally lower</strong>, suggesting a shift toward softer, less forceful production and a more relaxed listening experience.</p>
-<hr>
-</section>
-<section id="valence-across-eras" class="level2">
-<h2 class="anchored" data-anchor-id="valence-across-eras">Valence Across Eras</h2>
-<p><img src="images/valence-plot.png" class="img-fluid"></p>
-<p>Valence captures the emotional positivity of a track. <strong>The 1990s</strong> corpus shows <strong>higher valence values</strong> overall, indicating a tendency toward more upbeat and outward emotional expression. In <strong>the 2020s</strong> corpus, <strong>valence values are lower and more varied</strong>, suggesting a shift toward more subdued, introspective, and emotionally complex musical moods.</p>
-<hr>
-</section>
-<section id="relationship-between-danceability-and-energy" class="level2">
-<h2 class="anchored" data-anchor-id="relationship-between-danceability-and-energy">Relationship Between Danceability and Energy</h2>
+<section id="relationship-between-danceability-and-energy" class="level3">
+<h3 class="anchored" data-anchor-id="relationship-between-danceability-and-energy">Relationship Between Danceability and Energy</h3>
 <p><img src="images/danceability_vs_energy.png" class="img-fluid"></p>
-<p>This scatterplot shows how energy and danceability relate across the two eras. Tracks from <strong>the 1990s cluster more strongly in the high-energy, high-danceability</strong> <strong>region</strong>, reinforcing the idea that groove and movement were central characteristics of the genre. In <strong>the 2020s corpus, tracks are more dispersed and tend to appear at lower values on both dimensions</strong>, indicating a weaker link between intensity and danceability and a shift toward a more atmospheric style.</p>
-<hr>
+<p>This scatterplot examines how danceability and energy interact across eras. The 1990s corpus (pink) clusters tightly in the upper portion of the plot, with danceability consistently above 0.70 regardless of energy level indicating that high danceability was a stable property of these tracks. The 2020s corpus (purple) sits substantially lower and is more dispersed, with a weaker relationship between the two features. This decoupling suggests that in contemporary R&amp;B, energy no longer reliably predicts danceability consistent with a shift toward a more atmospheric sound.</p>
+</section>
+<section id="loudness-and-emotional-tone" class="level3">
+<h3 class="anchored" data-anchor-id="loudness-and-emotional-tone">Loudness and Emotional Tone</h3>
+<p><img src="images/loudness_vs_valence.png" class="img-fluid"></p>
+<p>This scatterplot compares loudness with valence to examine whether sonic power and emotional positivity move together across eras. The separation is clear: the 1990s corpus (pink) clusters consistently in the upper band of the plot, with high valence at all loudness levels. The 2020s corpus (purple) sits substantially lower, with many tracks falling below 0.50 on valence. This confirms that the emotional shift in R&amp;B is not a function of loudness 2020s tracks are more emotionally subdued across the full loudness range.</p>
+</section>
+</section>
+<section id="chroma-features" class="level2">
+<h2 class="anchored" data-anchor-id="chroma-features">Chroma Features</h2>
+<p>Chroma features describe the distribution of harmonic energy across the twelve pitch classes of the chromatic scale. Computed using the NNLS Chroma algorithm, they are visualised as chromagrams — heatmaps showing which pitch classes are active at each point in time. Two tracks were selected as case studies: <strong>No Diggity</strong> by Blackstreet (1990s) and <strong>Good Days</strong> by SZA (2020s), chosen as representative examples of their respective eras.</p>
+<section id="no-diggity-blackstreet-1990s" class="level3">
+<h3 class="anchored" data-anchor-id="no-diggity-blackstreet-1990s">No Diggity — Blackstreet (1990s)</h3>
+<p><img src="images/chroma_no_diggity.png" class="img-fluid"></p>
+<p>The chromagram for No Diggity shows a harmonically focused and repetitive structure. Pitch classes C and A dominate consistently throughout the track, appearing as recurring bright bands with little variation over time. This reflects the track’s groove-based vamp structure cycling through a small set of pitch centres without substantial harmonic development. The visual regularity of the chromagram is evidence of the loop-based, movement-oriented character of 1990s R&amp;B.</p>
+</section>
+<section id="good-days-sza-2020s" class="level3">
+<h3 class="anchored" data-anchor-id="good-days-sza-2020s">Good Days — SZA (2020s)</h3>
+<p><img src="images/chroma_good_days.png" class="img-fluid"></p>
+<p>Good Days presents a markedly different harmonic profile. Harmonic energy is distributed across D, E, F#, G, A, and B, shifting between them as the track progresses. No single pitch class dominates consistently, and sections of tonal ambiguity are visible where activity is diffuse across multiple rows. This harmonic openness is consistent with the atmospheric, introspective quality of contemporary R&amp;B.</p>
+</section>
 </section>
 <section id="key-findings" class="level2">
 <h2 class="anchored" data-anchor-id="key-findings">Key Findings</h2>
-<p>The results across the track-level features reveal a consistent pattern. The 1990s corpus shows higher values for both danceability and energy, along with slightly higher valence, indicating a stronger emphasis on rhythmic drive, physical engagement, and more outward emotional expression. In the 2020s corpus, these features are generally lower and more variable, suggesting a shift toward less movement-oriented and more subdued musical characteristics.</p>
-<p>The relationship between danceability and energy further supports this pattern. Tracks from the 1990s cluster more strongly in the high-energy, high-danceability region, while 2020s tracks are more dispersed and tend to occupy lower ranges on both dimensions.</p>
-<p>Taken together, these findings provide quantitative support for a broader stylistic shift in R&amp;B: from a genre closely associated with groove and collective movement toward one that emphasizes atmosphere, mood, and introspective listening.</p>
+<p>The analysis reveals a consistent pattern across all dimensions. The 1990s corpus shows higher danceability, energy, valence, and loudness features associated with physical engagement and outward emotional expression. The 2020s corpus scores lower and more variably on all four, with the gap in valence being the most pronounced.</p>
+<p>The scatterplots reinforce this: danceability was a stable property of 1990s tracks regardless of energy level, while the two features are more weakly linked in the 2020s. The loudness versus valence plot confirms that the emotional gap between eras persists across all loudness levels.</p>
+<p>At the harmonic level, No Diggity is built around a tight, repeating pitch class loop, while Good Days distributes its harmonic energy more freely reflecting a shift from groove-oriented repetition to atmospheric harmonic openness.</p>
+<p>Taken together, these findings support the central research question: R&amp;B has shifted measurably from a genre organised around danceability and rhythmic consistency toward one that prioritises mood, atmosphere, and emotional complexity.</p>
 
 
 </section>

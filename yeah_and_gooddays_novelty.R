@@ -1,74 +1,53 @@
 library(tidyverse)
 
-novelty <- read_delim(
-  "yeah_novelty.csv",
-  delim = ",",
-  col_names = FALSE,
-  show_col_types = FALSE
-) %>%
-  rename(
-    TIME = X1,
-    VALUE = X2
-  )
+bg <- "#0E0A1A"
 
-yeah_novelty <- ggplot(novelty, aes(x = TIME, y = VALUE)) +
-  geom_segment(aes(xend = TIME, yend = 0),
-               linewidth = 0.3,
-               color = "#00D5D5") +
-  labs(
-    title = "Yeah! — Novelty Function",
-    subtitle = "First 30 seconds",
-    x = "Time (s)",
-    y = "Novelty"
-  ) +
-  theme_minimal(base_size = 11) +
-  theme(
-    plot.background = element_rect(fill = "#0D1B2A", color = NA),
-    panel.background = element_rect(fill = "#0D1B2A"),
-    panel.grid = element_blank(),
-    text = element_text(color = "white"),
-    axis.text = element_text(color = "#C9D1D9"),
-    axis.title = element_text(face = "bold"),
-    plot.title = element_text(color = "#F4A261", face = "bold"),
-    plot.subtitle = element_text(color = "white")
-  )
+# ── Load data ─────────────────────────────────────────────────────────────────
+yeah_novelty <- read_csv("yeah_novelty.csv",
+                         col_names = c("time", "novelty"),
+                         show_col_types = FALSE)
 
-# ----------  Gooddays novelty -----------
+gooddays_novelty <- read_csv("gooddays_novelty.csv",
+                             col_names = c("time", "novelty"),
+                             show_col_types = FALSE)
 
-library(tidyverse)
+# ── Helper function ───────────────────────────────────────────────────────────
+make_novelty <- function(data, track_title, era_label, accent_colour) {
+  ggplot(data, aes(x = time, y = novelty)) +
+    geom_area(fill = accent_colour, alpha = 0.6) +
+    geom_line(colour = accent_colour, linewidth = 0.4) +
+    labs(
+      title    = paste0(track_title, " — Novelty Function"),
+      subtitle = paste0("First 30 seconds | ", era_label),
+      x        = "Time (s)",
+      y        = "Novelty"
+    ) +
+    theme_minimal(base_size = 12) +
+    theme(
+      plot.title       = element_text(face = "bold", size = 13, color = "white"),
+      plot.subtitle    = element_text(size = 10, color = "grey60"),
+      axis.title.x     = element_text(face = "bold", size = 10, color = "white",
+                                      margin = margin(t = 6)),
+      axis.title.y     = element_text(face = "bold", size = 10, color = "white"),
+      axis.text        = element_text(color = "grey70"),
+      panel.grid.minor = element_blank(),
+      panel.grid.major = element_line(colour = "#2E2E32", linewidth = 0.4),
+      panel.background = element_rect(fill = bg, colour = NA),
+      plot.background  = element_rect(fill = bg, colour = NA),
+      plot.margin      = margin(12, 12, 12, 12)
+    )
+}
 
-novelty <- read_delim(
-  "gooddays_novelty.csv",
-  delim = ",",
-  col_names = FALSE,
-  show_col_types = FALSE
-) %>%
-  rename(
-    TIME = X1,
-    VALUE = X2
-  )
+# ── Generate plots ────────────────────────────────────────────────────────────
+plot_yeah     <- make_novelty(yeah_novelty,     "Yeah!",     "1990s R&B", "#FF2D78")
+plot_gooddays <- make_novelty(gooddays_novelty, "Good Days", "2020s R&B", "#C77DFF")
 
-gooddays_novelty <- ggplot(novelty, aes(x = TIME, y = VALUE)) +
-  geom_segment(aes(xend = TIME, yend = 0),
-               linewidth = 0.3,
-               color = "#00D5D5") +
-  labs(
-    title = "Good days — Novelty Function",
-    subtitle = "First 30 seconds",
-    x = "Time (s)",
-    y = "Novelty"
-  ) +
-  theme_minimal(base_size = 11) +
-  theme(
-    plot.background = element_rect(fill = "#0D1B2A", color = NA),
-    panel.background = element_rect(fill = "#0D1B2A"),
-    panel.grid = element_blank(),
-    text = element_text(color = "white"),
-    axis.text = element_text(color = "#C9D1D9"),
-    axis.title = element_text(face = "bold"),
-    plot.title = element_text(color = "#F4A261", face = "bold"),
-    plot.subtitle = element_text(color = "white")
-  )
+plot(plot_yeah)
+plot(plot_gooddays)
 
-plot(yeah_novelty)
-# plot(gooddays_novelty)
+# ── Save ──────────────────────────────────────────────────────────────────────
+ggsave("images/yeah_novelty.png",
+       plot = plot_yeah,     width = 10, height = 4, dpi = 300, bg = bg)
+
+ggsave("images/gooddays_novelty.png",
+       plot = plot_gooddays, width = 10, height = 4, dpi = 300, bg = bg)

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Background – 1990s vs 2020s R&amp;B: Danceable vs Atmospheric Music</title>
+<title>Background &amp; Corpus – 1990s vs 2020s R&amp;B: Danceable vs Atmospheric Music</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -37,10 +37,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-707d8167ce6003fca903bfe2be84ab7f.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-f93c2b1f3f0577f377aefa4848a86a36.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-2ec1ecde4794cf0ca2676fdbadd3167b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -69,6 +69,20 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
+<link href="site_libs/htmltools-fill-0.5.9/fill.css" rel="stylesheet">
+<script src="site_libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+<link href="site_libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet">
+<script src="site_libs/datatables-binding-0.34.0/datatables.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<link href="site_libs/dt-core-1.13.6/css/jquery.dataTables.min.css" rel="stylesheet">
+<link href="site_libs/dt-core-1.13.6/css/jquery.dataTables.extra.css" rel="stylesheet">
+<script src="site_libs/dt-core-1.13.6/js/jquery.dataTables.min.js"></script>
+<link href="site_libs/nouislider-7.0.10/jquery.nouislider.min.css" rel="stylesheet">
+<script src="site_libs/nouislider-7.0.10/jquery.nouislider.min.js"></script>
+<link href="site_libs/selectize-0.12.0/selectize.bootstrap3.css" rel="stylesheet">
+<script src="site_libs/selectize-0.12.0/selectize.min.js"></script>
+<link href="site_libs/crosstalk-1.2.2/css/crosstalk.min.css" rel="stylesheet">
+<script src="site_libs/crosstalk-1.2.2/js/crosstalk.min.js"></script>
 
 
 <link rel="stylesheet" href="styles.css">
@@ -95,15 +109,11 @@ ul.task-list li input[type="checkbox"] {
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
     <a class="nav-link active" href="./index.html" aria-current="page"> 
-<span class="menu-text">Background</span></a>
+<span class="menu-text">Background &amp; Corpus</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./track-level.html"> 
 <span class="menu-text">Track-level Features</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./chroma.html"> 
-<span class="menu-text">Chroma Features</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./timbre.html"> 
@@ -136,7 +146,15 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#s-vs-2020s-rb-danceable-vs-atmospheric-music" id="toc-s-vs-2020s-rb-danceable-vs-atmospheric-music" class="nav-link active" data-scroll-target="#s-vs-2020s-rb-danceable-vs-atmospheric-music">1990s vs 2020s R&amp;B: Danceable vs Atmospheric Music</a></li>
+  <li><a href="#research-question" id="toc-research-question" class="nav-link active" data-scroll-target="#research-question">Research Question</a></li>
+  <li><a href="#the-corpus" id="toc-the-corpus" class="nav-link" data-scroll-target="#the-corpus">The Corpus</a></li>
+  <li><a href="#the-two-playlists" id="toc-the-two-playlists" class="nav-link" data-scroll-target="#the-two-playlists">The Two Playlists</a>
+  <ul class="collapse">
+  <li><a href="#s-rb" id="toc-s-rb" class="nav-link" data-scroll-target="#s-rb">1990s R&amp;B</a></li>
+  <li><a href="#s-rb-1" id="toc-s-rb-1" class="nav-link" data-scroll-target="#s-rb-1">2020s R&amp;B</a></li>
+  </ul></li>
+  <li><a href="#approach" id="toc-approach" class="nav-link" data-scroll-target="#approach">Approach</a></li>
+  <li><a href="#full-corpus-explorer" id="toc-full-corpus-explorer" class="nav-link" data-scroll-target="#full-corpus-explorer">Full Corpus Explorer</a></li>
   </ul>
 </nav>
 </nav>
@@ -149,7 +167,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Background</h1>
+<h1 class="title">Background &amp; Corpus</h1>
 </div>
 
 
@@ -166,17 +184,60 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="s-vs-2020s-rb-danceable-vs-atmospheric-music" class="level2">
-<h2 class="anchored" data-anchor-id="s-vs-2020s-rb-danceable-vs-atmospheric-music">1990s vs 2020s R&amp;B: Danceable vs Atmospheric Music</h2>
-<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/7l4QdeilTbEhnsLK0qw6NG?utm_source=generator" width="100%" height="352" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
+<section id="research-question" class="level2">
+<h2 class="anchored" data-anchor-id="research-question">Research Question</h2>
+<p>Can R&amp;B still make you move, or does it now aim to leave you speechless?</p>
+<p>This project examines how R&amp;B has evolved from the 1990s to the 2020s, not just in sound, but in purpose. It asks whether a genre once defined by groove, rhythm, and dancefloor energy has shifted toward atmosphere, introspection, and personal emotional experience.</p>
+</section>
+<section id="the-corpus" class="level2">
+<h2 class="anchored" data-anchor-id="the-corpus">The Corpus</h2>
+<p>The corpus consists of 50 tracks, with 25 from each era, selected to represent two distinct stylistic poles of R&amp;B.</p>
+<p>The <strong>1990s selection</strong> draws from artists such as Janet Jackson, Aaliyah, Blackstreet, Usher, and Mariah Carey. These tracks were chosen for their strong rhythmic structure, high danceability, and cultural association with social listening environments such as clubs, parties, and collective movement. They represent a period in which R&amp;B was closely tied to the body and the dancefloor, built around groove, energy, and outward emotional expression.</p>
+<p>The <strong>2020s selection</strong> features artists such as SZA, Frank Ocean, Ariana Grande, and Summer Walker. These tracks were selected for their slower tempos, softer production textures, and emphasis on mood and emotional nuance. They represent a contemporary R&amp;B more likely to be experienced in personal, intimate contexts such as late-night drives, quiet evenings, or moments of private reflection.</p>
+</section>
+<section id="the-two-playlists" class="level2">
+<h2 class="anchored" data-anchor-id="the-two-playlists">The Two Playlists</h2>
+<section id="s-rb" class="level3">
+<h3 class="anchored" data-anchor-id="s-rb">1990s R&amp;B</h3>
+<div style="border-left: 4px solid #FF2D78; padding: 0.4rem 1rem; margin-bottom: 1rem;">
+  <span style="color: #FF85B3; font-size: 0.75rem; font-weight: 700; letter-spacing: 0.08em;">
+    25 TRACKS · GROOVE-DRIVEN · DANCEABLE
+  </span>
+</div>
+
+<iframe style="border-radius:12px;" src="https://open.spotify.com/embed/playlist/7l4QdeilTbEhnsLK0qw6NG?utm_source=generator" width="100%" height="500" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
 </iframe>
-<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/6sApajVQgJC2k9KOGHByd2?utm_source=generator" width="100%" height="352" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
+</section>
+<section id="s-rb-1" class="level3">
+<h3 class="anchored" data-anchor-id="s-rb-1">2020s R&amp;B</h3>
+<div style="border-left: 4px solid #C77DFF; padding: 0.4rem 1rem; margin-bottom: 1rem;">
+  <span style="color: #E0AAFF; font-size: 0.75rem; font-weight: 700; letter-spacing: 0.08em;">
+    25 TRACKS · ATMOSPHERIC · INTROSPECTIVE
+  </span>
+</div>
+
+<iframe style="border-radius:12px;" src="https://open.spotify.com/embed/playlist/6sApajVQgJC2k9KOGHByd2?utm_source=generator" width="100%" height="500" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
 </iframe>
-<p>This project explores how R&amp;B has evolved from the 1990s to the 2020s by asking: <em>Can R&amp;B still make you move, or does it now aim to leave you speechless?</em> It compares “danceable” R&amp;B from the 1990s with more “atmospheric” R&amp;B from the 2020s to examine whether the function of the genre has shifted over time.</p>
-<p>The corpus consists of 50 tracks, with 25 songs from each era. The 1990s selection focuses on groove-driven, danceable R&amp;B associated with artists such as Mariah Carey, Janet Jackson, Aaliyah, and Usher. These tracks were chosen for their strong rhythmic structure, clear beats, and popularity in social settings like clubs and parties. In contrast, the 2020s selection includes artists such as SZA, Ariana Grande, Frank Ocean, and Summer Walker, whose music often emphasizes slower tempos, softer textures, and a more atmospheric sound. These tracks were selected to represent contemporary R&amp;B’s focus on mood, introspection, and personal listening contexts, such as late-night driving or listening alone.</p>
-<p>Using Spotify audio features, this dashboard investigates whether these differences can be measured. It asks: Are 1990s R&amp;B tracks more danceable and rhythmically driven than those from the 2020s? Do contemporary tracks show reduced tempo and rhythmic activity? Has harmonic movement become more repetitive? And do timbral features reflect a shift toward softer, more immersive textures?</p>
-<p>To answer these questions, the analysis focuses on temporal features (tempo and rhythm), track-level features (such as danceability and energy), chroma features (harmonic variation), and timbral features (sound texture and density). By comparing these dimensions across both eras, the project aims to determine whether R&amp;B has shifted from music designed for movement to music designed for mood.</p>
-<p>Overall, this study suggests that R&amp;B has not only changed in style, but also in purpose from driving collective movement in social spaces to shaping emotional experience in more personal listening environments.</p>
+</section>
+</section>
+<section id="approach" class="level2">
+<h2 class="anchored" data-anchor-id="approach">Approach</h2>
+<p>Using Spotify’s audio features and audio analysis tools, this dashboard investigates whether the stylistic differences between the two eras can be measured quantitatively. Four analytical dimensions are examined across the pages of this dashboard.</p>
+<p><strong>Track-level features</strong> look at danceability, energy, valence, and loudness to capture the most immediate and measurable qualities of each track.</p>
+<p><strong>Chroma features</strong> examine harmonic content and pitch class profiles to reveal how the tonal character of R&amp;B has shifted across eras.</p>
+<p><strong>Timbral features</strong> analyse sound texture, density, and instrumentation to capture how the sonic palette of the genre has changed.</p>
+<p><strong>Temporal features</strong> focus on tempo, rhythm, and structural patterns to determine whether the rhythmic drive of R&amp;B has weakened over time.</p>
+<p>By comparing these dimensions across both corpora, the project aims to determine whether R&amp;B has shifted from music designed for movement to music designed for mood.</p>
+</section>
+<section id="full-corpus-explorer" class="level2">
+<h2 class="anchored" data-anchor-id="full-corpus-explorer">Full Corpus Explorer</h2>
+<p>The table below contains all 50 tracks with their key Spotify audio features. Use the search box or column filters to explore by era, artist, or feature range.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div class="datatables html-widget html-fill-item" id="htmlwidget-eb5df172d7b3fe5d5e6f" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-eb5df172d7b3fe5d5e6f">{"x":{"filter":"top","vertical":false,"filterHTML":"<tr>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"number\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"display: none;position: absolute;width: 200px;opacity: 1\">\n      <div data-min=\"0.41\" data-max=\"0.87\" data-scale=\"2\"><\/div>\n      <span style=\"float: left;\"><\/span>\n      <span style=\"float: right;\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"number\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"display: none;position: absolute;width: 200px;opacity: 1\">\n      <div data-min=\"0.12\" data-max=\"0.85\" data-scale=\"2\"><\/div>\n      <span style=\"float: left;\"><\/span>\n      <span style=\"float: right;\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"number\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"display: none;position: absolute;width: 200px;opacity: 1\">\n      <div data-min=\"0.09\" data-max=\"0.97\" data-scale=\"2\"><\/div>\n      <span style=\"float: left;\"><\/span>\n      <span style=\"float: right;\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"number\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"display: none;position: absolute;width: 200px;opacity: 1\">\n      <div data-min=\"-14\" data-max=\"-3.5\" data-scale=\"1\"><\/div>\n      <span style=\"float: left;\"><\/span>\n      <span style=\"float: right;\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"number\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"display: none;position: absolute;width: 200px;opacity: 1\">\n      <div data-min=\"63\" data-max=\"172\"><\/div>\n      <span style=\"float: left;\"><\/span>\n      <span style=\"float: right;\"><\/span>\n    <\/div>\n  <\/td>\n<\/tr>","data":[["1990s","1990s","1990s","1990s","1990s","1990s","1990s","1990s","1990s","1990s","1990s","1990s","1990s","1990s","1990s","1990s","1990s","1990s","1990s","1990s","1990s","1990s","1990s","1990s","1990s","2020s","2020s","2020s","2020s","2020s","2020s","2020s","2020s","2020s","2020s","2020s","2020s","2020s","2020s","2020s","2020s","2020s","2020s","2020s","2020s","2020s","2020s","2020s","2020s","2020s"],["That's The Way Love Goes","No Diggity","Are You That Somebody?","Back &amp; Forth","Real Love","Creep","No Scrubs","You Make Me Wanna...","My Way","I Wanna Be Down","The Boy Is Mine","Right Here","Free Your Mind","Only You (feat. The Notorious B.I.G., Ma$e) - Bad Boy Remix","Bump N' Grind","Pony","This Is How We Do It","Poison","Lady","Sumthin' Sumthin' - Remastered 2021","Back To Life","No Ordinary Love","Doo Wop (That Thing)","Say My Name","Fantasy","Good Days","Snooze","Garden (Say It Like Dat)","pov","needy","imagine","Pink + White","Ivy","Call Out My Name","Session 32","Playing Games","Spotless Mind","Heartbreak Anniversary","Focus","Damage","Best Part (feat. H.E.R.)","Trust","PRBLMS","I Want You Around","After The Storm (feat. Tyler, The Creator &amp; Bootsy Collins)","cellophane","Break from Toronto","Dark Red","Hurt","Moment"],["Janet Jackson","Blackstreet;Dr. Dre;Queen Pen","Aaliyah","Aaliyah","Mary J. Blige","TLC","TLC","USHER","USHER","Brandy","Brandy;Monica","SWV","En Vogue","112;The Notorious B.I.G.;Ma$e","R. Kelly","Ginuwine","Montell Jordan","Bell Biv DeVoe","D'Angelo","Maxwell","Soul II Soul;Caron Wheeler","Sade","Ms. Lauryn Hill","Destiny's Child","Mariah Carey","SZA","SZA","SZA","Ariana Grande","Ariana Grande","Ariana Grande","Frank Ocean","Frank Ocean","The Weeknd","Summer Walker","Summer Walker","Jhené Aiko","GIVĒON","H.E.R.","H.E.R.","Daniel Caesar;H.E.R.","Brent Faiyaz","6LACK","Snoh Aalegra","Kali Uchis;Tyler, The Creator;Bootsy Collins","FKA twigs","PARTYNEXTDOOR","Steve Lacy","Arlo Parks","Victoria Monét"],[0.7,0.87,0.85,0.71,0.77,0.8100000000000001,0.74,0.76,0.8100000000000001,0.7,0.7,0.7,0.76,0.76,0.61,0.75,0.79,0.8100000000000001,0.8100000000000001,0.8,0.82,0.63,0.54,0.71,0.67,0.46,0.5600000000000001,0.73,0.49,0.65,0.73,0.54,0.58,0.46,0.57,0.76,0.44,0.62,0.41,0.65,0.52,0.76,0.42,0.7,0.7,0.43,0.6,0.6,0.65,0.57],[0.7,0.65,0.66,0.73,0.78,0.46,0.68,0.64,0.52,0.47,0.71,0.85,0.83,0.52,0.62,0.6,0.7,0.59,0.36,0.54,0.48,0.36,0.5,0.68,0.73,0.65,0.55,0.46,0.53,0.31,0.48,0.54,0.39,0.59,0.12,0.41,0.46,0.46,0.31,0.7,0.36,0.39,0.58,0.43,0.66,0.28,0.68,0.78,0.36,0.43],[0.58,0.67,0.84,0.9,0.83,0.8,0.59,0.92,0.89,0.66,0.76,0.67,0.8100000000000001,0.79,0.66,0.97,0.79,0.75,0.72,0.86,0.67,0.7,0.5,0.73,0.8100000000000001,0.38,0.39,0.55,0.17,0.2,0.37,0.55,0.47,0.17,0.12,0.4,0.34,0.59,0.09,0.18,0.44,0.47,0.14,0.6,0.84,0.23,0.26,0.77,0.72,0.36],[-6.8,-4.7,-7.1,-8.1,-5.5,-9.699999999999999,-4.3,-7.6,-8.199999999999999,-6.5,-6.5,-9.5,-6.5,-6,-5.3,-9.4,-7.3,-10.2,-11.8,-9.4,-11.7,-12.3,-8.9,-3.5,-7.6,-8.800000000000001,-7.2,-7.3,-5.7,-7.9,-5,-7.4,-9.6,-5,-14,-7.3,-8.800000000000001,-8.9,-12.9,-6.5,-10.2,-8.6,-4.6,-9.699999999999999,-6.8,-11.9,-5.2,-4,-9.5,-8.9],[98,89,138,93,95,93,93,164,90,86,93,105,100,96,65,142,104,112,85,98,101,166,100,138,102,121,143,111,132,87,63,160,116,134,115,116,83,130,85,81,75,92,69,168,80,98,117,172,95,130]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Era<\/th>\n      <th>Track Name<\/th>\n      <th>Artist Name(s)<\/th>\n      <th>Danceability<\/th>\n      <th>Energy<\/th>\n      <th>Valence<\/th>\n      <th>Loudness<\/th>\n      <th>Tempo<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":15,"dom":"ftp","initComplete":"\n      function(settings, json) {\n        $(this.api().table().container()).css({\n          'background-color': '#0E0A1A',\n          'color': '#FFFFFF'\n        });\n      }\n    ","columnDefs":[{"className":"dt-right","targets":[3,4,5,6,7]},{"name":"Era","targets":0},{"name":"Track Name","targets":1},{"name":"Artist Name(s)","targets":2},{"name":"Danceability","targets":3},{"name":"Energy","targets":4},{"name":"Valence","targets":5},{"name":"Loudness","targets":6},{"name":"Tempo","targets":7}],"order":[],"autoWidth":false,"orderClasses":false,"orderCellsTop":true,"lengthMenu":[10,15,25,50,100],"rowCallback":"function(row, data, displayNum, displayIndex, dataIndex) {\nvar value=data[0]; $(this.api().cell(row, 0).node()).css({'color':'#FFFFFF','background-color':'#160D2A'});\nvar value=data[1]; $(this.api().cell(row, 1).node()).css({'color':'#FFFFFF','background-color':'#160D2A'});\nvar value=data[2]; $(this.api().cell(row, 2).node()).css({'color':'#FFFFFF','background-color':'#160D2A'});\nvar value=data[3]; $(this.api().cell(row, 3).node()).css({'color':'#FFFFFF','background-color':'#160D2A'});\nvar value=data[4]; $(this.api().cell(row, 4).node()).css({'color':'#FFFFFF','background-color':'#160D2A'});\nvar value=data[5]; $(this.api().cell(row, 5).node()).css({'color':'#FFFFFF','background-color':'#160D2A'});\nvar value=data[6]; $(this.api().cell(row, 6).node()).css({'color':'#FFFFFF','background-color':'#160D2A'});\nvar value=data[7]; $(this.api().cell(row, 7).node()).css({'color':'#FFFFFF','background-color':'#160D2A'});\nvar value=data[0]; $(this.api().cell(row, 0).node()).css({'font-weight':'bold','color':value == \"1990s\" ? \"#FF2D78\" : value == \"2020s\" ? \"#C77DFF\" : null});\n}"}},"evals":["options.initComplete","options.rowCallback"],"jsHooks":[]}</script>
+</div>
+</div>
 
 
 </section>

@@ -1,32 +1,24 @@
-# ==========================================
-# 1. HERSTEL & BIBLIOTHEKEN
-# ==========================================
-dev.off() # Reset de grafische motor om 'invalid graphics state' te fixen
 library(tidyverse)
 library(tidymodels)
 library(ggdendro)
-library(viridis)
-# ==========================================
-# 2. DATA INLADEN (Zorg dat de bestandsnamen kloppen!)
-# ==========================================
-# We dwingen Release Date naar 'character' om de combine-error te voorkomen
-data_90s <- read_csv("1990s.csv") %>% 
+
+bg <- "#0E0A1A"
+
+# ── Load data ─────────────────────────────────────────────────────────────────
+data_90s <- read_csv("1990s.csv") %>%
   mutate(era = "1990s", `Release Date` = as.character(`Release Date`))
 
-data_20s <- read_csv("2020s.csv") %>% 
+data_20s <- read_csv("2020s.csv") %>%
   mutate(era = "2020s", `Release Date` = as.character(`Release Date`))
 
-# Samenvoegen tot één corpus
 rb_corpus <- bind_rows(data_90s, data_20s) %>%
   drop_na(Danceability, Energy, Valence, Tempo) %>%
   mutate(`Track Name` = str_trunc(`Track Name`, 30))
 
-# ==========================================
-# 3. PRE-PROCESSING (RECIPE & JUICE)
-# ==========================================
-rb_recipe <- recipe(`Track Name` ~ Danceability + Energy + Loudness + 
-                      Speechiness + Acousticness + Instrumentalness + 
-                      Liveness + Valence + Tempo, 
+# ── Pre-processing ────────────────────────────────────────────────────────────
+rb_recipe <- recipe(`Track Name` ~ Danceability + Energy + Loudness +
+                      Speechiness + Acousticness + Instrumentalness +
+                      Liveness + Valence + Tempo,
                     data = rb_corpus) %>%
   step_center(all_predictors()) %>%
   step_scale(all_predictors()) %>%
@@ -35,39 +27,91 @@ rb_recipe <- recipe(`Track Name` ~ Danceability + Energy + Loudness +
 rb_juice <- juice(rb_recipe) %>%
   column_to_rownames("Track Name")
 
-# Maak de matrix voor de heatmap
 rb_matrix <- as.matrix(rb_juice)
 
-# ==========================================
-# 4. CLUSTERING BEREKENEN
-# ==========================================
-rb_dist <- dist(rb_juice, method = "euclidean")
+# ── Clustering ────────────────────────────────────────────────────────────────
+rb_dist  <- dist(rb_juice, method = "euclidean")
 rb_clust <- hclust(rb_dist, method = "ward.D2")
 
-# ==========================================
-# 5. DE PLOTS (Kijk rechtsonder bij 'Plots')
-# ==========================================
+# ── Dendrogram with ggdendro ──────────────────────────────────────────────────
+dend_data <- dendro_data(rb_clust, type = "rectangle")
 
-# PLOT 1: HET DENDROGRAM (De Boom)
-# We zetten 'sub = ""' om de tekst onderaan (rb_dist etc.) te verwijderen
-# We zetten 'xlab = ""' om ook de as-naam weg te halen voor een cleaner resultaat
-plot(rb_clust, 
-     hang = -1, 
-     cex = 0.6, 
-     sub = "", 
-     xlab = "", 
-     main = "Dendrogram: R&B 90s (Movement) vs 2020s (Mood)")
+# Add era colour to labels
+label_df <- dend_data$labels %>%
+  mutate(era = case_when(
+    label %in% str_trunc(data_90s$`Track Name`, 30) ~ "1990s",
+    TRUE ~ "2020s"
+  ))
 
-# --- PLOT 2: PLOTTEN IN DE GEWENSTE KLEUREN ---
-# We herstellen de marges om 'figure margins too large' errors te voorkomen
-# Zorg er ook voor dat je plot-venster in RStudio groot genoeg is!
-par(mar=c(1,1,1,1))
+dendrogram_plot <- ggplot() +
+  geom_segment(data = dend_data$segments,
+               aes(x = x, y = y, xend = xend, yend = yend),
+               colour = "grey50", linewidth = 0.4) +
+  geom_text(data = label_df,
+            aes(x = x, y = y - 0.3, label = label, colour = era),
+            angle = 90, hjust = 1, size = 2.5) +
+  scale_colour_manual(values = c("1990s" = "#FF2D78", "2020s" = "#C77DFF"),
+                      name = NULL) +
+  labs(
+    title    = "Hierarchical Clustering of R&B Tracks",
+    subtitle = "Clustered by audio features using Ward linkage"
+  ) +
+  theme_minimal(base_size = 11) +
+  theme(
+    plot.title       = element_text(face = "bold", size = 13, color = "white"),
+    plot.subtitle    = element_text(size = 10, color = "grey60"),
+    axis.text        = element_blank(),
+    axis.title       = element_blank(),
+    axis.ticks       = element_blank(),
+    panel.grid       = element_blank(),
+    legend.text      = element_text(color = "white"),
+    legend.position  = "bottom",
+    panel.background = element_rect(fill = bg, colour = NA),
+    plot.background  = element_rect(fill = bg, colour = NA),
+    plot.margin      = margin(12, 12, 40, 12)
+  )
 
-heatmap(rb_matrix, 
-        Colv = NA,                      # Kenmerken niet clusteren, alleen nummers
-        col = viridis(256),             # HIER ZETTEN WE HET KLEURENSCHEMA OP VIRIDIS
-        scale = "column",                # Normalisatie per kenmerk
-        main = "R&B Feature Heatmap: Movement vs Mood",
-        cexRow = 0.6, cexCol = 0.8)     # Lettergrootte aanpassen voor leesbaarheid
+plot(dendrogram_plot)
 
+# ── Heatmap with ggplot2 ──────────────────────────────────────────────────────
+heatmap_df <- as.data.frame(rb_matrix) %>%
+  rownames_to_column("Track") %>%
+  pivot_longer(cols = -Track, names_to = "Feature", values_to = "Value") %>%
+  mutate(era = case_when(
+    Track %in% str_trunc(data_90s$`Track Name`, 30) ~ "1990s",
+    TRUE ~ "2020s"
+  ))
 
+heatmap_plot <- ggplot(heatmap_df, aes(x = Feature, y = Track, fill = Value)) +
+  geom_tile() +
+  scale_fill_viridis_c(option = "magma", name = "Value") +
+  facet_grid(era ~ ., scales = "free_y", space = "free_y") +
+  labs(
+    title    = "Audio Feature Heatmap",
+    subtitle = "Normalised feature values by track and era",
+    x        = NULL,
+    y        = NULL
+  ) +
+  theme_minimal(base_size = 10) +
+  theme(
+    plot.title       = element_text(face = "bold", size = 13, color = "white"),
+    plot.subtitle    = element_text(size = 10, color = "grey60"),
+    axis.text.x      = element_text(color = "grey70", angle = 30, hjust = 1),
+    axis.text.y      = element_text(color = "grey70", size = 7),
+    strip.text       = element_text(color = "white", face = "bold"),
+    legend.text      = element_text(color = "grey70"),
+    legend.title     = element_text(color = "white"),
+    panel.grid       = element_blank(),
+    panel.background = element_rect(fill = bg, colour = NA),
+    plot.background  = element_rect(fill = bg, colour = NA),
+    plot.margin      = margin(12, 12, 12, 12)
+  )
+
+plot(heatmap_plot)
+
+# ── Save ──────────────────────────────────────────────────────────────────────
+ggsave("images/dendrogram.png",
+       plot = dendrogram_plot, width = 12, height = 7, dpi = 300, bg = bg)
+
+ggsave("images/heatmap.png",
+       plot = heatmap_plot,    width = 10, height = 10, dpi = 300, bg = bg)

@@ -1,20 +1,125 @@
 ---
-title: "Background"
+title: "Background & Corpus"
 ---
 
-## 1990s vs 2020s R&B: Danceable vs Atmospheric Music
+## Research Question
+
+Can R&B still make you move, or does it now aim to leave you speechless?
+
+This project examines how R&B has evolved from the 1990s to the 2020s, not just in sound, but in purpose. It asks whether a genre once defined by groove, rhythm, and dancefloor energy has shifted toward atmosphere, introspection, and personal emotional experience.
+
+## The Corpus
+
+The corpus consists of 50 tracks, with 25 from each era, selected to represent two distinct stylistic poles of R&B.
+
+The **1990s selection** draws from artists such as Janet Jackson, Aaliyah, Blackstreet, Usher, and Mariah Carey. These tracks were chosen for their strong rhythmic structure, high danceability, and cultural association with social listening environments such as clubs, parties, and collective movement. They represent a period in which R&B was closely tied to the body and the dancefloor, built around groove, energy, and outward emotional expression.
+
+The **2020s selection** features artists such as SZA, Frank Ocean, Ariana Grande, and Summer Walker. These tracks were selected for their slower tempos, softer production textures, and emphasis on mood and emotional nuance. They represent a contemporary R&B more likely to be experienced in personal, intimate contexts such as late-night drives, quiet evenings, or moments of private reflection.
+
+## The Two Playlists
+
+### 1990s R&B
 
 ```{=html}
-<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/7l4QdeilTbEhnsLK0qw6NG?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+<div style="border-left: 4px solid #FF2D78; padding: 0.4rem 1rem; margin-bottom: 1rem;">
+  <span style="color: #FF85B3; font-size: 0.75rem; font-weight: 700; letter-spacing: 0.08em;">
+    25 TRACKS · GROOVE-DRIVEN · DANCEABLE
+  </span>
+</div>
 
-<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/6sApajVQgJC2k9KOGHByd2?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+<iframe style="border-radius:12px;"
+  src="https://open.spotify.com/embed/playlist/7l4QdeilTbEhnsLK0qw6NG?utm_source=generator"
+  width="100%" height="500" frameBorder="0"
+  allowfullscreen=""
+  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+  loading="lazy">
+</iframe>
+```
 
-This project explores how R&B has evolved from the 1990s to the 2020s by asking: *Can R&B still make you move, or does it now aim to leave you speechless?* It compares “danceable” R&B from the 1990s with more “atmospheric” R&B from the 2020s to examine whether the function of the genre has shifted over time.
+### 2020s R&B
 
-The corpus consists of 50 tracks, with 25 songs from each era. The 1990s selection focuses on groove-driven, danceable R&B associated with artists such as Mariah Carey, Janet Jackson, Aaliyah, and Usher. These tracks were chosen for their strong rhythmic structure, clear beats, and popularity in social settings like clubs and parties. In contrast, the 2020s selection includes artists such as SZA, Ariana Grande, Frank Ocean, and Summer Walker, whose music often emphasizes slower tempos, softer textures, and a more atmospheric sound. These tracks were selected to represent contemporary R&B’s focus on mood, introspection, and personal listening contexts, such as late-night driving or listening alone.
+```{=html}
+<div style="border-left: 4px solid #C77DFF; padding: 0.4rem 1rem; margin-bottom: 1rem;">
+  <span style="color: #E0AAFF; font-size: 0.75rem; font-weight: 700; letter-spacing: 0.08em;">
+    25 TRACKS · ATMOSPHERIC · INTROSPECTIVE
+  </span>
+</div>
 
-Using Spotify audio features, this dashboard investigates whether these differences can be measured. It asks: Are 1990s R&B tracks more danceable and rhythmically driven than those from the 2020s? Do contemporary tracks show reduced tempo and rhythmic activity? Has harmonic movement become more repetitive? And do timbral features reflect a shift toward softer, more immersive textures?
+<iframe style="border-radius:12px;"
+  src="https://open.spotify.com/embed/playlist/6sApajVQgJC2k9KOGHByd2?utm_source=generator"
+  width="100%" height="500" frameBorder="0"
+  allowfullscreen=""
+  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+  loading="lazy">
+</iframe>
+```
 
-To answer these questions, the analysis focuses on temporal features (tempo and rhythm), track-level features (such as danceability and energy), chroma features (harmonic variation), and timbral features (sound texture and density). By comparing these dimensions across both eras, the project aims to determine whether R&B has shifted from music designed for movement to music designed for mood.
+## Approach
 
-Overall, this study suggests that R&B has not only changed in style, but also in purpose from driving collective movement in social spaces to shaping emotional experience in more personal listening environments.
+Using Spotify's audio features and audio analysis tools, this dashboard investigates whether the stylistic differences between the two eras can be measured quantitatively. Four analytical dimensions are examined across the pages of this dashboard.
+
+**Track-level features** look at danceability, energy, valence, and loudness to capture the most immediate and measurable qualities of each track.
+
+**Chroma features** examine harmonic content and pitch class profiles to reveal how the tonal character of R&B has shifted across eras.
+
+**Timbral features** analyse sound texture, density, and instrumentation to capture how the sonic palette of the genre has changed.
+
+**Temporal features** focus on tempo, rhythm, and structural patterns to determine whether the rhythmic drive of R&B has weakened over time.
+
+By comparing these dimensions across both corpora, the project aims to determine whether R&B has shifted from music designed for movement to music designed for mood.
+
+## Full Corpus Explorer
+
+The table below contains all 50 tracks with their key Spotify audio features. Use the search box or column filters to explore by era, artist, or feature range.
+
+```{r}
+#| echo: false
+#| message: false
+library(tidyverse)
+library(DT)
+
+rnb_90s <- read_csv("1990s.csv", show_col_types = FALSE) %>%
+  mutate(`Release Date` = as.character(`Release Date`), Era = "1990s")
+
+rnb_2020s <- read_csv("2020s.csv", show_col_types = FALSE) %>%
+  mutate(`Release Date` = as.character(`Release Date`), Era = "2020s")
+
+rnb_tracks <- bind_rows(rnb_90s, rnb_2020s) %>%
+  select(Era, `Track Name`, `Artist Name(s)`, Danceability,
+         Energy, Valence, Loudness, Tempo) %>%
+  mutate(
+    across(c(Danceability, Energy, Valence), ~round(as.numeric(.), 2)),
+    Loudness = round(as.numeric(Loudness), 1),
+    Tempo    = round(as.numeric(Tempo), 0)
+  )
+
+datatable(
+  rnb_tracks,
+  rownames = FALSE,
+  filter   = "top",
+  options  = list(
+    pageLength = 15,
+    dom        = "ftp",
+    initComplete = JS("
+      function(settings, json) {
+        $(this.api().table().container()).css({
+          'background-color': '#0E0A1A',
+          'color': '#FFFFFF'
+        });
+      }
+    ")
+  ),
+  class = "display"
+) %>%
+  formatStyle(
+    columns         = names(rnb_tracks),
+    color           = "#FFFFFF",
+    backgroundColor = "#160D2A"
+  ) %>%
+  formatStyle(
+    "Era",
+    color      = styleEqual(c("1990s", "2020s"), c("#FF2D78", "#C77DFF")),
+    fontWeight = "bold"
+  )
+```
+

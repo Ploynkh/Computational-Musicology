@@ -37,10 +37,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-707d8167ce6003fca903bfe2be84ab7f.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-f93c2b1f3f0577f377aefa4848a86a36.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-2ec1ecde4794cf0ca2676fdbadd3167b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -95,15 +95,11 @@ ul.task-list li input[type="checkbox"] {
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
     <a class="nav-link" href="./index.html"> 
-<span class="menu-text">Background</span></a>
+<span class="menu-text">Background &amp; Corpus</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./track-level.html"> 
 <span class="menu-text">Track-level Features</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./chroma.html"> 
-<span class="menu-text">Chroma Features</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./timbre.html"> 
@@ -136,17 +132,15 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#analytical-workflow" id="toc-analytical-workflow" class="nav-link active" data-scroll-target="#analytical-workflow">Analytical Workflow</a></li>
-  <li><a href="#hierarchical-clustering" id="toc-hierarchical-clustering" class="nav-link" data-scroll-target="#hierarchical-clustering">Hierarchical Clustering</a></li>
+  <li><a href="#analytical-approach" id="toc-analytical-approach" class="nav-link active" data-scroll-target="#analytical-approach">Analytical Approach</a></li>
+  <li><a href="#hierarchical-clustering" id="toc-hierarchical-clustering" class="nav-link" data-scroll-target="#hierarchical-clustering">Hierarchical Clustering</a>
+  <ul class="collapse">
   <li><a href="#dendrogram" id="toc-dendrogram" class="nav-link" data-scroll-target="#dendrogram">Dendrogram</a></li>
   <li><a href="#heatmap" id="toc-heatmap" class="nav-link" data-scroll-target="#heatmap">Heatmap</a></li>
-  <li><a href="#spectrogram-comparison" id="toc-spectrogram-comparison" class="nav-link" data-scroll-target="#spectrogram-comparison">Spectrogram Comparison</a>
-  <ul class="collapse">
-  <li><a href="#no-diggity-1990s" id="toc-no-diggity-1990s" class="nav-link" data-scroll-target="#no-diggity-1990s">No Diggity (1990s)</a></li>
-  <li><a href="#cellophane-2020s" id="toc-cellophane-2020s" class="nav-link" data-scroll-target="#cellophane-2020s">Cellophane (2020s)</a></li>
   </ul></li>
-  <li><a href="#interpretation" id="toc-interpretation" class="nav-link" data-scroll-target="#interpretation">Interpretation</a></li>
-  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
+  <li><a href="#spectrogram-comparison" id="toc-spectrogram-comparison" class="nav-link" data-scroll-target="#spectrogram-comparison">Spectrogram Comparison</a></li>
+  <li><a href="#classification-can-audio-features-predict-era" id="toc-classification-can-audio-features-predict-era" class="nav-link" data-scroll-target="#classification-can-audio-features-predict-era">Classification: Can Audio Features Predict Era?</a></li>
+  <li><a href="#key-findings" id="toc-key-findings" class="nav-link" data-scroll-target="#key-findings">Key Findings</a></li>
   </ul>
 </nav>
 </nav>
@@ -176,62 +170,57 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>This section examines how R&amp;B has changed from the 1990s to the 2020s using both statistical clustering and audio analysis. The goal is to see whether differences between “movement” and “mood” can be observed in both data and sound.</p>
-<section id="analytical-workflow" class="level2">
-<h2 class="anchored" data-anchor-id="analytical-workflow">Analytical Workflow</h2>
-<p>The analysis combines Spotify audio features with direct audio processing.</p>
-<p>First, playlists of 1990s and 2020s R&amp;B tracks were collected. For each track, Spotify features such as <strong>danceability</strong>, <strong>energy</strong>, <strong>loudness</strong>, <strong>acousticness</strong>, <strong>valence</strong>, and <strong>tempo</strong> were used. These features were then used to perform hierarchical clustering.</p>
-<p>In addition, two representative tracks were selected: <em>No Diggity</em> (1990s) and <em>Cellophane</em> (2020s). These tracks were used to link the statistical results to the actual sound of the music.</p>
-<p>The audio files were first obtained as <strong>MP3</strong> and then converted to <strong>WAV</strong> format to preserve sound quality. Short excerpts were edited in <strong>Audacity</strong> to focus on comparable sections. These excerpts were then analyzed in <strong>Sonic Visualiser</strong>, where spectrograms were used to examine frequency content and rhythmic structure.</p>
-<p>This combined approach makes it possible to connect numerical features to audible differences.</p>
+<p>This section examines how R&amp;B has changed from the 1990s to the 2020s using hierarchical clustering and audio analysis. The goal is to determine whether differences between movement-oriented and mood-oriented music can be observed in the data and confirmed through direct sound analysis.</p>
+<section id="analytical-approach" class="level2">
+<h2 class="anchored" data-anchor-id="analytical-approach">Analytical Approach</h2>
+<p>The analysis combines Spotify audio features with direct audio processing. For each track, features including danceability, energy, loudness, acousticness, valence, and tempo were used to perform hierarchical clustering. All features were standardised before clustering to ensure that no single variable dominates due to scale differences.</p>
+<p>In addition, two representative tracks were selected for spectrogram analysis: <em>No Diggity</em> by Blackstreet (1990s) and <em>Cellophane</em> by FKA Twigs (2020s). These tracks were used to connect the statistical clustering results to audible differences in the music.</p>
 </section>
 <section id="hierarchical-clustering" class="level2">
 <h2 class="anchored" data-anchor-id="hierarchical-clustering">Hierarchical Clustering</h2>
-<p>Hierarchical clustering groups songs based on similarity in their audio features. Instead of assigning songs to fixed categories, this method shows how tracks are gradually related to each other.</p>
-<p>The aim is to see whether songs from the 1990s and 2020s naturally form separate clusters. If they do, this suggests that the musical style of R&amp;B has changed over time.</p>
+<p>Hierarchical clustering groups tracks based on similarity in their audio features. Rather than assigning songs to fixed categories, this method reveals how tracks are gradually related to each other producing a tree structure in which closely related tracks branch off at lower heights and more distant groupings merge at higher heights.</p>
+<p>The aim is to examine whether tracks from the 1990s and 2020s naturally form separate clusters. If they do, this provides evidence that the musical style of R&amp;B has shifted systematically over time.</p>
+<section id="dendrogram" class="level3">
+<h3 class="anchored" data-anchor-id="dendrogram">Dendrogram</h3>
+<p>The dendrogram visualises how tracks are grouped based on feature similarity. Track labels are coloured by era pink for 1990s tracks and purple for 2020s tracks making it possible to see at a glance whether the two eras separate into distinct branches.</p>
+<p><img src="images/dendrogram.png" class="img-fluid"></p>
+<p>The results show a general separation between 1990s and 2020s tracks. Many 1990s songs cluster together due to higher energy, danceability, and loudness, while many 2020s tracks group around higher acousticness and a more atmospheric sonic profile. This suggests that the two eras occupy meaningfully different regions of the feature space.</p>
 </section>
-<section id="dendrogram" class="level2">
-<h2 class="anchored" data-anchor-id="dendrogram">Dendrogram</h2>
-<p>The dendrogram shows how songs are grouped based on similarity. The vertical axis (<em>Height</em>) represents the distance between clusters.</p>
-<p>The results show a general separation between 1990s and 2020s tracks. Many 1990s songs cluster together due to higher <strong>energy</strong>, <strong>danceability</strong>, and <strong>loudness</strong>. In contrast, many 2020s tracks are grouped around higher <strong>acousticness</strong> and a more atmospheric sound.</p>
-<p>This suggests that 1990s R&amp;B is more focused on rhythm and movement, while 2020s R&amp;B is more focused on mood and texture.</p>
-<p><a href="Dendrogram.png"><img src="Dendrogram.png" class="img-fluid" style="width:85.0%"></a></p>
+<section id="heatmap" class="level3">
+<h3 class="anchored" data-anchor-id="heatmap">Heatmap</h3>
+<p>The heatmap displays the normalised audio feature values for each track. Each row represents a song and each column represents a feature, with warmer colours indicating higher values.</p>
+<p><img src="images/heatmap.png" class="img-fluid"></p>
+<p>The 1990s tracks generally show higher values for energy and danceability, supporting the idea that this era of R&amp;B is more rhythm-driven. In contrast, 2020s tracks show higher acousticness and more variation in valence, indicating a shift toward emotional expression and atmosphere. The heatmap helps explain why the clusters in the dendrogram form as they do.</p>
 </section>
-<section id="heatmap" class="level2">
-<h2 class="anchored" data-anchor-id="heatmap">Heatmap</h2>
-<p>The heatmap shows the values of the audio features for each track. Each row represents a song, and each column represents a feature.</p>
-<p>The 1990s tracks generally show higher values for <strong>energy</strong> and <strong>danceability</strong>. This supports the idea that this era of R&amp;B is more rhythm-driven.</p>
-<p>In contrast, 2020s tracks show higher <strong>acousticness</strong> and more variation in <strong>valence</strong>. This indicates a shift toward emotional expression and atmosphere.</p>
-<p>The heatmap helps explain why the clusters in the dendrogram are formed.</p>
-<p><a href="Heatmap.png"><img src="Heatmap.png" class="img-fluid" style="width:85.0%"></a></p>
 </section>
 <section id="spectrogram-comparison" class="level2">
 <h2 class="anchored" data-anchor-id="spectrogram-comparison">Spectrogram Comparison</h2>
-<p>To connect the clustering results to actual sound, two representative tracks were analyzed using spectrograms.</p>
-<section id="no-diggity-1990s" class="level3">
-<h3 class="anchored" data-anchor-id="no-diggity-1990s">No Diggity (1990s)</h3>
-<p>The spectrogram of <em>No Diggity</em> shows strong vertical lines, which represent clear rhythmic hits. The pattern is dense and consistent, reflecting a steady groove.</p>
-<p>This supports the idea that 1990s R&amp;B is built around rhythm and movement.</p>
-<p><a href="Spectogram_Nodiggity.png"><img src="Spectogram_Nodiggity.png" class="img-fluid" style="width:55.0%"></a></p>
+<p>To connect the clustering results to actual sound, two representative tracks were analysed using spectrograms in Sonic Visualiser. Spectrograms display the frequency content of audio over time, making it possible to observe rhythmic density, timbral texture, and structural patterns directly from the sound.</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">No Diggity (1990s)</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">Cellophane (2020s)</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<p><img src="images/Spectogram_Nodiggity.png" class="img-fluid"></p>
+<p>The spectrogram of <em>No Diggity</em> shows strong vertical lines representing clear rhythmic hits. The pattern is dense and consistent throughout the excerpt, reflecting a steady groove and strong rhythmic articulation. This supports the clustering result that 1990s R&amp;B is built around rhythm and movement.</p>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<p><img src="images/Spectogram_Cellophane.png" class="img-fluid"></p>
+<p>The spectrogram of <em>Cellophane</em> is more spread out and less dense. There are fewer strong rhythmic patterns and more sustained, continuous frequency content. This reflects a more atmospheric and emotionally oriented style, consistent with the higher acousticness and lower danceability values observed in the clustering analysis.</p>
+</div>
+</div>
+</div>
 </section>
-<section id="cellophane-2020s" class="level3">
-<h3 class="anchored" data-anchor-id="cellophane-2020s">Cellophane (2020s)</h3>
-<p>The spectrogram of <em>Cellophane</em> is more spread out and less dense. There are fewer strong rhythmic patterns and more sustained sounds.</p>
-<p>This reflects a more atmospheric and emotional style, which is typical of modern R&amp;B.</p>
-<p><a href="Spectogram_Cellophane.png"><img src="Spectogram_Cellophane.png" class="img-fluid" style="width:55.0%"></a></p>
+<section id="classification-can-audio-features-predict-era" class="level2">
+<h2 class="anchored" data-anchor-id="classification-can-audio-features-predict-era">Classification: Can Audio Features Predict Era?</h2>
+<p>To test whether the differences between the two eras are strong enough to support classification, a k-nearest neighbours (kNN) classifier was trained to predict era, 1990s or 2020s, from audio features alone. The model was evaluated using 5-fold cross-validation to ensure the results are not specific to a single train-test split.</p>
+<p>If the classifier performs well above chance (50%), it provides direct quantitative evidence that the two eras are genuinely separable by their Spotify audio features.</p>
+<p><img src="images/confusion_matrix.png" class="img-fluid"></p>
+<p>The confusion matrix shows how often the model correctly predicted each era. Correct predictions appear along the diagonal. High accuracy on both classes would confirm that 1990s and 2020s R&amp;B occupy distinct regions of the audio feature space supporting the central claim of this project.</p>
 </section>
-</section>
-<section id="interpretation" class="level2">
-<h2 class="anchored" data-anchor-id="interpretation">Interpretation</h2>
-<p>The results from clustering and audio analysis point in the same direction.</p>
-<p>1990s R&amp;B is generally characterized by higher energy, stronger rhythm, and greater danceability. In contrast, 2020s R&amp;B places more emphasis on acoustic elements, space, and emotional variation.</p>
-<p>The spectrograms support this pattern by showing clearer rhythmic structure in the 1990s track and a more open, atmospheric structure in the 2020s track.</p>
-<p>Overall, the findings suggest that R&amp;B has shifted from a movement-focused style to a mood-focused style.</p>
-</section>
-<section id="conclusion" class="level2">
-<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
-<p>The clustering analysis shows that many 1990s and 2020s tracks group differently based on their audio features. The heatmap explains these differences, and the spectrograms confirm them at the level of sound.</p>
-<p>Together, these results suggest that R&amp;B has evolved over time. While 1990s R&amp;B is more focused on rhythm and dance, modern R&amp;B emphasizes mood, texture, and emotional expression.</p>
+<section id="key-findings" class="level2">
+<h2 class="anchored" data-anchor-id="key-findings">Key Findings</h2>
+<p>The clustering analysis and spectrogram comparison point in the same direction. At the feature level, 1990s R&amp;B is characterised by higher energy, stronger rhythm, and greater danceability, while 2020s R&amp;B places more emphasis on acoustic elements, space, and emotional variation. At the audio level, these differences are confirmed by the spectrograms, which show a clear contrast between the dense rhythmic structure of <em>No Diggity</em> and the more open, sustained texture of <em>Cellophane</em>.</p>
+<p>Taken together, the results provide convergent evidence that R&amp;B has shifted from a movement-focused style toward a mood-focused one, a pattern that is consistent across the statistical, visual, and acoustic dimensions of this analysis.</p>
 
 
 </section>
