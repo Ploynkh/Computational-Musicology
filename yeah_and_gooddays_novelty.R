@@ -16,6 +16,7 @@ make_novelty <- function(data, track_title, era_label, accent_colour) {
   ggplot(data, aes(x = time, y = novelty)) +
     geom_area(fill = accent_colour, alpha = 0.6) +
     geom_line(colour = accent_colour, linewidth = 0.4) +
+    coord_cartesian(xlim = c(0, 30)) +        # ← add this
     labs(
       title    = paste0(track_title, " — Novelty Function"),
       subtitle = paste0("First 30 seconds | ", era_label),
@@ -37,7 +38,6 @@ make_novelty <- function(data, track_title, era_label, accent_colour) {
       plot.margin      = margin(12, 12, 12, 12)
     )
 }
-
 # ── Generate plots ────────────────────────────────────────────────────────────
 plot_yeah     <- make_novelty(yeah_novelty,     "Yeah!",     "1990s R&B", "#FF2D78")
 plot_gooddays <- make_novelty(gooddays_novelty, "Good Days", "2020s R&B", "#C77DFF")

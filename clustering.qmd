@@ -58,24 +58,16 @@ The spectrogram of *Cellophane* presents a noticeably different picture. The pat
 
 ## Classification: Can Audio Features Predict Era?
 
-To test whether the differences between the two eras are strong enough to support
-classification, a k-nearest neighbours (kNN) classifier was trained to predict
-era, 1990s or 2020s, from audio features alone. The model was evaluated using
-5-fold cross-validation to ensure the results are not specific to a single
-train-test split.
-
-If the classifier performs well above chance (50%), it provides direct quantitative
-evidence that the two eras are genuinely separable by their Spotify audio features.
+To test whether the differences between the two eras are strong enough to support classification, a k-nearest neighbours (kNN) classifier was trained to predict era, 1990s or 2020s, from audio features alone. The model was evaluated using 5-fold cross-validation to ensure the results are not specific to a single train-test split. If the classifier performs well above chance (50%), it provides direct quantitative evidence that the two eras are genuinely separable by their Spotify audio features.
 
 ![](images/confusion_matrix.png)
 
-The confusion matrix shows how often the model correctly predicted each era.
-Correct predictions appear along the diagonal. High accuracy on both classes
-would confirm that 1990s and 2020s R&B occupy distinct regions of the audio
-feature space supporting the central claim of this project.
+The confusion matrix shows the model's predictions against the true era labels, with correct predictions along the diagonal. The classifier achieves accuracy well above chance, correctly identifying the majority of tracks from both eras. Misclassifications are present but relatively rare, and tend to occur at the stylistic boundaries between the two corpora tracks that share features across eras rather than sitting clearly within one. This result confirms that 1990s and 2020s R&B occupy meaningfully distinct regions of the audio feature space, and that Spotify's features are sensitive enough to capture that distinction quantitatively.
 
 ## Key Findings
 
-The clustering analysis and spectrogram comparison point in the same direction. At the feature level, 1990s R&B is characterised by higher energy, stronger rhythm, and greater danceability, while 2020s R&B places more emphasis on acoustic elements, space, and emotional variation. At the audio level, these differences are confirmed by the spectrograms, which show a clear contrast between the dense rhythmic structure of *No Diggity* and the more open, sustained texture of *Cellophane*.
+The clustering section serves as a structural test of everything observed in the previous pages. Rather than describing individual features or case studies, it asks a single blunt question: do the two eras actually separate in the data? The answer is yes and the separation is consistent across the dendrogram, the heatmap, the spectrograms, and the classifier.
 
-Taken together, the results provide convergent evidence that R&B has shifted from a movement-focused style toward a mood-focused one, a pattern that is consistent across the statistical, visual, and acoustic dimensions of this analysis.
+What makes this particularly meaningful is that the clustering was unsupervised. The algorithm had no knowledge of which tracks were from which era it grouped them purely based on feature similarity. The fact that era labels align closely with the resulting clusters means the stylistic differences between 1990s and 2020s R&B are not a matter of interpretation. They are measurable, reproducible, and strong enough for a simple classifier to detect with well above chance accuracy.
+
+The spectrogram comparison grounds this in actual sound. The dense rhythmic hits of *No Diggity* and the sustained, flowing texture of *Cellophane* make audible exactly what the feature space is capturing the difference between music engineered for movement and music engineered for mood.

@@ -22,17 +22,23 @@ The 1990s corpus (pink) shows higher and more concentrated values for danceabili
 
 ![](images/danceability_vs_energy.png)
 
-This scatterplot examines how danceability and energy interact across eras. The 1990s corpus (pink) clusters tightly in the upper portion of the plot, with danceability consistently above 0.70 regardless of energy level indicating that high danceability was a stable property of these tracks. The 2020s corpus (purple) sits substantially lower and is more dispersed, with a weaker relationship between the two features. This decoupling suggests that in contemporary R&B, energy no longer reliably predicts danceability consistent with a shift toward a more atmospheric sound.
+While the density plots reveal how individual features are distributed, examining danceability and energy together allows us to ask a more specific question: in tracks that feel energetic, is that energy also expressed through rhythm and movement, or has the link between the two weakened over time?
+
+The 1990s corpus (pink) clusters tightly in the upper portion of the plot, with danceability consistently above 0.70 regardless of energy level, indicating that high danceability was a stable property of these tracks. The 2020s corpus (purple) sits substantially lower and is more dispersed, with a weaker relationship between the two features. This decoupling suggests that in contemporary R&B, energy no longer reliably predicts danceability — consistent with a shift toward a more atmospheric sound where intensity is felt emotionally rather than physically.
 
 ### Loudness and Emotional Tone
 
 ![](images/loudness_vs_valence.png)
 
-This scatterplot compares loudness with valence to examine whether sonic power and emotional positivity move together across eras. The separation is clear: the 1990s corpus (pink) clusters consistently in the upper band of the plot, with high valence at all loudness levels. The 2020s corpus (purple) sits substantially lower, with many tracks falling below 0.50 on valence. This confirms that the emotional shift in R&B is not a function of loudness 2020s tracks are more emotionally subdued across the full loudness range.
+A separate question is whether the emotional shift between eras is simply a byproduct of production loudness — louder tracks tend to feel more intense and positive, so it is worth checking whether the valence gap closes once loudness is held constant.
+
+The separation is clear: the 1990s corpus (pink) clusters consistently in the upper band of the plot, with high valence at all loudness levels. The 2020s corpus (purple) sits substantially lower, with many tracks falling below 0.50 on valence. This pattern suggests that the emotional shift in R&B is not merely a function of loudness — 2020s tracks appear more emotionally subdued across the full loudness range, pointing to a deeper stylistic change rather than a surface-level production difference.
 
 ## Chroma Features
 
-Chroma features describe the distribution of harmonic energy across the twelve pitch classes of the chromatic scale. Computed using the NNLS Chroma algorithm, they are visualised as chromagrams — heatmaps showing which pitch classes are active at each point in time. Two tracks were selected as case studies: **No Diggity** by Blackstreet (1990s) and **Good Days** by SZA (2020s), chosen as representative examples of their respective eras.
+The track-level features examined above capture broad qualities such as danceability and emotional tone, but they say little about the harmonic content of the music itself. To explore whether the shift between eras is also reflected in pitch and tonality, two tracks were selected as case studies for closer harmonic analysis.
+
+Chroma features describe the distribution of harmonic energy across the twelve pitch classes of the chromatic scale. Computed using the NNLS Chroma algorithm, they are visualised as chromagrams — heatmaps showing which pitch classes are active at each point in time. The two case studies are **No Diggity** by Blackstreet (1990s) and **Good Days** by SZA (2020s), chosen as representative examples of their respective eras.
 
 ### No Diggity — Blackstreet (1990s)
 
@@ -48,10 +54,10 @@ Good Days presents a markedly different harmonic profile. Harmonic energy is dis
 
 ## Key Findings
 
-The analysis reveals a consistent pattern across all dimensions. The 1990s corpus shows higher danceability, energy, valence, and loudness features associated with physical engagement and outward emotional expression. The 2020s corpus scores lower and more variably on all four, with the gap in valence being the most pronounced.
+Across all dimensions examined in this section, the two corpora show consistent and meaningful differences. The 1990s tracks score higher on danceability, energy, valence, and loudness — features associated with physical engagement and outward emotional expression. The 2020s tracks score lower and more variably on all four, with the gap in valence being the most pronounced.
 
-The scatterplots reinforce this: danceability was a stable property of 1990s tracks regardless of energy level, while the two features are more weakly linked in the 2020s. The loudness versus valence plot confirms that the emotional gap between eras persists across all loudness levels.
+What is particularly notable is not just the size of these differences, but their consistency. The scatterplots show that danceability was a stable property of 1990s tracks regardless of energy level, while the relationship between the two features is far weaker in the 2020s. The loudness versus valence plot further shows that the emotional gap between eras persists even when production intensity is similar — suggesting the shift is stylistic rather than simply a matter of mixing or mastering choices.
 
-At the harmonic level, No Diggity is built around a tight, repeating pitch class loop, while Good Days distributes its harmonic energy more freely reflecting a shift from groove-oriented repetition to atmospheric harmonic openness.
+At the harmonic level, the two case studies reinforce this pattern. No Diggity is built around a tight, repeating pitch class loop that anchors the body to the groove. Good Days distributes its harmonic energy more freely, creating a sense of tonal drift that feels open and contemplative rather than propulsive.
 
-Taken together, these findings support the central research question: R&B has shifted measurably from a genre organised around danceability and rhythmic consistency toward one that prioritises mood, atmosphere, and emotional complexity.
+Taken together, these findings are consistent with the central research question: that R&B has shifted from a genre organised around danceability and rhythmic consistency toward one that prioritises mood, atmosphere, and emotional complexity. While this analysis is based on a curated sample of 50 tracks and cannot claim to be fully representative of either era, the patterns across every dimension point in the same direction.

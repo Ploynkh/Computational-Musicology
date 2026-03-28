@@ -45,7 +45,7 @@ yeah_tempogram <- ggplot(yeah_tempogram_long, aes(x = TIME, y = tempo, fill = va
   labs(
     title    = "Yeah! — Autocorrelation Tempogram",
     subtitle = "1990s R&B · First 30 seconds",
-    x        = "Time (s)",
+    x        = "Time (frames)",
     y        = "Tempo (BPM)"
   ) +
   theme_tempogram
@@ -57,7 +57,7 @@ gooddays_tempogram <- ggplot(gooddays_tempogram_long, aes(x = TIME, y = tempo, f
   labs(
     title    = "Good Days — Autocorrelation Tempogram",
     subtitle = "2020s R&B · First 30 seconds",
-    x        = "Time (s)",
+    x        = "Time (frames)",
     y        = "Tempo (BPM)"
   ) +
   theme_tempogram
