@@ -18,8 +18,6 @@ website:
         text: Clustering
       - href: conclusion.qmd
         text: Conclusion
-    right:
-      - text: "Naritsarakon Khongcharern"
 
 format:
   html:
