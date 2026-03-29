@@ -1,7 +1,7 @@
 # 1990s vs 2020s R&B: Danceable vs Atmospheric Music
 
 A computational musicology project examining how R&B has evolved 
-from the 1990s to the 2020s — asking whether a genre once defined 
+from the 1990s to the 2020s, asking whether a genre once defined 
 by groove and dancefloor energy has shifted toward atmosphere, 
 introspection, and personal emotional experience.
 
