@@ -8,7 +8,7 @@ format:
 
 If R&B has shifted from movement to mood, that shift should be audible in its rhythmic structure. This section examines tempo, track duration, and pulse organisation to ask whether the rhythmic character of the genre has changed as markedly as its emotional and timbral qualities.
 
-The analysis works at two levels. At the corpus level, histograms and boxplots capture broad tendencies in tempo and duration across all 50 tracks. At the track level, novelty functions and autocorrelation tempograms reveal how rhythmic activity and pulse stability unfold within individual songs — offering a closer look at what groove-driven and atmosphere-oriented music actually looks like as audio data.
+The analysis works at two levels. At the corpus level, histograms and boxplots capture broad tendencies in tempo and duration across all 50 tracks. At the track level, novelty functions and autocorrelation tempograms reveal how rhythmic activity and pulse stability unfold within individual songs offering a closer look at what groove-driven and atmosphere-oriented music actually looks like as audio data.
 
 ## Distribution of Tempo Across Eras
 
@@ -16,7 +16,7 @@ A histogram was used to examine the distribution of tempo values across the corp
 
 ![](images/tempo_histogram.png)
 
-The 1990s corpus is concentrated within a relatively narrow mid-tempo range, particularly around 90–110 BPM — a range closely associated with groove-based production and dancefloor energy. The 2020s corpus spreads more broadly across the tempo spectrum. Although mid-tempo tracks remain common, the wider distribution indicates less reliance on a single dominant rhythmic feel and greater openness to slower, more atmospheric pacing.
+The 1990s corpus is concentrated within a relatively narrow mid-tempo range, particularly around 90–110 BPM a range closely associated with groove-based production and dancefloor energy. The 2020s corpus spreads more broadly across the tempo spectrum. Although mid-tempo tracks remain common, the wider distribution indicates less reliance on a single dominant rhythmic feel and greater openness to slower, more atmospheric pacing.
 
 This difference is consistent with the idea that 1990s R&B was built around a shared rhythmic pulse, while contemporary R&B allows for more individual and varied listening experiences.
 
@@ -64,7 +64,7 @@ Together, these features indicate that *Good Days* maintains temporal organisati
 
 ## Key Findings
 
-The temporal findings add a rhythmic dimension to what the earlier sections established through harmony, timbre, and emotional tone. Across all three measures tempo distribution, track duration, and pulse stability — the same pattern holds: 1990s R&B is built around rhythmic consistency and sustained groove, while 2020s R&B is more varied, more compact, and less insistent about its own pulse.
+The temporal findings add a rhythmic dimension to what the earlier sections established through harmony, timbre, and emotional tone. Across all three measures tempo distribution, track duration, and pulse stability the same pattern holds: 1990s R&B is built around rhythmic consistency and sustained groove, while 2020s R&B is more varied, more compact, and less insistent about its own pulse.
 
 What is notable here is that this is not simply a matter of being slower or quieter. *Good Days* is not an absence of rhythm it has a pulse, and it uses it. But that pulse functions differently: as atmosphere rather than engine. The contrast with *Yeah!* makes this audible. One track demands physical response from the first beat; the other invites emotional attention over time.
 

@@ -14,8 +14,8 @@ website:
         text: Timbre Features
       - href: temporal.qmd
         text: Temporal Features
-      - href: clustering.qmd
-        text: Clustering
+      - href: clustering&classification.qmd
+        text: Clustering & Classification
       - href: conclusion.qmd
         text: Conclusion
 

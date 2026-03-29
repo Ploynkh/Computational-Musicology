@@ -1,7 +1,7 @@
 ---
 author: "Naritsarakon Khongcharern"
 date: "March 29, 2026"
-title: "Background & Corpus"
+title: "1990s vs 2020s R&B: Danceable vs Atmospheric Music"
 ---
 
 ## Research Question
@@ -56,7 +56,7 @@ The corpus consists of 50 tracks, with 25 songs from each era. The **1990s selec
 
 Using Spotify's audio features and audio analysis tools, this dashboard investigates whether the stylistic differences between the two eras can be measured quantitatively. It asks: Are 1990s R&B tracks more danceable and rhythmically driven than those from the 2020s? Do contemporary tracks show reduced tempo and rhythmic activity? Has harmonic movement become more repetitive? And do timbral features reflect a shift toward softer, more immersive textures?
 
-To answer these questions, the analysis focuses on four analytical dimensions examined across the pages of this dashboard.
+To answer these questions, the analysis focuses on five analytical dimensions examined across the pages of this dashboard.
 
 **Track-level features** look at danceability, energy, valence, and loudness to capture the most immediate and measurable qualities of each track.
 
@@ -66,7 +66,9 @@ To answer these questions, the analysis focuses on four analytical dimensions ex
 
 **Temporal features** focus on tempo, rhythm, and structural patterns to determine whether the rhythmic drive of R&B has weakened over time.
 
-By comparing these dimensions across both corpora, the project aims to determine whether R&B has shifted from music designed for movement to music designed for mood. Overall, this study suggests that R&B has not only changed in style, but also in purpose — from driving collective movement in social spaces to shaping emotional experience in more personal listening environments.
+**Clustering & classification** use hierarchical clustering and k-nearest neighbour (kNN) methods to test whether the two eras occupy distinct regions of the audio feature space and whether era membership can be predicted from audio features alone.
+
+By comparing these dimensions across both corpora, the project aims to determine whether R&B has shifted from music designed for movement to music designed for mood. Overall, this study suggests that R&B has not only changed in style, but also in purpose from driving collective movement in social spaces to shaping emotional experience in more personal listening environments.
 
 ## Full Corpus Explorer
 

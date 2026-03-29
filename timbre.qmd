@@ -28,7 +28,7 @@ The cepstrogram for *Creep* shows consistent activity across multiple MFCC coeff
 
 ![](images/cepstrogram_snooze.png)
 
-In contrast, *Snooze* shows a softer and more diffuse timbral profile. Activity is concentrated in fewer coefficients and the overall pattern is smoother and less varied. This reflects the track's minimalist production, with gentle layers, soft percussion, and a focus on vocal texture rather than rhythmic density. The cepstrogram is consistent with the idea that 2020s R&B tends toward a more restrained and atmospheric sonic palette — though it is worth noting that this is a single case study rather than a corpus-wide measurement.
+In contrast, *Snooze* shows a softer and more diffuse timbral profile. Activity is concentrated in fewer coefficients and the overall pattern is smoother and less varied. This reflects the track's minimalist production, with gentle layers, soft percussion, and a focus on vocal texture rather than rhythmic density. The cepstrogram is consistent with the idea that 2020s R&B tends toward a more restrained and atmospheric sonic palette though it is worth noting that this is a single case study rather than a corpus-wide measurement.
 
 ## Structural Repetition
 
@@ -72,7 +72,7 @@ The keygram for *Pov* shows a different pattern. While a primary key is still de
 
 ## Key Findings
 
-What makes the findings of this section particularly compelling is not that any single dimension shows a difference — it is that all three point in the same direction. Timbre, structure, and harmony each tell a version of the same story: 1990s R&B was built around density, repetition, and tonal stability, while 2020s R&B leans toward restraint, fluidity, and harmonic openness.
+What makes the findings of this section particularly compelling is not that any single dimension shows a difference it is that all three point in the same direction. Timbre, structure, and harmony each tell a version of the same story: 1990s R&B was built around density, repetition, and tonal stability, while 2020s R&B leans toward restraint, fluidity, and harmonic openness.
 
 This convergence matters because these are independent dimensions of musical organisation. The fact that timbral texture, formal structure, and key stability all shift together suggests that the change in R&B is not a surface-level production trend, but a deeper shift in how the music is composed and what it is designed to do. A track like *That's The Way Love Goes* is engineered for repetition its groove locks the listener in. A track like *Good Days* resists that lock, unfolding gradually and leaving more tonal space for emotional reflection.
 
