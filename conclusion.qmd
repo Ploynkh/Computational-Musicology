@@ -50,7 +50,7 @@ This project set out to answer one question: has R&B shifted from a danceable, m
 
 ## Discussion
 
-Both hierarchical clustering and kNN classification demonstrate that 1990s and 2020s tracks separate meaningfully based on Spotify audio features alone. The features most responsible for this separation are danceability, energy, and acousticness — confirming that these dimensions capture something real about how the two eras differ, not just as music but as data. Spotify's feature set is algorithmic and imperfect, but the consistency of results across methods suggests it is sensitive enough to detect genuine stylistic change.
+Both hierarchical clustering and kNN classification demonstrate that 1990s and 2020s tracks separate meaningfully based on Spotify audio features alone. The features most responsible for this separation are danceability, energy, and acousticness confirming that these dimensions capture something real about how the two eras differ, not just as music but as data. Spotify's feature set is algorithmic and imperfect, but the consistency of results across methods suggests it is sensitive enough to detect genuine stylistic change.
 
 The broader insight of this project is that the shift in R&B is not confined to any single dimension. It is visible in rhythm, harmony, timbre, structure, and emotional tone simultaneously and that convergence is what makes the finding meaningful. A change in danceability alone could be a production trend. A change that runs through every measurable dimension of the music points to something deeper: a shift in what R&B is for.
 
@@ -59,6 +59,14 @@ These findings have practical relevance beyond academic musicology. Streaming pl
 ## Limitations
 
 The corpus is small, with 25 tracks per era, meaning individual tracks can have an outsized effect on distributional results. The boundaries of R&B are porous and several tracks carry influences from pop, hip-hop, and soul. Spotify's audio features are algorithmic estimates rather than ground truth measurements and may not capture every dimension of musical expression. These limitations do not undermine the findings but mean the results should be understood as suggestive rather than definitive.
+
+## What I Learned
+
+This project taught me that computational methods are most powerful when their results converge. Any single analysis — a boxplot of danceability, a chroma heatmap, a dendrogram could be dismissed as a quirk of the data or an artefact of Spotify's algorithms. But when five independent analyses all point in the same direction, the pattern becomes harder to ignore. Learning to read that kind of convergence, and to trust it, was the most important methodological lesson of this project.
+
+I also learned that numbers do not explain themselves. The data showed that 2020s R&B is quieter, less danceable, and more acoustic than its 1990s counterpart. But it took close listening, cultural context, and careful interpretation to understand what that actually means: a genre shifting from collective to private experience, from the body to the mood. Computational musicology works best when it moves between the quantitative and the qualitative, using each to check and enrich the other.
+
+Finally, I learned something about R&B itself. I came into this project with an intuition that something had changed in the genre, but I did not expect the shift to be so consistent across every dimension of the music. The fact that era alone predicts cluster membership that a kNN classifier trained on audio features can tell 1990s from 2020s R&B with meaningful accuracy — suggests the change is not superficial. It is structural, and it is real.
 
 ## Final Reflection
 
