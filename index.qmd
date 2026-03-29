@@ -1,8 +1,15 @@
 ---
 author: "Naritsarakon Khongcharern"
 date: "March 29, 2026"
+institute: "University of Amsterdam"
 title: "1990s vs 2020s R&B: Danceable vs Atmospheric Music"
 ---
+```{=html}
+<p style="color: #aaa; font-size: 0.9rem;">
+  Course: Computational Musicology<br>
+  Instructor: John Ashley Burgoyne
+</p>
+```
 
 ## Research Question
 
